@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+/*
+ * Brand tokens, from the Matt Stacy brand guidelines v2.0.
+ * Red is for the mark and for small accents only: about 6% of any view.
+ */
+@theme {
+  --color-petroglyph: #c4391c; /* Petroglyph Red, primary */
+  --color-varnish: #2a211c; /* Desert Varnish, dark ground */
+  --color-varnish-deep: #211a16; /* Under-varnish for lightbox and footer edges */
+  --color-clay: #b5764f; /* Clay, secondary; large text only on Canvas */
+  --color-canvas: #f4efe7; /* Canvas, light ground */
+  --color-bone: #ded5c7; /* Bone, light accent */
+
+  --font-sans: var(--font-archivo), "Helvetica Neue", Arial, sans-serif;
+  --font-serif: var(--font-fraunces), Georgia, "Times New Roman", serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+  }
+  body {
+    background: var(--color-canvas);
+    color: var(--color-varnish);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-petroglyph);
+    outline-offset: 3px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* Side gutter used by every section: at least 16px on a phone. */
+@utility px-gutter {
+  padding-inline: clamp(16px, 4vw, 56px);
+}
+
+/* Tracked caps label: Archivo Semibold 11, +30% (brand type scale "Label"). */
+@utility label {
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+/* Fraunces with optical sizing at display sizes. */
+@utility font-display {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  font-variation-settings: "opsz" 144;
+  letter-spacing: -0.02em;
+}
+
+/*
+ * The petroglyph mark as a mask, so it takes the current text color. That
+ * keeps it to the palette in every placement without a file per color.
+ */
+@utility brand-mark {
+  display: inline-block;
+  aspect-ratio: 1024 / 1253;
+  background-color: currentColor;
+  -webkit-mask: url("/brand/ms_mark_red.png") center / contain no-repeat;
+  mask: url("/brand/ms_mark_red.png") center / contain no-repeat;
+  flex: none;
+}
