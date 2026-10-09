@@ -2,8 +2,6 @@ export interface Service {
   slug: string;
   /** Exactly as it appears in the Services dropdown. */
   navLabel: string;
-  /** Short tag above the heading on the homepage. */
-  tag: string;
   /** The homepage heading, written the way people search for it. */
   heading: string;
   summary: string;
@@ -19,7 +17,6 @@ export const SERVICES: Service[] = [
   {
     slug: "expedition-athlete-documentation",
     navLabel: "Expedition & Athlete Documentation",
-    tag: "Expedition & athlete",
     heading: "Expedition and athlete documentation",
     summary:
       "Trail runners, climbers and alpinists photographed and filmed on route, from the approach to the summit and back.",
@@ -28,7 +25,6 @@ export const SERVICES: Service[] = [
   {
     slug: "drone-cinematography",
     navLabel: "Drone Cinematography",
-    tag: "Drone",
     heading: "Drone cinematography",
     summary:
       "Aerial stills and film of ridgelines, glaciers and approach routes, graded to match everything shot on the ground.",
@@ -37,7 +33,6 @@ export const SERVICES: Service[] = [
   {
     slug: "adventure-photography",
     navLabel: "Adventure Photography",
-    tag: "Photography",
     heading: "Adventure photography",
     summary:
       "Landscape and adventure stills from the high Andes, for editorial, tourism and print.",
@@ -46,7 +41,6 @@ export const SERVICES: Service[] = [
   {
     slug: "brand-commercial",
     navLabel: "Brand & Commercial",
-    tag: "Brand & commercial",
     heading: "Brand and commercial production",
     summary:
       "Campaign stills and film for outdoor, travel and tourism brands. Location scouting, filming permits and local crew in Peru.",

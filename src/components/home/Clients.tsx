@@ -8,19 +8,9 @@ export function Clients() {
   return (
     <section className="px-gutter pb-[clamp(64px,9vw,128px)]">
       <div className="mx-auto max-w-[1320px]">
-        <div className="mb-[clamp(28px,4vw,44px)] grid items-end gap-[clamp(20px,6vw,96px)] md:grid-cols-[5fr_7fr]">
-          <div>
-            <p className="label text-clay">Clients</p>
-            <h2 className="mt-3.5 text-[clamp(26px,2.8vw,36px)] leading-[1.1] font-bold tracking-[-0.015em]">
-              Brands I&apos;ve worked with
-            </h2>
-          </div>
-          <p className="max-w-[56ch] text-[15px]">
-            Outdoor, travel and tourism brands shooting in Peru, plus the athletes
-            and production companies who needed someone who already knows the
-            terrain.
-          </p>
-        </div>
+        <h2 className="mb-[clamp(28px,4vw,44px)] text-[clamp(26px,2.8vw,36px)] leading-[1.1] font-bold tracking-[-0.015em]">
+          Brands I&apos;ve worked with
+        </h2>
 
         <ul
           aria-label="Client logos"

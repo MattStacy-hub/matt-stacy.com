@@ -10,7 +10,7 @@ import { HERO_PHOTO, SELECTED_WORK } from "@/data/home";
  * (same reasoning as the AAV sitemap).
  */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const photos = [HERO_PHOTO, ...SELECTED_WORK.flatMap((row) => row.photos)];
+  const photos = [HERO_PHOTO, ...SELECTED_WORK];
   return [
     {
       url: SITE_CONFIG.url,

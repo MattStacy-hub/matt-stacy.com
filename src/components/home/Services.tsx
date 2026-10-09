@@ -5,12 +5,9 @@ export function Services() {
   return (
     <section id="about" className="px-gutter py-[clamp(64px,9vw,128px)]">
       <div className="mx-auto grid max-w-[1320px] items-start gap-[clamp(32px,6vw,96px)] md:grid-cols-[5fr_7fr]">
-        <div>
-          <p className="label text-clay">Sacred Valley, Cusco</p>
-          <h2 className="mt-4.5 text-[clamp(30px,3.6vw,48px)] leading-[1.05] font-bold tracking-[-0.02em] text-balance">
-            Outdoor and adventure photography and film in the high Andes.
-          </h2>
-        </div>
+        <h2 className="text-[clamp(30px,3.6vw,48px)] leading-[1.05] font-bold tracking-[-0.02em] text-balance">
+          Outdoor and adventure photography and film in the high Andes.
+        </h2>
         <p className="max-w-[62ch] text-[17px]">
           I make photographs and films for brands, for athletes, and for stories
           that need time. Expedition and athlete documentation, drone
@@ -27,8 +24,7 @@ export function Services() {
       >
         {SERVICES.map((service) => (
           <article key={service.slug} className="min-w-0 pt-5.5">
-            <p className="label text-clay">{service.tag}</p>
-            <h3 className="mt-3.5 mb-2 text-[22px] leading-tight font-semibold tracking-[-0.01em]">
+            <h3 className="mb-2 text-[22px] leading-tight font-semibold tracking-[-0.01em]">
               {service.heading}
             </h3>
             <p className="max-w-[36ch] text-[15px] leading-[1.7]">{service.summary}</p>

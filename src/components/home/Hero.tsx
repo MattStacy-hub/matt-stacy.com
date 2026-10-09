@@ -28,8 +28,7 @@ export function Hero() {
         }}
       />
       <div className="px-gutter pb-[clamp(28px,5vw,56px)]">
-        <p className="label">Matt Stacy · Photography &amp; film</p>
-        <h1 className="font-display mt-3.5 mb-6 max-w-[13ch] text-[clamp(40px,7vw,96px)] leading-none text-balance">
+        <h1 className="font-display mb-6 max-w-[13ch] text-[clamp(40px,7vw,96px)] leading-none text-balance">
           Adventure Photographer in <em className="italic">Cusco,</em> Peru
         </h1>
         <p className="max-w-[44ch] text-[clamp(16px,1.4vw,19px)] text-bone">

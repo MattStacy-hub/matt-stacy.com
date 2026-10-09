@@ -6,11 +6,11 @@ import Lightbox from "yet-another-react-lightbox";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/captions.css";
-import { SELECTED_WORK, type Photo, type WorkRow } from "@/data/home";
+import { SELECTED_WORK, type WorkPhoto } from "@/data/home";
 import { DEVICE_SIZES, optimizedImageUrl } from "@/lib/image-sizes";
 
 /** Every photo in page order, which is also the lightbox's order. */
-const PHOTOS: Photo[] = SELECTED_WORK.flatMap((row) => row.photos);
+const PHOTOS = SELECTED_WORK;
 
 /**
  * The lightbox asks the optimizer for the same widths next/image uses, so
@@ -30,54 +30,40 @@ const SLIDES = PHOTOS.map((photo) => ({
   })),
 }));
 
-const ROW_LAYOUT: Record<WorkRow["layout"], { row: string; frame: string; sizes: string }> = {
-  one: {
-    row: "grid-cols-1",
-    frame: "aspect-[4/3] md:aspect-video md:max-h-[88vh]",
-    sizes: "100vw",
-  },
-  "two-portrait": {
-    row: "grid-cols-1 md:grid-cols-2",
-    frame: "aspect-[4/5]",
-    sizes: "(min-width: 768px) 50vw, 100vw",
-  },
-  "two-landscape": {
-    row: "grid-cols-1 md:grid-cols-2",
-    frame: "aspect-[3/2]",
-    sizes: "(min-width: 768px) 50vw, 100vw",
-  },
-};
+/** Where a frame sits in the grid, from its shape. See SELECTED_WORK. */
+function tileLayout(photo: WorkPhoto): { span: string; sizes: string } {
+  if (photo.feature) {
+    return {
+      span: "lg:col-span-full lg:row-span-2",
+      sizes: "(min-width: 1024px) 100vw, (min-width: 768px) 50vw, 100vw",
+    };
+  }
+  return {
+    span: photo.height > photo.width ? "row-span-2" : "",
+    sizes: "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw",
+  };
+}
 
 export function SelectedWork() {
   const [index, setIndex] = useState(-1);
 
   return (
-    <section id="work" className="bg-varnish pt-[clamp(64px,9vw,128px)] pb-1.5 text-canvas">
-      <div className="mb-[clamp(28px,4vw,48px)] flex flex-wrap items-end justify-between gap-6 px-gutter">
-        <div>
-          <p className="label text-bone">Photographs</p>
-          <h2 className="mt-3 text-[clamp(30px,3.6vw,48px)] leading-none font-bold tracking-[-0.02em]">
-            Selected work
-          </h2>
-        </div>
-        <p className="max-w-[40ch] text-[15px] text-bone">
-          Twelve frames from the last few seasons in the Peruvian Andes. Select one
-          to see it full screen.
-        </p>
-      </div>
+    <section id="work" className="bg-varnish py-[clamp(64px,9vw,128px)] text-canvas">
+      <h2 className="mb-[clamp(28px,4vw,48px)] px-gutter text-[clamp(30px,3.6vw,48px)] leading-none font-bold tracking-[-0.02em]">
+        Selected work
+      </h2>
 
-      <div className="grid gap-2 px-2">
-        {SELECTED_WORK.map((row, r) => {
-          const layout = ROW_LAYOUT[row.layout];
-          return (
-            <div key={r} className={`grid gap-2 ${layout.row}`}>
-              {row.photos.map((photo) => (
+      <div className="@container px-gutter">
+        <div className="work-grid">
+          {PHOTOS.map((photo, i) => {
+            const layout = tileLayout(photo);
+            return (
                 <button
                   key={photo.src}
                   type="button"
-                  onClick={() => setIndex(PHOTOS.indexOf(photo))}
+                  onClick={() => setIndex(i)}
                   aria-label={`View ${photo.title} full screen`}
-                  className={`group relative w-full cursor-zoom-in overflow-hidden bg-varnish-deep ${layout.frame}`}
+                  className={`group relative w-full cursor-zoom-in overflow-hidden h-full bg-varnish-deep ${layout.span}`}
                 >
                   <Image
                     src={photo.src}
@@ -101,10 +87,9 @@ export function SelectedWork() {
                     </span>
                   </span>
                 </button>
-              ))}
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
 
       <Lightbox

@@ -23,155 +23,120 @@ export const HERO_PHOTO: Photo = {
 };
 
 /**
- * Selected work, in rows. A "one" row is a single full-width frame; a "two"
- * row is a pair. Portrait pairs and landscape pairs are kept apart so each
- * pair shares one shape and nothing is cropped hard.
+ * Selected work, in page order. The grid reads each frame's shape from its
+ * width and height: a landscape fills one cell, a portrait fills two cells
+ * stacked. `feature` marks the lead frame, which spans the full width on wide
+ * screens.
+ *
+ * The order is what packs the grid without gaps. Counting a landscape as 1,
+ * a portrait as 2 and the feature as 6 on three columns (1 on two), the total
+ * must divide by 3 on wide screens and by 2 on tablets. Portraits need a
+ * partner beside them in the same pair of rows, or a cell is left empty.
  */
-export type WorkRow =
-  | { layout: "one"; photos: [Photo] }
-  | { layout: "two-portrait" | "two-landscape"; photos: [Photo, Photo] };
+export type WorkPhoto = Photo & { feature?: boolean };
 
 const P = "/images/locations";
 
-export const SELECTED_WORK: WorkRow[] = [
+export const SELECTED_WORK: WorkPhoto[] = [
   {
-    layout: "one",
-    photos: [
-      {
-        src: `${P}/ancash-region/cordillera-huayhuash/h2.webp`,
-        width: 2048,
-        height: 1365,
-        alt: "Hiker above Laguna Jahuacocha in the Cordillera Huayhuash, Peru",
-        title: "Laguna Jahuacocha",
-        place: "Huayhuash, Áncash",
-      },
-    ],
+    src: `${P}/ancash-region/cordillera-huayhuash/h2.webp`,
+    width: 2048,
+    height: 1365,
+    alt: "Hiker above Laguna Jahuacocha in the Cordillera Huayhuash, Peru",
+    title: "Laguna Jahuacocha",
+    place: "Huayhuash, Áncash",
+    feature: true,
   },
   {
-    layout: "two-portrait",
-    photos: [
-      {
-        src: `${P}/ancash-region/cordillera-huayhuash/v3.webp`,
-        width: 1365,
-        height: 2048,
-        alt: "Lit tent at high camp below a glacier in the Cordillera Huayhuash at night",
-        title: "High camp, before sunrise",
-        place: "Huayhuash, Áncash",
-        focus: "50% 60%",
-      },
-      {
-        src: `${P}/ancash-region/nevado-huascaran/huascaran-2.webp`,
-        width: 1920,
-        height: 2560,
-        alt: "Climbers on the summit of Huascarán, the highest mountain in Peru",
-        title: "Huascarán",
-        place: "Áncash · 6,768 m",
-        focus: "50% 30%",
-      },
-    ],
+    src: `${P}/ancash-region/cordillera-huayhuash/v3.webp`,
+    width: 1365,
+    height: 2048,
+    alt: "Lit tent at high camp below a glacier in the Cordillera Huayhuash at night",
+    title: "High camp, before sunrise",
+    place: "Huayhuash, Áncash",
+    focus: "50% 60%",
   },
   {
-    layout: "one",
-    photos: [
-      {
-        src: `${P}/cusco-region/nevado-veronica/h4.webp`,
-        width: 2560,
-        height: 1707,
-        alt: "Climber on the summit ridge of Nevado Verónica above the Sacred Valley",
-        title: "Nevado Verónica",
-        place: "Urubamba, Cusco",
-      },
-    ],
+    src: `${P}/cusco-region/ahobamba-trek/h6.webp`,
+    width: 2560,
+    height: 1707,
+    alt: "Machu Picchu under storm light, Cusco",
+    title: "Machu Picchu",
+    place: "Cusco",
   },
   {
-    layout: "two-landscape",
-    photos: [
-      {
-        src: `${P}/cusco-region/inti-punku/h2.webp`,
-        width: 2048,
-        height: 1365,
-        alt: "Inti Punku Inca gateway at dusk near the Sacred Valley, Cusco",
-        title: "Inti Punku",
-        place: "Sacred Valley, Cusco",
-      },
-      {
-        src: `${P}/cusco-region/nevado-ausangate/h7.webp`,
-        width: 2560,
-        height: 1707,
-        alt: "Trekkers crossing a stream on the Ausangate circuit, Cusco",
-        title: "Ausangate",
-        place: "Cusco · 6,384 m",
-      },
-    ],
+    src: `${P}/ancash-region/nevado-huascaran/huascaran-2.webp`,
+    width: 1920,
+    height: 2560,
+    alt: "Climbers on the summit of Huascarán, the highest mountain in Peru",
+    title: "Huascarán",
+    place: "Áncash · 6,768 m",
+    focus: "50% 30%",
   },
   {
-    layout: "one",
-    photos: [
-      {
-        src: `${P}/cusco-region/nevado-chumpe/h3.webp`,
-        width: 2560,
-        height: 1707,
-        alt: "Last light on Nevado Chumpe in the Cordillera Vilcanota, Cusco, with a lone figure on the puna",
-        title: "Last light on Chumpe",
-        place: "Cordillera Vilcanota, Cusco",
-        focus: "50% 55%",
-      },
-    ],
+    src: `${P}/cusco-region/inti-punku/h2.webp`,
+    width: 2048,
+    height: 1365,
+    alt: "Inti Punku Inca gateway at dusk near the Sacred Valley, Cusco",
+    title: "Inti Punku",
+    place: "Sacred Valley, Cusco",
   },
   {
-    layout: "two-portrait",
-    photos: [
-      {
-        src: `${P}/ancash-region/cordillera-blanca/v6.webp`,
-        width: 1365,
-        height: 2048,
-        alt: "Snow peak at first light in the Cordillera Blanca, Peru",
-        title: "First light",
-        place: "Cordillera Blanca",
-      },
-      {
-        src: `${P}/cusco-region/cordillera-vilcabamba/v1.webp`,
-        width: 1365,
-        height: 2048,
-        alt: "Climber standing on a rocky summit above the clouds in the Cordillera Vilcabamba",
-        title: "Summit, Vilcabamba",
-        place: "Cordillera Vilcabamba, Cusco",
-      },
-    ],
+    src: `${P}/cusco-region/nevado-veronica/h4.webp`,
+    width: 2560,
+    height: 1707,
+    alt: "Climber on the summit ridge of Nevado Verónica above the Sacred Valley",
+    title: "Nevado Verónica",
+    place: "Urubamba, Cusco",
   },
   {
-    layout: "one",
-    photos: [
-      {
-        src: `${P}/cusco-region/nevado-sirijuani/h1.webp`,
-        width: 2560,
-        height: 1705,
-        alt: "Aerial view of a glacier tongue in the Cordillera Vilcanota, Cusco",
-        title: "Glacier tongue",
-        place: "Cordillera Vilcanota, Cusco",
-      },
-    ],
+    src: `${P}/ancash-region/cordillera-blanca/v6.webp`,
+    width: 1365,
+    height: 2048,
+    alt: "Snow peak at first light in the Cordillera Blanca, Peru",
+    title: "First light",
+    place: "Cordillera Blanca",
   },
   {
-    layout: "two-landscape",
-    photos: [
-      {
-        src: `${P}/cusco-region/nevado-ausangate/h1.webp`,
-        width: 2560,
-        height: 1707,
-        alt: "Expedition base camp below Ausangate, Cusco",
-        title: "Base camp",
-        place: "Ausangate, Cusco",
-      },
-      {
-        src: `${P}/cusco-region/ahobamba-trek/h6.webp`,
-        width: 2560,
-        height: 1707,
-        alt: "Machu Picchu under storm light, Cusco",
-        title: "Machu Picchu",
-        place: "Cusco",
-      },
-    ],
+    src: `${P}/cusco-region/cordillera-vilcabamba/v1.webp`,
+    width: 1365,
+    height: 2048,
+    alt: "Climber standing on a rocky summit above the clouds in the Cordillera Vilcabamba",
+    title: "Summit, Vilcabamba",
+    place: "Cordillera Vilcabamba, Cusco",
+  },
+  {
+    src: `${P}/cusco-region/nevado-chumpe/h3.webp`,
+    width: 2560,
+    height: 1707,
+    alt: "Last light on Nevado Chumpe in the Cordillera Vilcanota, Cusco, with a lone figure on the puna",
+    title: "Last light on Chumpe",
+    place: "Cordillera Vilcanota, Cusco",
+    focus: "50% 55%",
+  },
+  {
+    src: `${P}/cusco-region/nevado-ausangate/h7.webp`,
+    width: 2560,
+    height: 1707,
+    alt: "Trekkers crossing a stream on the Ausangate circuit, Cusco",
+    title: "Ausangate",
+    place: "Cusco · 6,384 m",
+  },
+  {
+    src: `${P}/cusco-region/nevado-sirijuani/h1.webp`,
+    width: 2560,
+    height: 1705,
+    alt: "Aerial view of a glacier tongue in the Cordillera Vilcanota, Cusco",
+    title: "Glacier tongue",
+    place: "Cordillera Vilcanota, Cusco",
+  },
+  {
+    src: `${P}/cusco-region/nevado-ausangate/h1.webp`,
+    width: 2560,
+    height: 1707,
+    alt: "Expedition base camp below Ausangate, Cusco",
+    title: "Base camp",
+    place: "Ausangate, Cusco",
   },
 ];
 

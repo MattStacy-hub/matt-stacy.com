@@ -4,14 +4,12 @@ export function Locations() {
   return (
     <section id="locations" className="px-gutter py-[clamp(64px,9vw,128px)]">
       <div className="mx-auto max-w-[1320px]">
-        <div className="mb-[clamp(28px,4vw,44px)] grid items-end gap-[clamp(20px,6vw,96px)] md:grid-cols-[5fr_7fr]">
-          <div>
-            <p className="label text-clay">Where I shoot</p>
-            <h2 className="mt-3.5 text-[clamp(26px,2.8vw,36px)] leading-[1.1] font-bold tracking-[-0.015em] text-balance">
-              Filming and photography locations in Peru
-            </h2>
-          </div>
-          <p className="max-w-[56ch] text-[15px]">
+        <div className="mb-[clamp(28px,4vw,44px)] grid gap-4.5">
+          <h2 className="text-[clamp(26px,2.8vw,36px)] leading-[1.1] font-bold tracking-[-0.015em] text-balance">
+            Filming and photography locations in Peru
+          </h2>
+          {/* Serif lead-in: the one section note on the page. */}
+          <p className="font-display max-w-[46ch] text-[clamp(19px,1.7vw,23px)] leading-[1.45] tracking-normal [font-variation-settings:'opsz'_36]">
             I live in the Sacred Valley and work across the Peruvian Andes.
             Scouting, permits, transport and acclimatization are planned into the
             schedule, not left to the week of the shoot.
