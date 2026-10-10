@@ -11,8 +11,7 @@ export function Services() {
         <p className="max-w-[62ch] text-[17px]">
           I create impactful photographs and films for brands, for athletes,
           and for audiovisual production teams that require a professional who
-          excels in extreme environments. Expedition and athlete documentation, drone
-          cinematography, adventure photography and brand campaigns.
+          excels in extreme environments.
         </p>
       </div>
 
