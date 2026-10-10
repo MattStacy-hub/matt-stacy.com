@@ -20,14 +20,14 @@ export function ContactCta() {
             <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
           </a>
         </div>
-        <dl className="grid grid-cols-[auto_1fr] gap-x-7 gap-y-3.5 border-t border-bone/25 pt-6">
-          <dt className="label pt-1 text-bone/70">Email</dt>
+        <dl className="grid grid-cols-[auto_1fr] items-baseline gap-x-7 gap-y-3.5 border-t border-bone/25 pt-6">
+          <dt className="text-[15px] text-bone/70">Email</dt>
           <dd className="text-[17px] break-words">
             <a href={`mailto:${CONTACT.email}`} className="hover:underline">
               {CONTACT.email}
             </a>
           </dd>
-          <dt className="label pt-1 text-bone/70">Instagram</dt>
+          <dt className="text-[15px] text-bone/70">Instagram</dt>
           <dd className="text-[17px]">
             <a
               href={CONTACT.instagramUrl}
@@ -38,7 +38,7 @@ export function ContactCta() {
               @{CONTACT.instagram}
             </a>
           </dd>
-          <dt className="label pt-1 text-bone/70">Based</dt>
+          <dt className="text-[15px] text-bone/70">Based</dt>
           <dd className="text-[17px]">
             {CONTACT.base} · {CONTACT.timezone}
           </dd>
