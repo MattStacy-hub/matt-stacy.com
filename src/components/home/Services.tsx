@@ -9,12 +9,10 @@ export function Services() {
           Outdoor and adventure photography and film in the high Andes.
         </h2>
         <p className="max-w-[62ch] text-[17px]">
-          I make photographs and films for brands, for athletes, and for stories
-          that need time. Expedition and athlete documentation, drone
-          cinematography, adventure photography and brand campaigns across Peru.
-          The work happens where the terrain is. Altitude, weather and distance
-          are part of the job, not the backdrop. Clear briefs, safe crews,
-          delivered on time.
+          I make photographs and films for brands, for athletes, and for
+          audiovisual productions that require a professional who excels in
+          extreme environments. Expedition and athlete documentation, drone
+          cinematography, adventure photography and brand campaigns.
         </p>
       </div>
 
