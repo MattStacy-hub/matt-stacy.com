@@ -4,11 +4,16 @@ import { SERVICES } from "@/data/services";
 export function Services() {
   return (
     <section id="about" className="px-gutter py-[clamp(64px,9vw,128px)]">
-      <div className="mx-auto grid max-w-[1320px] items-baseline gap-[clamp(32px,6vw,96px)] md:grid-cols-[5fr_7fr]">
+      <div className="mx-auto grid max-w-[1320px] items-start gap-[clamp(32px,6vw,96px)] md:grid-cols-[5fr_7fr]">
         <h2 className="text-[clamp(30px,3.6vw,48px)] leading-[1.05] font-bold tracking-[-0.02em] text-balance">
           Outdoor and adventure photography and film.
         </h2>
-        <p className="max-w-[62ch] text-[17px]">
+        {/*
+          Side by side, the tops of the capitals line up. Archivo's caps sit
+          0.174em below the top of a 1.05 line, and 8.9px below the top of a
+          17px / 1.75 line, so the paragraph moves by the difference.
+        */}
+        <p className="max-w-[62ch] text-[17px] md:mt-[calc(0.174*clamp(30px,3.6vw,48px)-8.9px)]">
           I create impactful photographs and films for brands, for athletes,
           and for audiovisual production teams that require a professional who
           excels in extreme environments.
