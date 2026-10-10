@@ -32,7 +32,7 @@ export function Hero() {
           Adventure Photographer in <em className="italic">Cusco,</em> Peru
         </h1>
         <p className="max-w-[44ch] text-[clamp(16px,1.4vw,19px)] text-bone">
-          Commercial, film and athlete work across Peru – available internationally
+          Professional photography, filmmaking, and drone services across Peru – available internationally
         </p>
       </div>
     </section>
