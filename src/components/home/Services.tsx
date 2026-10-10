@@ -9,9 +9,9 @@ export function Services() {
           Outdoor and adventure photography and film.
         </h2>
         <p className="max-w-[62ch] text-[17px]">
-          I make photographs and films for brands, for athletes, and for
-          audiovisual productions that require a professional who excels in
-          extreme environments. Expedition and athlete documentation, drone
+          I create impactful photographs and films for brands, for athletes,
+          and for audiovisual production teams that require a professional who
+          excels in extreme environments. Expedition and athlete documentation, drone
           cinematography, adventure photography and brand campaigns.
         </p>
       </div>
