@@ -200,10 +200,17 @@ export const FAQ = [
 ] as const;
 
 /**
- * Client logos. Empty until the files arrive; the section shows labelled
- * placeholders meanwhile. Add one SVG per client to public/clients/ and list
- * it here. Logos are shown in a single color, so the file's own colors don't
- * matter.
+ * Client logos, in page order. Files live in public/images/clients/, trimmed
+ * to the mark on a white or transparent ground. They're shown in grayscale and
+ * multiplied onto the page, so white drops out and the files' colors don't
+ * matter. With no logos listed, the section shows labelled placeholders.
  */
-export const CLIENTS: { name: string; logo: string }[] = [];
+export const CLIENTS: { name: string; logo: string; width: number; height: number }[] = [
+  { name: "Backcountry Magazine", logo: "/images/clients/backcountry-magazine.webp", width: 508, height: 85 },
+  { name: "ALPS Mountaineering", logo: "/images/clients/alps-mountaineering.webp", width: 388, height: 82 },
+  { name: "Bozeman Ice Festival", logo: "/images/clients/bozeman-ice-festival.webp", width: 414, height: 340 },
+  { name: "Wyoming Ice Fest", logo: "/images/clients/wyoming-ice-fest.webp", width: 227, height: 177 },
+  { name: "Tushar Mountain Tours", logo: "/images/clients/tushar-mountain-tours.webp", width: 416, height: 115 },
+  { name: "Action Peru Treks", logo: "/images/clients/action-peru-treks.webp", width: 198, height: 70 },
+];
 export const CLIENT_PLACEHOLDER_COUNT = 8;
