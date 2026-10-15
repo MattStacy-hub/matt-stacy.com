@@ -10,7 +10,6 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import {
   ABOUT_HERO,
   FIELD_SHEET,
-  INTRO_BODY,
   INTRO_OPENER,
   MILESTONES,
   PORTRAIT,
@@ -44,10 +43,13 @@ export default async function AboutPage() {
       <main>
         <ServiceHero photo={ABOUT_HERO} heading="Matt Stacy" lead="Professional storyteller, drone cinematographer, and adventure seeker" showPlace={false} />
 
-        {/* The story beside the portrait, with the facts a producer checks first under it. */}
+        {/*
+          The portrait and its two companions: the opener at the top of the
+          frame, the facts a producer checks first along its bottom edge.
+        */}
         <section className="px-gutter py-[clamp(64px,9vw,128px)]">
-          <div className="mx-auto grid max-w-[1320px] items-start gap-[clamp(32px,6vw,96px)] md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
-            <figure className="md:sticky md:top-28">
+          <div className="mx-auto grid max-w-[1320px] gap-[clamp(32px,6vw,96px)] md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
+            <figure>
               <Image
                 src={PORTRAIT.src}
                 alt={PORTRAIT.alt}
@@ -57,24 +59,19 @@ export default async function AboutPage() {
                 className="aspect-[4/5] h-auto w-full object-cover object-[50%_35%]"
               />
             </figure>
-            <div>
-              <p className="font-display mb-8 text-[clamp(26px,2.8vw,36px)] leading-[1.3] tracking-[-0.01em] text-balance [font-variation-settings:'opsz'_72]">
+            <div className="flex flex-col justify-between gap-[clamp(40px,5vw,64px)]">
+              <p className="font-display -mt-[0.18em] max-w-[20ch] text-[clamp(32px,4vw,56px)] leading-[1.15] tracking-[-0.015em] text-balance [font-variation-settings:'opsz'_96]">
                 {INTRO_OPENER}
               </p>
-              <div className="grid max-w-[62ch] gap-5 text-[17px]">
-                {INTRO_BODY.map((paragraph) => (
-                  <p key={paragraph.slice(0, 24)}>{paragraph}</p>
-                ))}
-              </div>
 
-              <dl className="mt-[clamp(40px,5vw,64px)] grid border-t border-varnish sm:grid-cols-2">
+              <dl className="grid border-t border-varnish sm:grid-cols-2">
                 {FIELD_SHEET.map((fact) => (
                   <div
                     key={fact.term}
-                    className="grid gap-1 border-b border-bone py-4 sm:odd:pr-6 sm:even:border-l sm:even:pl-6"
+                    className="grid content-start gap-1.5 border-b border-bone py-5 sm:odd:pr-6 sm:even:border-l sm:even:pl-6"
                   >
                     <dt className="label opacity-70">{fact.term}</dt>
-                    <dd className="text-[17px] leading-snug font-semibold">{fact.value}</dd>
+                    <dd className="text-[18px] leading-snug font-semibold">{fact.value}</dd>
                   </div>
                 ))}
               </dl>

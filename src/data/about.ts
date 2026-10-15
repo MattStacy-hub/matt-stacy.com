@@ -25,12 +25,7 @@ export const PORTRAIT: Photo = {
 export const INTRO_OPENER =
   "I create visual stories for commercial brands, expedition teams, and athletes in far-out places that impact audiences.";
 
-export const INTRO_BODY = [
-  "I came to climbing through the camera. Following stronger partners up walls, I came home with frame after frame shot from below, and none of the exposure or context that makes a climbing image land. To get the shots I wanted, I had to become a climber first.",
-  "So I left the camera at home. For two seasons of splitboarding in Utah, and again for two years of learning to lead climb, I worked on the craft before the photography. The partners I shoot with know I'll never trade the team's safety for a frame, and that trust is what puts me on the rope beside them.",
-];
-
-/** The facts a producer checks first. Shown as a field sheet beside the story. */
+/** The facts a producer checks first. Shown as a field sheet beside the portrait. */
 export const FIELD_SHEET = [
   { term: "Based", value: "Sacred Valley, Cusco, Peru" },
   { term: "Working", value: "Across Peru, available worldwide" },
