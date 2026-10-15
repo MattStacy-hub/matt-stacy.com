@@ -12,9 +12,11 @@ const LOGO_AREA = 7500;
 const MAX_HEIGHT = 64;
 const MAX_WIDTH = 200;
 
-function logoBox(width: number, height: number) {
+/** A mark set above a typed name gets half the area, so the pair fits the cell. */
+function logoBox(width: number, height: number, withName = false) {
   const ratio = width / height;
-  let h = Math.min(MAX_HEIGHT, Math.sqrt(LOGO_AREA / ratio));
+  const area = withName ? LOGO_AREA / 2 : LOGO_AREA;
+  let h = Math.min(MAX_HEIGHT, Math.sqrt(area / ratio));
   if (h * ratio > MAX_WIDTH) h = MAX_WIDTH / ratio;
   return { width: Math.round(h * ratio), height: Math.round(h) };
 }
@@ -31,7 +33,8 @@ export function Clients() {
         <ul
           aria-label="Client logos"
           className={`grid grid-cols-2 border-t border-l border-bone ${
-            hasLogos ? "md:grid-cols-3" : "md:grid-cols-4"
+            // Three or four across, whichever fills the last row.
+            hasLogos && CLIENTS.length % 4 !== 0 ? "md:grid-cols-3" : "md:grid-cols-4"
           }`}
         >
           {hasLogos
@@ -48,15 +51,22 @@ export function Clients() {
                     isolate it and the white would show. Hover brings back the
                     logo's own colors.
                   */}
-                  <Image
-                    src={client.logo}
-                    alt={client.name}
-                    width={client.width}
-                    height={client.height}
-                    sizes={`${logoBox(client.width, client.height).width}px`}
-                    style={logoBox(client.width, client.height)}
-                    className="max-w-full object-contain opacity-60 mix-blend-multiply contrast-[1.6] grayscale transition-[opacity,filter] duration-300 group-hover:opacity-100 group-hover:contrast-100 group-hover:grayscale-0"
-                  />
+                  <span className="grid justify-items-center gap-1.5">
+                    <Image
+                      src={client.logo}
+                      alt={client.wordmark ? "" : client.name}
+                      width={client.width}
+                      height={client.height}
+                      sizes={`${logoBox(client.width, client.height, client.wordmark).width}px`}
+                      style={logoBox(client.width, client.height, client.wordmark)}
+                      className="max-w-full object-contain opacity-60 mix-blend-multiply contrast-[1.6] grayscale transition-[opacity,filter] duration-300 group-hover:opacity-100 group-hover:contrast-100 group-hover:grayscale-0"
+                    />
+                    {client.wordmark && (
+                      <span className="label text-[10.5px] tracking-[0.24em] whitespace-nowrap opacity-60 transition-opacity duration-300 group-hover:opacity-100">
+                        {client.name}
+                      </span>
+                    )}
+                  </span>
                 </li>
               ))
             : Array.from({ length: CLIENT_PLACEHOLDER_COUNT }, (_, i) => (

@@ -205,12 +205,27 @@ export const FAQ = [
  * multiplied onto the page, so white drops out and the files' colors don't
  * matter. With no logos listed, the section shows labelled placeholders.
  */
-export const CLIENTS: { name: string; logo: string; width: number; height: number }[] = [
-  { name: "Backcountry Magazine", logo: "/images/clients/backcountry-magazine.webp", width: 508, height: 85 },
-  { name: "ALPS Mountaineering", logo: "/images/clients/alps-mountaineering.webp", width: 388, height: 82 },
-  { name: "Bozeman Ice Festival", logo: "/images/clients/bozeman-ice-festival.webp", width: 414, height: 340 },
-  { name: "Wyoming Ice Fest", logo: "/images/clients/wyoming-ice-fest.webp", width: 227, height: 177 },
-  { name: "Tushar Mountain Tours", logo: "/images/clients/tushar-mountain-tours.webp", width: 416, height: 115 },
-  { name: "Action Peru Treks", logo: "/images/clients/action-peru-treks.webp", width: 198, height: 70 },
+export const CLIENTS: {
+  name: string;
+  logo: string;
+  width: number;
+  height: number;
+  /** For a logo that's only a mark: the name, set in type beneath it. */
+  wordmark?: boolean;
+}[] = [
+  { name: "Backcountry Magazine", logo: "/images/clients/backcountry-magazine-logo.webp", width: 508, height: 85 },
+  {
+    name: "Refugios Peru",
+    logo: "/images/clients/refugios-peru-logo.webp",
+    width: 146,
+    height: 147,
+    wordmark: true,
+  },
+  { name: "Bozeman Ice Festival", logo: "/images/clients/bozeman-ice-festival-logo.webp", width: 414, height: 340 },
+  { name: "Wyoming Ice Fest", logo: "/images/clients/wyoming-ice-fest-logo.webp", width: 227, height: 177 },
+  { name: "Tushar Mountain Tours", logo: "/images/clients/tushar-mountain-tours-logo.webp", width: 416, height: 115 },
+  { name: "ALPS Mountaineering", logo: "/images/clients/alps-mountaineering-logo.webp", width: 388, height: 82 },
+  { name: "Stio", logo: "/images/clients/stio-logo.webp", width: 600, height: 214 },
+  { name: "Action Peru Treks", logo: "/images/clients/action-peru-treks-logo.webp", width: 198, height: 70 },
 ];
 export const CLIENT_PLACEHOLDER_COUNT = 8;
