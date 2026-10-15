@@ -23,8 +23,8 @@ const SERVICE_LINKS: NavLink[] = [
 
 export const MAIN_NAV: NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "Portfolio", href: "/portfolio" },
   { label: "Services", href: "/services", children: SERVICE_LINKS },
+  { label: "Portfolio", href: "/portfolio" },
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
