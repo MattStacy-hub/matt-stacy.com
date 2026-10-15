@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Archivo, Fraunces } from "next/font/google";
 import { SITE_CONFIG, SEO_CONFIG } from "@/data/site";
+import { SamePageLinkTop } from "@/components/layout/SamePageLinkTop";
 import "./globals.css";
 
 /*
@@ -42,8 +43,18 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${archivo.variable} ${fraunces.variable}`}>
-      <body>{children}</body>
+    // data-scroll-behavior lets Next.js switch smooth scrolling off while it
+    // changes pages, so every link opens at the top of the new page. Without
+    // it, the smooth scroll to the top gets cut short and the page stays put.
+    <html
+      lang="en"
+      data-scroll-behavior="smooth"
+      className={`${archivo.variable} ${fraunces.variable}`}
+    >
+      <body>
+        <SamePageLinkTop />
+        {children}
+      </body>
     </html>
   );
 }
