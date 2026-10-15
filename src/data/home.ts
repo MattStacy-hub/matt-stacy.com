@@ -165,10 +165,11 @@ export const LOCATIONS = [
   },
 ] as const;
 
-export const FIELD_NOTE = {
-  quote:
-    "You do not choose the light. You get there early, and you wait for it.",
-  credit: "Field note no. 14 · Huayhuash, Peru",
+/** A line from one of the blog posts, quoted word for word, with a link to the post. */
+export const BLOG_QUOTE = {
+  quote: "I see dreams as goals we haven’t set yet.",
+  post: "Vertical",
+  href: "/blog/vertical-my-story-and-approach-to-becoming-a-photographer-in-alpine-environments",
 } as const;
 
 /** Shown on the page and repeated, word for word, in the FAQPage structured data. */
