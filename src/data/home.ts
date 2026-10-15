@@ -140,31 +140,6 @@ export const SELECTED_WORK: WorkPhoto[] = [
   },
 ];
 
-export const LOCATIONS = [
-  {
-    region: "Home base",
-    name: "Cusco and the Sacred Valley",
-    detail:
-      "Machu Picchu, Inti Punku, the Maras salt pans and the trails around Urubamba.",
-  },
-  {
-    region: "Áncash",
-    name: "Cordillera Blanca",
-    detail: "Huascarán, Yanapaccha and the high valleys above Huaraz.",
-  },
-  {
-    region: "Áncash",
-    name: "Cordillera Huayhuash",
-    detail: "Laguna Jahuacocha and the Huayhuash circuit, nine days on foot.",
-  },
-  {
-    region: "Cusco",
-    name: "Ausangate and Vilcanota",
-    detail:
-      "The Ausangate circuit, glacial lakes and the high puna above 4,500 m.",
-  },
-] as const;
-
 /** A line from one of the blog posts, quoted word for word, with a link to the post. */
 export const BLOG_QUOTE = {
   quote: "I see dreams as goals we haven’t set yet.",

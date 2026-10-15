@@ -4,7 +4,7 @@ import { BLOG_QUOTE } from "@/data/home";
 
 export function BlogQuote() {
   return (
-    <section className="px-gutter pb-[clamp(64px,9vw,128px)]">
+    <section className="px-gutter py-[clamp(64px,9vw,128px)]">
       <figure className="mx-auto grid max-w-[1100px] items-start gap-[clamp(20px,4vw,56px)] md:grid-cols-[auto_1fr]">
         <Mark className="mt-2.5 h-16 text-petroglyph" />
         <div>
