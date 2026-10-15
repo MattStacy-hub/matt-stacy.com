@@ -26,7 +26,7 @@ export function PostCard({ post }: { post: PostSummary }) {
             {formatDate(post.publishedAt)}
             {post.categories.length > 0 && ` · ${post.categories.map(categoryLabel).join(", ")}`}
           </span>
-          <span className="font-display text-[clamp(24px,2.2vw,30px)] leading-[1.08] text-balance">
+          <span className="font-display text-[clamp(24px,2.2vw,30px)] leading-[1.1] font-medium text-balance [font-variation-settings:'opsz'_36]">
             {post.title}
           </span>
           <span className="max-w-[52ch] text-[15px] leading-[1.7]">
