@@ -56,7 +56,7 @@ export default function PortfolioPage() {
                     <span className="font-display text-[clamp(32px,3.6vw,52px)] leading-[1.02]">
                       {collection.title}
                     </span>
-                    <span className="max-w-[52ch] text-[15.5px] leading-[1.7] lg:justify-self-end lg:text-right">
+                    <span className="max-w-[52ch] text-[15.5px] leading-[1.7] text-balance lg:justify-self-end lg:text-right">
                       {collection.intro}
                     </span>
                   </span>
