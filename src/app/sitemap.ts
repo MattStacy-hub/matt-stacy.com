@@ -61,6 +61,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${SITE_CONFIG.url}/portfolio/${collection.slug}`,
       images: imageUrls(collection.photos),
     })),
+    { url: `${SITE_CONFIG.url}/contact` },
     { url: `${SITE_CONFIG.url}/blog` },
     ...BLOG_CATEGORIES.map((category) => ({
       url: `${SITE_CONFIG.url}/blog/category/${category.value}`,

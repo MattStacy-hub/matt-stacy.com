@@ -48,7 +48,7 @@ export function ServicePageShell({
         <ServiceHero photo={hero} heading={service.heading} lead={lead} />
         {children}
         <NextService slug={slug} />
-        <ContactCta heading={ctaHeading} text={ctaText} />
+        <ContactCta heading={ctaHeading} text={ctaText} service={slug} />
       </main>
       <SiteFooter />
     </>

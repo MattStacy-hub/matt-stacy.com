@@ -18,6 +18,12 @@ export const CONTACT = {
   email: "mattstacym@gmail.com",
   instagram: "_mattstacy",
   instagramUrl: "https://www.instagram.com/_mattstacy",
+  phones: [
+    { region: "Peru", display: "+51 973 137 403", tel: "+51973137403" },
+    { region: "US", display: "+1 (847) 732-5383", tel: "+18477325383" },
+  ],
+  /** Shown beside the contact details. Update it when the calendar moves on. */
+  booking: "Currently booking 2026 & 2027 projects",
   base: "Sacred Valley, Cusco, Peru",
   timezone: "UTC−5",
   replyTime: "I reply within two business days.",

@@ -17,6 +17,7 @@ import {
   STRENGTHS,
 } from "@/data/about";
 import { getPosts } from "@/lib/blog";
+import { CONTACT } from "@/data/site";
 import { breadcrumbSchema, pageMetadata, personSchema } from "@/lib/seo";
 
 export const metadata = pageMetadata({
@@ -75,6 +76,33 @@ export default async function AboutPage() {
                   </div>
                 ))}
               </dl>
+            </div>
+          </div>
+        </section>
+
+        {/* A first way in, before the long story. Copy from the current About page. */}
+        <section className="px-gutter pb-[clamp(64px,9vw,128px)]">
+          <div className="mx-auto flex max-w-[1320px] flex-wrap items-end justify-between gap-x-10 gap-y-8 border-t border-varnish pt-[clamp(28px,4vw,44px)]">
+            <div>
+              <h2 className="font-display mb-3 text-[clamp(32px,4vw,56px)] leading-[1.05] text-balance">
+                Tell me what you&apos;re planning.
+              </h2>
+              <p className="text-[17px] opacity-80">{CONTACT.replyTime}</p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href="/contact"
+                className="label group inline-flex gap-3 bg-petroglyph px-6.5 py-4 text-white"
+              >
+                Work with me
+                <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
+              </Link>
+              <Link
+                href="/portfolio"
+                className="label inline-flex border border-varnish px-6.5 py-4 transition-colors hover:bg-varnish hover:text-canvas"
+              >
+                See the portfolio
+              </Link>
             </div>
           </div>
         </section>

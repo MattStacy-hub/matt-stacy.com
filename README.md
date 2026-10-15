@@ -91,11 +91,24 @@ change never means touching layout code.
   in `src/data/services.ts`, which turns on its dropdown link and its
   "Learn more" link.
 
-## Not built yet
+## The contact form
 
-Portfolio, the five service pages, About, Blog and Contact. The menu links to
-them; until they exist those links show the 404 page, and the Services dropdown
-marks each service "Soon" instead of linking.
+`/contact` posts to `src/app/api/contact/route.ts`, which emails each inquiry
+over SMTP with nodemailer, the same setup as the AAV site. Set these in Vercel
+(and in `.env.local` to test locally):
+
+| Variable | |
+| --- | --- |
+| `SMTP_HOST` | Required. |
+| `SMTP_USER` | Required. Also the From address, unless `SMTP_FROM` is set. |
+| `SMTP_PASSWORD` | Required. For Gmail, an app password. |
+| `SMTP_PORT` | Optional. 587 by default; 465 switches to TLS. |
+| `SMTP_FROM` | Optional. |
+| `CONTACT_TO_EMAIL` | Optional. Where inquiries go; the contact email in `src/data/site.ts` by default. |
+
+Without the three required ones, the form shows its error message with the
+email address to write to instead, and the server log names what's missing.
+Replies go straight to the sender: each inquiry's Reply-To is their address.
 
 ## Writing blog posts
 

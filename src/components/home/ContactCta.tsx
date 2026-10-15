@@ -1,14 +1,18 @@
+import Link from "next/link";
 import { CONTACT } from "@/data/site";
 
 interface ContactCtaProps {
   heading?: string;
   /** Lead-in before the reply-time promise. */
   text?: string;
+  /** A service slug: the contact form opens with that service selected. */
+  service?: string;
 }
 
 export function ContactCta({
   heading = "Start a project",
   text = "Tell me what you're making, where, and roughly when.",
+  service,
 }: ContactCtaProps) {
   return (
     <section id="contact" className="bg-varnish px-gutter py-[clamp(64px,9vw,128px)] text-canvas">
@@ -20,14 +24,13 @@ export function ContactCta({
           <p className="max-w-[44ch] text-bone">
             {text} {CONTACT.replyTime}
           </p>
-          {/* Opens an email until the /contact page and its form are built. */}
-          <a
-            href={`mailto:${CONTACT.email}`}
+          <Link
+            href={service ? `/contact?service=${service}` : "/contact"}
             className="label group mt-8 inline-flex gap-3 bg-petroglyph px-6.5 py-4 text-white"
           >
             Send an inquiry
             <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
-          </a>
+          </Link>
         </div>
         <dl className="grid grid-cols-[auto_1fr] items-baseline gap-x-7 gap-y-3.5 border-t border-bone/25 pt-6">
           <dt className="text-[15px] text-bone/70">Email</dt>
