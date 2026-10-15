@@ -188,6 +188,11 @@ export const CLIENTS: {
   height: number;
   /** For a logo that's only a mark: the name, set in type beneath it. */
   wordmark?: boolean;
+  /**
+   * For a logo with a light color that grayscale would wash out: shown as a
+   * solid silhouette at rest instead. Needs a file with a transparent ground.
+   */
+  solid?: boolean;
 }[] = [
   { name: "Backcountry Magazine", logo: "/images/clients/backcountry-magazine-logo.webp", width: 508, height: 85 },
   {
@@ -202,6 +207,6 @@ export const CLIENTS: {
   { name: "Tushar Mountain Tours", logo: "/images/clients/tushar-mountain-tours-logo.webp", width: 416, height: 115 },
   { name: "ALPS Mountaineering", logo: "/images/clients/alps-mountaineering-logo.webp", width: 388, height: 82 },
   { name: "Stio", logo: "/images/clients/stio-logo.webp", width: 600, height: 214 },
-  { name: "Action Peru Treks", logo: "/images/clients/action-peru-treks-logo.webp", width: 198, height: 70 },
+  { name: "Fitbanker", logo: "/images/clients/fitbanker-logo.webp", width: 579, height: 76, solid: true },
 ];
 export const CLIENT_PLACEHOLDER_COUNT = 8;

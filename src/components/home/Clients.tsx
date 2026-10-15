@@ -59,7 +59,11 @@ export function Clients() {
                       height={client.height}
                       sizes={`${logoBox(client.width, client.height, client.wordmark).width}px`}
                       style={logoBox(client.width, client.height, client.wordmark)}
-                      className="max-w-full object-contain opacity-60 mix-blend-multiply contrast-[1.6] grayscale transition-[opacity,filter] duration-300 group-hover:opacity-100 group-hover:contrast-100 group-hover:grayscale-0"
+                      className={`max-w-full object-contain opacity-60 mix-blend-multiply transition-[opacity,filter] duration-300 group-hover:opacity-100 ${
+                        client.solid
+                          ? "brightness-0 group-hover:brightness-100"
+                          : "contrast-[1.6] grayscale group-hover:contrast-100 group-hover:grayscale-0"
+                      }`}
                     />
                     {client.wordmark && (
                       <span className="label text-[10.5px] tracking-[0.24em] whitespace-nowrap opacity-60 transition-opacity duration-300 group-hover:opacity-100">
