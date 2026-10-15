@@ -5,6 +5,7 @@ import { SERVICES } from "@/data/services";
 import { COLLECTIONS } from "@/data/portfolio";
 import { BLOG_CATEGORIES } from "@/data/blog";
 import { getPosts } from "@/lib/blog";
+import { ABOUT_HERO, PORTRAIT } from "@/data/about";
 import { ADVENTURE, BRAND, DRONE, EXPEDITION, OVERVIEW } from "@/data/service-pages";
 
 /**
@@ -47,6 +48,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     {
       url: `${SITE_CONFIG.url}/services`,
       images: imageUrls(Object.values(OVERVIEW.routes).map((route) => route.photo)),
+    },
+    {
+      url: `${SITE_CONFIG.url}/about`,
+      images: imageUrls([ABOUT_HERO, PORTRAIT]),
     },
     {
       url: `${SITE_CONFIG.url}/portfolio`,

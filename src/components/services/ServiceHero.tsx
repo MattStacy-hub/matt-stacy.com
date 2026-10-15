@@ -6,7 +6,7 @@ export const SERVICE_HERO_ID = "service-hero";
 interface ServiceHeroProps {
   photo: Photo;
   heading: string;
-  lead: string;
+  lead?: string;
 }
 
 /** Full-bleed photo opening each service page. Shorter than the homepage hero. */
@@ -35,10 +35,10 @@ export function ServiceHero({ photo, heading, lead }: ServiceHeroProps) {
       />
       <div className="grid items-end gap-6 px-gutter pb-[clamp(28px,5vw,56px)] md:grid-cols-[1fr_auto]">
         <div>
-          <h1 className="font-display mb-5 max-w-[14ch] text-[clamp(40px,6.4vw,88px)] leading-none text-balance">
+          <h1 className={`font-display max-w-[14ch] text-[clamp(40px,6.4vw,88px)] leading-none text-balance ${lead ? "mb-5" : ""}`}>
             {heading}
           </h1>
-          <p className="max-w-[48ch] text-[clamp(16px,1.4vw,19px)] text-bone">{lead}</p>
+          {lead && <p className="max-w-[48ch] text-[clamp(16px,1.4vw,19px)] text-bone">{lead}</p>}
         </div>
         {/* Where the photo was taken, set like the captions in Selected work. */}
         <p className="hidden border-l-2 border-petroglyph pl-3 md:block">
