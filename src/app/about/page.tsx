@@ -42,7 +42,7 @@ export default async function AboutPage() {
       />
       <SiteHeader overHeroId={SERVICE_HERO_ID} />
       <main>
-        <ServiceHero photo={ABOUT_HERO} heading="Matt Stacy" />
+        <ServiceHero photo={ABOUT_HERO} heading="Matt Stacy" showPlace={false} />
 
         {/* The story beside the portrait, with the facts a producer checks first under it. */}
         <section className="px-gutter py-[clamp(64px,9vw,128px)]">

@@ -7,10 +7,12 @@ interface ServiceHeroProps {
   photo: Photo;
   heading: string;
   lead?: string;
+  /** Show where the photo was taken, bottom right. */
+  showPlace?: boolean;
 }
 
 /** Full-bleed photo opening each service page. Shorter than the homepage hero. */
-export function ServiceHero({ photo, heading, lead }: ServiceHeroProps) {
+export function ServiceHero({ photo, heading, lead, showPlace = true }: ServiceHeroProps) {
   return (
     <section
       id={SERVICE_HERO_ID}
@@ -41,10 +43,12 @@ export function ServiceHero({ photo, heading, lead }: ServiceHeroProps) {
           {lead && <p className="max-w-[48ch] text-[clamp(16px,1.4vw,19px)] text-bone">{lead}</p>}
         </div>
         {/* Where the photo was taken, set like the captions in Selected work. */}
-        <p className="hidden border-l-2 border-petroglyph pl-3 md:block">
-          <span className="block text-[15px] leading-tight font-semibold">{photo.title}</span>
-          <span className="label text-[10px] tracking-[0.28em] opacity-80">{photo.place}</span>
-        </p>
+        {showPlace && (
+          <p className="hidden border-l-2 border-petroglyph pl-3 md:block">
+            <span className="block text-[15px] leading-tight font-semibold">{photo.title}</span>
+            <span className="label text-[10px] tracking-[0.28em] opacity-80">{photo.place}</span>
+          </p>
+        )}
       </div>
     </section>
   );
