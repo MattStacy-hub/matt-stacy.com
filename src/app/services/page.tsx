@@ -77,7 +77,7 @@ export default function ServicesPage() {
                       <span className="block text-[clamp(30px,3.8vw,52px)] leading-[1.02] font-bold tracking-[-0.02em] text-balance">
                         {service.heading}
                       </span>
-                      <span className="mt-4 block max-w-[48ch] text-[16px]">{service.summary}</span>
+                      <span className="mt-4 block max-w-[48ch] text-[16px]">{route.text}</span>
                       <span className="mt-4 inline-flex items-center gap-2 text-xs font-semibold tracking-[0.06em] text-petroglyph">
                         See the service
                         <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
@@ -163,7 +163,7 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        <ContactCta />
+        <ContactCta heading={OVERVIEW.ctaHeading} text={OVERVIEW.ctaText} />
       </main>
       <SiteFooter />
     </>

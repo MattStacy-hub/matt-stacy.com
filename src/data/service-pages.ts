@@ -79,29 +79,35 @@ const SHAQSHA_DAWN: Photo = {
 /* ── Overview ─────────────────────────────────────────────────────── */
 
 export const OVERVIEW = {
-  heading: "Photography and film for the people who go up there",
+  heading: "How I can help",
   intro:
-    "Four ways to work with me, from a single day on the trail to a full campaign shoot. Each one is shot by the same person, with the same eye, in the same mountains.",
-  /** One row per service, keyed by slug: who it suits, in their words, and a photo. */
+    "Commercial adventure photography and film from the Peruvian Andes, for the brands, expeditions, and athletes who go where the story is. Hire me for a shoot, or take home the work itself.",
+  /** One row per service, keyed by slug: who it suits, in their words, what it is, and a photo. */
   routes: {
     "expedition-athlete-documentation": {
       audience: "You're climbing something, or sponsoring someone who is",
+      text: "Full-trip coverage for expedition teams and sponsored athletes.",
       photo: VERONICA_ICE,
     },
     "drone-cinematography": {
       audience: "You need the view nobody on the ground can get",
+      text: "Cinematic aerials that reveal the scale of the landscape.",
       photo: HUAYHUASH_AERIAL,
     },
     "adventure-photography": {
       audience: "You're traveling to Peru for a trek, a climb or a day in the hills",
+      text: "For individuals and groups visiting Peru who value high-quality photography.",
       photo: SAN_ANTONIO_PASS,
     },
     "brand-commercial": {
       audience: "You're a brand with a campaign to shoot in the Andes",
+      text: "Photo and video campaigns that help outdoor brands stand out.",
       photo: AUSANGATE_FINS,
     },
-  } as Record<string, { audience: string; photo: Photo }>,
+  } as Record<string, { audience: string; text: string; photo: Photo }>,
   compareHeading: "What each service covers",
+  ctaHeading: "Bring your vision to life",
+  ctaText: "Tell me about your project, expedition, or campaign.",
   /** Rows of the comparison table, one value per service. */
   compare: [
     {
@@ -135,11 +141,10 @@ export const OVERVIEW = {
 
 export const EXPEDITION = {
   hero: PALCARAJU_WALLS,
-  lead: "Climbers, alpinists and trail runners photographed and filmed on route, from the trailhead to the summit and back down.",
-  statement: "A photographer on the rope, not a passenger on it.",
+  lead: "I capture the raw emotion of athletes pushing their limits. Expedition teams on the cutting edge of mountain adventures. The joys, the pain, and every step taken from the start of the journey to the final summit push.",
+  statement: "Legacies, documented.",
   body: [
-    "I'm an alpinist first. I carry my own kit, manage my own rope work, and keep the team's pace, so nobody has to slow down to look after the person with the camera.",
-    "That access is the whole point. The frames that matter happen on the ridge at 4 a.m., not at the trailhead, and I'm there for them: shooting from above, below and alongside, with aerials when the terrain allows.",
+    "My skills as an alpinist and all-around outdoor athlete mean I can rope up without being a liability. I carry my own kit, shoot handheld angles from top-down, and produce captivating, dynamic aerial footage.",
   ],
   ascentHeading: "Trailhead to summit",
   ascentIntro: "Every stage of a climb tells part of the story. I cover all of them.",
@@ -216,14 +221,14 @@ export const EXPEDITION = {
   audiences: [
     {
       heading: "For sponsored athletes and brands",
-      text: "Campaign-ready stills and film of the athlete in real terrain, delivered for brand decks, social, editorial and film licensing.",
+      text: "Campaign-ready stills and film that show the athlete in real terrain. Built for brand decks, social, editorial, and film licensing.",
     },
     {
       heading: "For expedition teams",
-      text: "A full record of the expedition as it happens: the approach, the camps, the summit and the way back down. No babysitting required.",
+      text: "I climb with you. My own kit, rope skills, no babysitting. Full documentation of the expedition as it happens, from the approach to the summit and back down.",
     },
   ],
-  logHeading: "Climbs I've documented",
+  logHeading: "Real objectives, documented",
   /** Heights only where they're confirmed. Blank cells show a dash. */
   log: [
     {
@@ -272,15 +277,15 @@ export const EXPEDITION = {
   logPhoto: SHAQSHA_DAWN,
   ctaHeading: "Tell me about the objective",
   ctaText:
-    "Sponsored athlete, expedition team or a brand backing a climb: tell me the peak, the line and the dates.",
+    "Whether you're a sponsored athlete, an expedition team, or a brand backing a climb, let's talk about documenting it properly.",
 } as const;
 
 /* ── Drone cinematography ─────────────────────────────────────────── */
 
 export const DRONE = {
   hero: HUAYHUASH_AERIAL,
-  lead: "Aerial film and stills of ridgelines, glaciers and approach routes, graded to sit alongside everything shot on the ground.",
-  pairHeading: "Same mountain, two vantage points",
+  lead: "Dynamic aerials that reveal new perspectives. For professional productions, launching from anywhere you can imagine.",
+  pairHeading: "Heightened perspective",
   pairText:
     "From the ridge you get the climber's view. From the air you get the whole story: the route, the lakes below and how small a person is up there.",
   pair: [
@@ -301,7 +306,7 @@ export const DRONE = {
   uses: [
     {
       heading: "Film productions",
-      text: "Planned camera moves for brand films and campaigns: reveals, orbits and tracking shots.",
+      text: "Cinematic aerial sequences, smooth and planned camera moves like reveals, orbits, and tracking shots, cut for brand films and campaigns.",
       photo: {
         src: `${P}/amazonas-region/laguna-de-los-condores/laguna-de-los-condores-36.webp`,
         width: 2560,
@@ -313,7 +318,7 @@ export const DRONE = {
     },
     {
       heading: "Destination and hospitality",
-      text: "Lodges, itineraries and landscapes from the angle that makes people book.",
+      text: "Aerials that sell a location: lodges, itineraries, and landscapes from the perspective that makes people book.",
       photo: {
         src: `${P}/amazonas-region/laguna-de-los-condores/laguna-de-los-condores-27.webp`,
         width: 2560,
@@ -324,8 +329,8 @@ export const DRONE = {
       },
     },
     {
-      heading: "Aerial stills",
-      text: "High-resolution frames composed for print, editorial and social, not pulled from video.",
+      heading: "Stills",
+      text: "High-resolution aerial photography, composed and delivered ready for print, editorial, and social.",
       photo: {
         src: `${P}/cusco-region/nevado-sirijuani/nevado-sirijuani-1.webp`,
         width: 2560,
@@ -337,7 +342,7 @@ export const DRONE = {
     },
     {
       heading: "Expedition coverage",
-      text: "The scale of a route and a glacier, from where no ground camera can reach.",
+      text: "Aerial documentation of climbs and treks, capturing scale and route that ground cameras simply can't reach.",
       photo: {
         src: `${P}/cusco-region/nevado-chumpe/nevado-chumpe-4.webp`,
         width: 2560,
@@ -364,16 +369,16 @@ export const DRONE = {
     },
   ],
   ctaHeading: "Let's get your project off the ground",
-  ctaText: "Tell me about the campaign, the expedition or the place, and where you want the camera to fly.",
+  ctaText: "Tell me about your campaign, expedition, or destination, and where you want the camera to fly.",
 } as const;
 
 /* ── Adventure photography ────────────────────────────────────────── */
 
 export const ADVENTURE = {
   hero: SAN_ANTONIO_PASS,
-  lead: "For travelers, groups of friends and tour operators heading into the Peruvian Andes. Based in Cusco, available across Peru.",
-  statement: "Your trip, as a gallery you'll actually print.",
-  body: "You'll be busy walking, breathing and taking it in. I'll be making sure the day is captured properly: the planned hero shots, and the moments in between that nobody thought to plan.",
+  lead: "Traveling to Peru for a trek, a climb, or a once-in-a-lifetime adventure? I document journeys throughout all of Peru, turning your time from the Andes to the Amazon into a gallery of story-driven images you'll be excited to share, print, and relive.",
+  statement: "Photos that tell a story.",
+  body: "For independent travelers venturing into Peru's mountain ranges for a trek around Ausangate or Salkantay, groups of friends day-tripping to places like Pallay Punchu, or tour operators looking to elevate their guests' experience with professional photography services. Based in Cusco, available across Peru.",
   formatsHeading: "Choose your trip",
   formats: [
     {
@@ -416,29 +421,35 @@ export const ADVENTURE = {
       },
     },
   ] as { name: string; examples: string; text: string; photo: Photo }[],
-  phasesHeading: "Before, during and after",
+  phasesHeading: "How we work together",
   phases: [
     {
-      name: "Before",
-      text: "We talk through your itinerary: where, how many days, and the shots that matter most to you. I plan around the light.",
+      name: "Initial consultation",
+      text: "Every adventure photography shoot starts with a conversation about your itinerary. Where does your adventure take place? Is it a single day trip or multiday adventure? Maybe there are specific shots that matter most to you. We will work together and plan for the best compositions.",
     },
     {
-      name: "On the trail",
-      text: "I document the trip as it unfolds, carrying my own kit at altitude and keeping your pace, whatever the weather.",
+      name: "Shoot on location",
+      text: "On location I document the journey as it actually unfolds, balancing planned hero shots with the unscripted moments that make the images real. I'm comfortable working at altitude and in difficult conditions, carrying my own kit, and keeping pace no matter where we are.",
     },
     {
-      name: "After",
-      text: "I cull to the strongest frames and edit them to one consistent finish, then deliver a private gallery to download and share.",
+      name: "Editing",
+      text: "Back from the field, I cull the RAW photos down to the strongest selects and edit each one to a consistent, cinematic finish. Color, tone, and mood are refined so the gallery is one cohesive body of work.",
+    },
+    {
+      name: "Deliver",
+      text: "You receive a polished, high-resolution gallery, carefully organized and ready for online sharing and print, delivered through a private online gallery you can download from.",
     },
   ],
-  includedHeading: "What's in your gallery",
+  includedHeading: "What you get",
+  includedIntro:
+    "Every adventure photography session is custom fit to your itinerary and planned to take advantage of the best natural light.",
   included: [
-    "Planning together before the trip",
-    "Full-day or multi-day coverage",
-    "A curated set of edited, high-resolution photos",
-    "A private online gallery to download from",
-    "Files ready to share and to print",
-    "Aerial photos, as an optional add-on",
+    "Collaborative pre-trip planning",
+    "Full-day or multi-day trip coverage",
+    "Professionally edited high-resolution images",
+    "Curated selection of images",
+    "Private online gallery for easy download",
+    "Optional drone and aerial add-on",
   ],
   includedPhoto: {
     src: `${P}/ancash-region/cordillera-huayhuash/cordillera-huayhuash-22.webp`,
@@ -449,41 +460,41 @@ export const ADVENTURE = {
     place: "Cordillera Huayhuash, Áncash",
   } as Photo,
   ctaHeading: "Let's plan your shoot",
-  ctaText: "Send me your itinerary, or just the idea of one, and I'll be in touch.",
+  ctaText: "Tell me about your expedition or project.",
 } as const;
 
 /* ── Brand & commercial ───────────────────────────────────────────── */
 
 export const BRAND = {
   hero: AUSANGATE_FINS,
-  lead: "Campaign stills and film for outdoor, travel and hospitality brands, shot on location in Peru and worldwide.",
-  statement: "Imagery that sells the experience, because it was shot inside it.",
+  lead: "Commercial photography and film for outdoor brands, travel companies, and hospitality. On-location shooting throughout Peru and worldwide.",
+  statement: "Imagery that sells the experience.",
   body: "Gear looks right when it's used where it was made to be used. I shoot product, people and place in real terrain and real weather, so the campaign holds up to the people who know the difference.",
-  capabilitiesHeading: "What brands hire me for",
+  capabilitiesHeading: "What I shoot for brands",
   capabilities: [
     {
       heading: "Product and gear",
-      text: "Apparel, hardgoods and equipment, shot in the field where they're meant to be used.",
+      text: "Apparel, hardgoods, and equipment shot in the field where it's meant to be used.",
     },
     {
-      heading: "Campaigns",
-      text: "From concept to delivery: stills and motion for launches, seasonal collections and brand stories.",
+      heading: "Brand campaigns",
+      text: "Full campaign production from concept to delivery. Still and motion for launches, seasonal collections, and brand storytelling.",
     },
     {
-      heading: "Athletes and lifestyle",
-      text: "Sponsored athletes and talent in real adventure settings, for every channel you publish on.",
+      heading: "Athlete and lifestyle",
+      text: "Sponsored athletes and lifestyle talent in authentic adventure settings, producing the human-led imagery brands need across media channels.",
     },
     {
       heading: "Destination and travel",
-      text: "For travel companies, lodges and tourism boards. Images that make people want to book.",
+      text: "Destination marketing for travel companies, lodges, and tourism boards. Imagery that makes prospective guests want to book.",
     },
     {
       heading: "Motion and film",
-      text: "Social cutdowns to full brand films, with aerial coverage from the same shoot.",
+      text: "Short-form and long-form video, from social cutdowns to brand films, with aerial coverage.",
     },
     {
       heading: "Editorial",
-      text: "Assignments and branded content for outdoor and adventure-travel publications.",
+      text: "Editorial assignments and branded content for magazines, publications, and digital media in the outdoor and adventure-travel space.",
     },
   ],
   photos: [
@@ -522,13 +533,13 @@ export const BRAND = {
     { item: "Transport", detail: "From Cusco or Huaraz to the trailhead and back." },
     { item: "Acclimatization", detail: "Built into the schedule, not left to the week of the shoot." },
   ],
-  processHeading: "How a campaign runs",
+  processHeading: "How we collaborate",
   process: [
-    { name: "Brief", text: "We agree on outcomes, deliverables and the creative direction." },
-    { name: "Plan", text: "Locations, logistics, talent and shot list, scoped to the campaign." },
-    { name: "Produce", text: "Stills and motion on location, on the schedule we agreed." },
-    { name: "Deliver", text: "Edited, ready-to-publish files with clear licensing." },
+    { name: "Brief", text: "We define your outcomes, deliverables, and creative vision." },
+    { name: "Plan", text: "Location, logistics, talent, and shot list are scoped to your campaign." },
+    { name: "Produce", text: "On-location production of stills and motion required to meet our goals." },
+    { name: "Deliver", text: "Edited, public-facing assets delivered on schedule with clear licensing." },
   ],
   ctaHeading: "Let's talk about your campaign",
-  ctaText: "Tell me about your brand, your goals and your timeline, and I'll come back with how we can work together.",
+  ctaText: "Tell me about your brand, your goals, and your timeline. I'll get back to you with how we can work together.",
 } as const;
