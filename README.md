@@ -33,8 +33,11 @@ src/
   lib/
     seo.ts              page metadata and structured-data builders
     image-sizes.ts      widths the image optimizer produces
+content/
+  blog/                 blog posts, one .mdoc file each (written in the Keystatic editor)
 public/
   brand/                mark, share image
+  images/blog/          blog photos, one folder per post (uploaded through the editor)
   images/locations/     photographs, by region then place (same layout as the AAV site)
 ```
 
@@ -93,3 +96,14 @@ change never means touching layout code.
 Portfolio, the five service pages, About, Blog and Contact. The menu links to
 them; until they exist those links show the 404 page, and the Services dropdown
 marks each service "Soon" instead of linking.
+
+## Writing blog posts
+
+Run `npm run dev` and open http://localhost:3000/keystatic. The editor saves
+each post to `content/blog/` and its photos to `public/images/blog/<post>/`;
+commit and push them like any other change. Categories are a fixed list in
+`src/data/blog.ts`; tags are free-form per post.
+
+To write on the live site instead, put the repo on GitHub and set
+`NEXT_PUBLIC_KEYSTATIC_GITHUB_REPO` (plus the GitHub app keys Keystatic asks
+for on first visit). Until then `/keystatic` returns 404 in production.
