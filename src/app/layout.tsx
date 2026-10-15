@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Archivo, Fraunces } from "next/font/google";
 import { SITE_CONFIG, SEO_CONFIG } from "@/data/site";
+import { SamePageLinkTop } from "@/components/layout/SamePageLinkTop";
 import "./globals.css";
 
 /*
@@ -50,7 +51,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       data-scroll-behavior="smooth"
       className={`${archivo.variable} ${fraunces.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <SamePageLinkTop />
+        {children}
+      </body>
     </html>
   );
 }
