@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SITE_CONFIG, SEO_CONFIG, CONTACT } from "@/data/site";
-import { SERVICES } from "@/data/services";
+import { SERVICES, type Service } from "@/data/services";
 
 interface PageMetadataOptions {
   /** Page title. The site template appends " | Matt Stacy". */
@@ -142,6 +142,32 @@ export function faqSchema(items: readonly { question: string; answer: string }[]
       "@type": "Question",
       name: item.question,
       acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
+}
+
+export function serviceSchema(service: Service) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.heading,
+    description: service.seoDescription,
+    url: canonicalUrl(`/services/${service.slug}`),
+    provider: { "@id": `${SITE_CONFIG.url}/#service` },
+    areaServed: { "@type": "Country", name: "Peru" },
+  };
+}
+
+/** Trail from the homepage to the current page, for search results. */
+export function breadcrumbSchema(trail: readonly { name: string; path: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: trail.map((crumb, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: crumb.name,
+      item: canonicalUrl(crumb.path),
     })),
   };
 }

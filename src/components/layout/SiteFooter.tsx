@@ -11,8 +11,7 @@ export function SiteFooter() {
       </span>
       <nav aria-label="Footer">
         <ul className="flex flex-wrap gap-5">
-          {/* Services has no page of its own yet, only the dropdown. */}
-          {MAIN_NAV.filter((item) => item.href !== "/" && !item.children).map((item) => (
+          {MAIN_NAV.filter((item) => item.href !== "/").map((item) => (
             <li key={item.label}>
               <Link href={item.href} className="hover:text-white">
                 {item.label}

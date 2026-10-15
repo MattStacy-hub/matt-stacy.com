@@ -1,15 +1,24 @@
 import { CONTACT } from "@/data/site";
 
-export function ContactCta() {
+interface ContactCtaProps {
+  heading?: string;
+  /** Lead-in before the reply-time promise. */
+  text?: string;
+}
+
+export function ContactCta({
+  heading = "Start a project",
+  text = "Tell me what you're making, where, and roughly when.",
+}: ContactCtaProps) {
   return (
     <section id="contact" className="bg-varnish px-gutter py-[clamp(64px,9vw,128px)] text-canvas">
       <div className="mx-auto grid max-w-[1320px] items-end gap-[clamp(32px,6vw,96px)] md:grid-cols-2">
         <div>
           <h2 className="font-display mb-5.5 text-[clamp(40px,6vw,84px)] leading-none">
-            Start a project
+            {heading}
           </h2>
           <p className="max-w-[44ch] text-bone">
-            Tell me what you&apos;re making, where, and roughly when. {CONTACT.replyTime}
+            {text} {CONTACT.replyTime}
           </p>
           {/* Opens an email until the /contact page and its form are built. */}
           <a

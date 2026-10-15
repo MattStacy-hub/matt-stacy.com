@@ -45,6 +45,12 @@ const nextConfig: NextConfig = {
   // Don't advertise the framework and version to anyone probing for exploits.
   poweredByHeader: false,
 
+  // The old site's overview lived at /services-overview. Keep its links and
+  // search ranking pointing at the new page.
+  async redirects() {
+    return [{ source: "/services-overview", destination: "/services", permanent: true }];
+  },
+
   async headers() {
     return [{ source: "/:path*", headers: SECURITY_HEADERS }];
   },
