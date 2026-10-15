@@ -40,7 +40,7 @@ export function ServiceHero({ photo, heading, lead, showPlace = true }: ServiceH
           <h1 className={`font-display max-w-[14ch] text-[clamp(40px,6.4vw,88px)] leading-none text-balance ${lead ? "mb-5" : ""}`}>
             {heading}
           </h1>
-          {lead && <p className="max-w-[48ch] text-[clamp(16px,1.4vw,19px)] text-bone">{lead}</p>}
+          {lead && <p className="max-w-[48ch] text-[clamp(16px,1.4vw,19px)] text-balance text-bone">{lead}</p>}
         </div>
         {/* Where the photo was taken, set like the captions in Selected work. */}
         {showPlace && (
