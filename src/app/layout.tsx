@@ -42,7 +42,14 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${archivo.variable} ${fraunces.variable}`}>
+    // data-scroll-behavior lets Next.js switch smooth scrolling off while it
+    // changes pages, so every link opens at the top of the new page. Without
+    // it, the smooth scroll to the top gets cut short and the page stays put.
+    <html
+      lang="en"
+      data-scroll-behavior="smooth"
+      className={`${archivo.variable} ${fraunces.variable}`}
+    >
       <body>{children}</body>
     </html>
   );
