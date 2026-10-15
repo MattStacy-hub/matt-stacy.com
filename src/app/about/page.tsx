@@ -87,7 +87,7 @@ export default async function AboutPage() {
               <h2 className="font-display mb-3 text-[clamp(32px,4vw,56px)] leading-[1.05] text-balance">
                 Tell me what you&apos;re planning.
               </h2>
-              <p className="text-[17px] opacity-80">{CONTACT.replyTime}</p>
+              <p className="max-w-[52ch] text-[17px] opacity-80">{CONTACT.replyTime}</p>
             </div>
             <div className="flex flex-wrap gap-3">
               <Link

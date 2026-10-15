@@ -155,7 +155,7 @@ export function ContactForm() {
           {status === "sending" ? "Sending…" : "Send inquiry"}
           <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
         </button>
-        <p className="text-[14px] opacity-70">{CONTACT.replyTime}</p>
+        <p className="max-w-[44ch] text-[14px] leading-snug opacity-70">{CONTACT.replyTime}</p>
       </div>
 
       <p role="alert" className="text-[15px] text-petroglyph empty:hidden">
