@@ -23,21 +23,21 @@ export const PORTRAIT: Photo = {
 
 /** Essay opener, set in Fraunces. */
 export const INTRO_OPENER =
-  "I make photographs and films for brands, expedition teams and athletes who work in far-out places, and I want them to move the people who see them.";
+  "I create visual stories for commercial brands, expedition teams, and athletes in far-out places that impact audiences.";
 
 export const INTRO_BODY = [
   "I came to climbing through the camera. Following stronger partners up walls, I came home with frame after frame shot from below, and none of the exposure or context that makes a climbing image land. To get the shots I wanted, I had to become a climber first.",
-  "So I left the camera at home. For two seasons of splitboarding in Utah, and again for two years of learning to lead and climb ice, I worked on the craft before the photography. The partners I shoot with know I'll never trade the team's safety for a frame, and that trust is what puts me on the rope beside them.",
+  "So I left the camera at home. For two seasons of splitboarding in Utah, and again for two years of learning to lead climb, I worked on the craft before the photography. The partners I shoot with know I'll never trade the team's safety for a frame, and that trust is what puts me on the rope beside them.",
 ];
 
 /** The facts a producer checks first. Shown as a field sheet beside the story. */
 export const FIELD_SHEET = [
   { term: "Based", value: "Sacred Valley, Cusco, Peru" },
   { term: "Working", value: "Across Peru, available worldwide" },
-  { term: "Focus", value: "Alpine climbing, expeditions, travel and lifestyle" },
-  { term: "Languages", value: "English, Spanish (fluent)" },
+  { term: "Focus", value: "Alpine climbing, trekking, expeditions, travel and lifestyle" },
+  { term: "Languages", value: "English, Spanish (B2)" },
   { term: "Highest shoot", value: "6,274 m, Nevado Palcaraju" },
-  { term: "In the field since", value: "2019" },
+  { term: "Shooting in the field since", value: "2021" },
 ];
 
 export interface Milestone {
@@ -51,31 +51,36 @@ export interface Milestone {
 /** How I got here, oldest first. */
 export const MILESTONES: Milestone[] = [
   {
+    year: "2019",
+    title: "The drive west",
+    text: "I graduated from university in Indiana and moved from the Chicago suburbs to Los Angeles for an engineering job. On the drive I saw the Tetons, my first real mountains. Until then they only existed in textbooks.",
+  },
+  {
     year: "2020",
-    title: "Splitboarding in the Wasatch",
-    text: "A 101 course and close to 70 days in the backcountry before the camera came out seriously. Snow safety first, photos second.",
+    title: "The first camera",
+    text: "The trails closed for COVID. On the couch in Santa Monica I hesitated over a $600 Canon T7i on eBay, and my roommate said you'll never know if you don't take the risk. I bought it, and learning it never felt like work. That November I moved to Salt Lake City to be near the mountains.",
+  },
+  {
+    year: "2021",
+    title: "Going solo",
+    text: "I'd never traveled alone, so I tried five days in Jackson Hole. A week after getting back, I built a sleeping platform in my car and drove 4,000 miles, working remotely the whole way. I took an avalanche course and started shooting friends snowboarding and climbing.",
   },
   {
     year: "2022",
-    title: "First glaciated summit",
-    text: "A dormmate in a Huaraz hostel invited me on a guided climb of Nevado Vallunaraju. I came home to Salt Lake City and started climbing in a gym the next month.",
+    title: "Peru",
+    text: "My friend Joey and I walked the Salkantay trek, five days and about 50 miles self-supported, and I saw glaciated mountains for the first time. I was supposed to fly home. Instead I went to Huaraz for seven weeks, made my first Peruvian friends and learned Spanish from almost nothing.",
     href: "/blog/vertical-my-story-and-approach-to-becoming-a-photographer-in-alpine-environments",
   },
   {
-    year: "2024",
-    title: "Sunrise on Lone Peak",
-    text: "A 6,000-foot night approach to ride the Question Mark Wall at first light. The frame ran in the Backcountry Magazine Photo Annual.",
-  },
-  {
     year: "2025",
-    title: "A new route on Palcaraju",
-    text: "Opened a line on the 6,274 m peak in the Cordillera Blanca with Nate Heald, then made my second alpine circuit of the Huayhuash: 70 km and seven passes in six days.",
-    href: "/blog/climbing-a-new-route-on-nevado-palcaraju-6274m",
+    title: "Andes Adventure Visuals",
+    text: "After coming back every year, I started a business to give other people the same access: photography tours, workshops, mountaineering expeditions and treks across Peru.",
+    href: "https://www.andesadventurevisuals.com",
   },
   {
     year: "Now",
-    title: "Living in the Andes",
-    text: "Based in the Sacred Valley year-round, from Peru's mountaineering seasons to backcountry ski trips in Argentina and Chile.",
+    title: "Here for good",
+    text: "I live full-time in the Sacred Valley and make photographs and films in the high Andes. I've been told no countless times and pivoted again and again. The work is only starting to take off, and it feels like it's just beginning.",
   },
 ];
 
@@ -97,7 +102,7 @@ export const STRENGTHS = [
   {
     question: "Do they know the ground?",
     answer:
-      "I live in the Peruvian Andes year-round and speak Spanish fluently, so scouting, permits, transport and local crews are handled from here, not flown in.",
+      "I live in the Peruvian Andes year-round and work in Spanish, so scouting, permits, transport and local crews are handled from here, not flown in.",
     detail: "Cordillera Blanca · Huayhuash · Vilcanota · Urubamba",
   },
   {
