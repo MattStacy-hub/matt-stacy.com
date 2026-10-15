@@ -68,7 +68,7 @@ export default function AdventurePhotographyPage() {
           <h2 className="mb-[clamp(32px,5vw,56px)] text-[clamp(26px,2.8vw,36px)] leading-[1.1] font-bold tracking-[-0.015em]">
             {ADVENTURE.phasesHeading}
           </h2>
-          <ol className="grid gap-10 md:grid-cols-3 md:gap-[clamp(24px,3vw,48px)]">
+          <ol className="grid gap-10 md:grid-cols-2 md:gap-[clamp(24px,3vw,48px)] lg:grid-cols-4">
             {ADVENTURE.phases.map((phase) => (
               <li key={phase.name} className="relative border-t-2 border-varnish pt-6">
                 <span
@@ -101,9 +101,10 @@ export default function AdventurePhotographyPage() {
             </figcaption>
           </figure>
           <div>
-            <h2 className="mb-[clamp(20px,3vw,32px)] text-[clamp(26px,2.8vw,36px)] leading-[1.1] font-bold tracking-[-0.015em]">
+            <h2 className="mb-4 text-[clamp(26px,2.8vw,36px)] leading-[1.1] font-bold tracking-[-0.015em]">
               {ADVENTURE.includedHeading}
             </h2>
+            <p className="mb-[clamp(20px,3vw,32px)] max-w-[52ch] text-[17px]">{ADVENTURE.includedIntro}</p>
             <ul className="border-t border-varnish">
               {ADVENTURE.included.map((item) => (
                 <li
