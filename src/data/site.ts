@@ -15,9 +15,9 @@ export const SITE_CONFIG = {
 } as const;
 
 export const CONTACT = {
-  email: "hello@matt-stacy.com",
-  instagram: "mattstacy",
-  instagramUrl: "https://www.instagram.com/mattstacy",
+  email: "mattstacym@gmail.com",
+  instagram: "_mattstacy",
+  instagramUrl: "https://www.instagram.com/_mattstacy",
   base: "Sacred Valley, Cusco, Peru",
   timezone: "UTC−5",
   replyTime: "I reply within two business days.",
