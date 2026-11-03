@@ -24,11 +24,11 @@ export default function BrandCommercialPage() {
       hero={BRAND.hero}
     >
       <section className="px-gutter py-[clamp(64px,9vw,128px)]">
-        <div className="mx-auto grid max-w-[1320px] items-center gap-[clamp(24px,6vw,96px)] md:grid-cols-[7fr_5fr]">
+        <div className="mx-auto grid max-w-[60ch] justify-items-center gap-[clamp(16px,2vw,24px)] text-center">
           <p className="font-display text-[clamp(30px,3.8vw,52px)] leading-[1.1] text-balance">
             {BRAND.statement}
           </p>
-          <p className="max-w-[48ch] text-[17px]">{BRAND.body}</p>
+          <p className="max-w-[56ch] text-[17px]">{BRAND.body}</p>
         </div>
       </section>
 
