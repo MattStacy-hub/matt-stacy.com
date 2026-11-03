@@ -104,7 +104,7 @@ export const SELECTED_WORK: WorkPhoto[] = [
     height: 1707,
     alt: "A snowboarder in the air off a snowy ridge below heavy cloud",
     title: "Backcountry snowboarding",
-    place: "Utah",
+    place: "",
     layout: "major",
   },
   {
