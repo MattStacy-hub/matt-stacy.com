@@ -211,7 +211,7 @@ export const CLIENTS: {
    */
   solid?: boolean;
 }[] = [
-  { name: "Backcountry Magazine", logo: "/images/clients/backcountry-magazine-logo.webp", width: 508, height: 85 },
+  { name: "Bozeman Ice Festival", logo: "/images/clients/bozeman-ice-festival-logo.webp", width: 414, height: 340 },
   {
     name: "Refugios Peru",
     logo: "/images/clients/refugios-peru-logo.webp",
@@ -219,7 +219,7 @@ export const CLIENTS: {
     height: 147,
     wordmark: true,
   },
-  { name: "Bozeman Ice Festival", logo: "/images/clients/bozeman-ice-festival-logo.webp", width: 414, height: 340 },
+  { name: "Backcountry Magazine", logo: "/images/clients/backcountry-magazine-logo.webp", width: 508, height: 85 },
   { name: "Wyoming Ice Fest", logo: "/images/clients/wyoming-ice-fest-logo.webp", width: 227, height: 177 },
   { name: "Tushar Mountain Tours", logo: "/images/clients/tushar-mountain-tours-logo.webp", width: 416, height: 115 },
   { name: "ALPS Mountaineering", logo: "/images/clients/alps-mountaineering-logo.webp", width: 388, height: 82 },
