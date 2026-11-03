@@ -31,8 +31,8 @@ export default function HomePage() {
       <main>
         <Hero />
         <Services />
-        <Clients />
         <SelectedWork />
+        <Clients />
         <Testimonial />
         <Faq />
         <ContactCta />

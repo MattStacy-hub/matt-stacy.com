@@ -24,7 +24,7 @@ function logoBox(width: number, height: number, withName = false) {
 export function Clients() {
   const hasLogos = CLIENTS.length > 0;
   return (
-    <section className="px-gutter pb-[clamp(64px,9vw,128px)]">
+    <section className="px-gutter pt-[clamp(64px,9vw,128px)]">
       <div className="mx-auto max-w-[1320px]">
         <h2 className="mb-[clamp(28px,4vw,44px)] text-[clamp(26px,2.8vw,36px)] leading-[1.1] font-bold tracking-[-0.015em]">
           Brands I&apos;ve worked with
