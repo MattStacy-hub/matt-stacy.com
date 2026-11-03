@@ -23,17 +23,21 @@ export const HERO_PHOTO: Photo = {
 };
 
 /**
- * Selected work, in page order. The grid reads each frame's shape from its
- * width and height: a landscape fills one cell, a portrait fills two cells
- * stacked. `feature` marks the lead frame, which spans the full width on wide
- * screens.
+ * Selected work, in page order, which is also the lightbox's order. Each frame
+ * names its place in the sequence:
  *
- * The order is what packs the grid without gaps. Counting a landscape as 1,
- * a portrait as 2 and the feature as 6 on three columns (1 on two), the total
- * must divide by 3 on wide screens and by 2 on tablets. Portraits need a
- * partner beside them in the same pair of rows, or a cell is left empty.
+ * - `bleed`: runs edge to edge in a cinematic crop. Use it for the opener.
+ * - `wide`: a cinematic crop inside the page margins, between the pairs.
+ * - `major` and `minor`: a pair on one row, the major two-thirds wide in 3:2
+ *   and the minor a third wide, cropped to the same height. A portrait suits
+ *   the minor slot. Either can come first.
+ * - `half`: a pair of equal frames on one row.
+ *
+ * Pairs must sit next to each other in the list.
  */
-export type WorkPhoto = Photo & { feature?: boolean };
+export type WorkLayout = "bleed" | "wide" | "major" | "minor" | "half";
+
+export type WorkPhoto = Photo & { layout: WorkLayout };
 
 const P = "/images/locations";
 
@@ -45,16 +49,8 @@ export const SELECTED_WORK: WorkPhoto[] = [
     alt: "Hiker above Laguna Jahuacocha in the Cordillera Huayhuash, Peru",
     title: "Laguna Jahuacocha",
     place: "Huayhuash, Áncash",
-    feature: true,
-  },
-  {
-    src: `${P}/ancash-region/cordillera-huayhuash/v3.webp`,
-    width: 1365,
-    height: 2048,
-    alt: "Lit tent at high camp below a glacier in the Cordillera Huayhuash at night",
-    title: "High camp, before sunrise",
-    place: "Huayhuash, Áncash",
-    focus: "50% 60%",
+    focus: "50% 85%",
+    layout: "bleed",
   },
   {
     src: `${P}/cusco-region/ahobamba-trek/h6.webp`,
@@ -63,6 +59,7 @@ export const SELECTED_WORK: WorkPhoto[] = [
     alt: "Machu Picchu under storm light, Cusco",
     title: "Machu Picchu",
     place: "Cusco",
+    layout: "major",
   },
   {
     src: `${P}/ancash-region/nevado-huascaran/huascaran-2.webp`,
@@ -72,14 +69,17 @@ export const SELECTED_WORK: WorkPhoto[] = [
     title: "Huascarán",
     place: "Áncash · 6,768 m",
     focus: "50% 30%",
+    layout: "minor",
   },
   {
-    src: `${P}/cusco-region/inti-punku/h2.webp`,
-    width: 2048,
-    height: 1365,
-    alt: "Inti Punku Inca gateway at dusk near the Sacred Valley, Cusco",
-    title: "Inti Punku",
-    place: "Sacred Valley, Cusco",
+    src: `${P}/ancash-region/cordillera-huayhuash/v3.webp`,
+    width: 1365,
+    height: 2048,
+    alt: "Lit tent at high camp below a glacier in the Cordillera Huayhuash at night",
+    title: "High camp, before sunrise",
+    place: "Huayhuash, Áncash",
+    focus: "50% 60%",
+    layout: "minor",
   },
   {
     src: `${P}/cusco-region/nevado-veronica/h4.webp`,
@@ -88,22 +88,7 @@ export const SELECTED_WORK: WorkPhoto[] = [
     alt: "Climber on the summit ridge of Nevado Verónica above the Sacred Valley",
     title: "Nevado Verónica",
     place: "Urubamba, Cusco",
-  },
-  {
-    src: `${P}/ancash-region/cordillera-blanca/v6.webp`,
-    width: 1365,
-    height: 2048,
-    alt: "Snow peak at first light in the Cordillera Blanca, Peru",
-    title: "First light",
-    place: "Cordillera Blanca",
-  },
-  {
-    src: `${P}/cusco-region/cordillera-vilcabamba/v1.webp`,
-    width: 1365,
-    height: 2048,
-    alt: "Climber standing on a rocky summit above the clouds in the Cordillera Vilcabamba",
-    title: "Summit, Vilcabamba",
-    place: "Cordillera Vilcabamba, Cusco",
+    layout: "major",
   },
   {
     src: `${P}/cusco-region/nevado-chumpe/h3.webp`,
@@ -113,6 +98,34 @@ export const SELECTED_WORK: WorkPhoto[] = [
     title: "Last light on Chumpe",
     place: "Cordillera Vilcanota, Cusco",
     focus: "50% 55%",
+    layout: "wide",
+  },
+  {
+    src: `${P}/cusco-region/inti-punku/h2.webp`,
+    width: 2048,
+    height: 1365,
+    alt: "Inti Punku Inca gateway at dusk near the Sacred Valley, Cusco",
+    title: "Inti Punku",
+    place: "Sacred Valley, Cusco",
+    layout: "major",
+  },
+  {
+    src: `${P}/ancash-region/cordillera-blanca/v6.webp`,
+    width: 1365,
+    height: 2048,
+    alt: "Snow peak at first light in the Cordillera Blanca, Peru",
+    title: "First light",
+    place: "Cordillera Blanca",
+    layout: "minor",
+  },
+  {
+    src: `${P}/cusco-region/cordillera-vilcabamba/v1.webp`,
+    width: 1365,
+    height: 2048,
+    alt: "Climber standing on a rocky summit above the clouds in the Cordillera Vilcabamba",
+    title: "Summit, Vilcabamba",
+    place: "Cordillera Vilcabamba, Cusco",
+    layout: "minor",
   },
   {
     src: `${P}/cusco-region/nevado-ausangate/h7.webp`,
@@ -121,6 +134,7 @@ export const SELECTED_WORK: WorkPhoto[] = [
     alt: "Trekkers crossing a stream on the Ausangate circuit, Cusco",
     title: "Ausangate",
     place: "Cusco · 6,384 m",
+    layout: "major",
   },
   {
     src: `${P}/cusco-region/nevado-sirijuani/h1.webp`,
@@ -129,6 +143,7 @@ export const SELECTED_WORK: WorkPhoto[] = [
     alt: "Aerial view of a glacier tongue in the Cordillera Vilcanota, Cusco",
     title: "Glacier tongue",
     place: "Cordillera Vilcanota, Cusco",
+    layout: "half",
   },
   {
     src: `${P}/cusco-region/nevado-ausangate/h1.webp`,
@@ -137,6 +152,7 @@ export const SELECTED_WORK: WorkPhoto[] = [
     alt: "Expedition base camp below Ausangate, Cusco",
     title: "Base camp",
     place: "Ausangate, Cusco",
+    layout: "half",
   },
 ];
 
