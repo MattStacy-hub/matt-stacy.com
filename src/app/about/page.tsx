@@ -12,7 +12,6 @@ import {
   FIELD_SHEET,
   INTRO_OPENER,
   PORTRAIT,
-  PULL_QUOTE,
   STRENGTHS,
 } from "@/data/about";
 import { getPosts } from "@/lib/blog";
@@ -104,19 +103,6 @@ export default async function AboutPage() {
               </Link>
             </div>
           </div>
-        </section>
-
-        <section className="px-gutter py-[clamp(64px,9vw,128px)]">
-          <figure className="mx-auto max-w-[900px] text-center">
-            <blockquote className="font-display text-[clamp(28px,3.6vw,48px)] leading-[1.25] tracking-[-0.01em] text-balance [font-variation-settings:'opsz'_96]">
-              “{PULL_QUOTE.quote}”
-            </blockquote>
-            <figcaption className="mt-6 text-[15px] opacity-70">
-              <Link href={PULL_QUOTE.href} className="underline-offset-4 hover:underline">
-                {PULL_QUOTE.credit}
-              </Link>
-            </figcaption>
-          </figure>
         </section>
 
         {/* What a team gets, framed as the questions a producer asks before hiring. */}

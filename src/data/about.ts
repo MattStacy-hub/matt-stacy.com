@@ -38,13 +38,6 @@ export const FIELD_SHEET = [
   { term: "Years of experience", value: "6+" },
 ];
 
-export const PULL_QUOTE = {
-  quote:
-    "I didn't want my work as a photographer to endanger the lives of my partners.",
-  credit: "From “Vertical,” on learning to climb before shooting climbing",
-  href: "/blog/vertical-my-story-and-approach-to-becoming-a-photographer-in-alpine-environments",
-};
-
 /** What a team gets when I join, written as answers to a producer's questions. */
 export const STRENGTHS = [
   {
