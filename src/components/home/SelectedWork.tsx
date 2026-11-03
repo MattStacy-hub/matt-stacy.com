@@ -59,7 +59,7 @@ const BOX: Record<WorkLayout, string> = {
   bleed: "aspect-[4/3] md:aspect-[21/9]",
   wide: "aspect-[3/2] md:aspect-[21/9]",
   major: "aspect-[3/2]",
-  minor: "aspect-[4/5] md:aspect-auto md:flex-1",
+  minor: "aspect-[4/5] md:aspect-auto",
   half: "aspect-[3/2]",
 };
 
@@ -82,35 +82,28 @@ function pairColumns(row: Frame[]): string {
 function WorkFrame({ frame, onOpen }: { frame: Frame; onOpen: (index: number) => void }) {
   const { photo, index } = frame;
   return (
-    <figure className="flex min-w-0 flex-col">
-      <button
-        type="button"
-        onClick={() => onOpen(index)}
-        aria-label={`View ${photo.title} full screen`}
-        className={`group relative w-full cursor-zoom-in overflow-clip bg-varnish-deep ${BOX[photo.layout]}`}
-      >
-        <div className="work-reveal absolute inset-0">
-          <Image
-            src={photo.src}
-            alt={photo.alt}
-            fill
-            sizes={SIZES[photo.layout]}
-            className="object-cover transition-transform duration-[1.4s] ease-[cubic-bezier(.2,.7,.2,1)] group-hover:scale-[1.03]"
-            style={{ objectPosition: photo.focus }}
-          />
-        </div>
-      </button>
-      <figcaption
-        className={`mt-3 flex items-baseline justify-between gap-4 text-[14px] leading-tight ${
-          photo.layout === "bleed" ? "px-gutter" : ""
-        }`}
-      >
-        <span className="truncate font-semibold text-canvas">{photo.title}</span>
-        <span className="shrink-0 text-[13px] text-bone/60">{photo.place}</span>
-      </figcaption>
-    </figure>
+    <button
+      type="button"
+      onClick={() => onOpen(index)}
+      aria-label={`View ${photo.title} full screen`}
+      className={`group relative w-full min-w-0 cursor-zoom-in overflow-clip bg-varnish-deep ${BOX[photo.layout]}`}
+    >
+      <div className="work-reveal absolute inset-0">
+        <Image
+          src={photo.src}
+          alt={photo.alt}
+          fill
+          sizes={SIZES[photo.layout]}
+          className="object-cover transition-transform duration-[1.4s] ease-[cubic-bezier(.2,.7,.2,1)] group-hover:scale-[1.03]"
+          style={{ objectPosition: photo.focus }}
+        />
+      </div>
+    </button>
   );
 }
+
+/** One gap between every frame, across rows and within pairs. */
+const GAP = "gap-[clamp(4px,0.6vw,8px)]";
 
 export function SelectedWork() {
   const [index, setIndex] = useState(-1);
@@ -129,27 +122,18 @@ export function SelectedWork() {
         </Link>
       </div>
 
-      {/* Rows breathe apart; the frames in a pair sit close together. */}
-      <div className="grid gap-[clamp(48px,7vw,104px)]">
-        {ROWS.map((row) => {
-          if (row.length === 1) {
-            return (
-              <div key={row[0].photo.src} className={row[0].photo.layout === "bleed" ? "" : "px-gutter"}>
-                <WorkFrame frame={row[0]} onOpen={setIndex} />
-              </div>
-            );
-          }
-          return (
-            <div
-              key={row[0].photo.src}
-              className={`grid gap-[clamp(48px,7vw,104px)] px-gutter md:gap-[clamp(12px,1.6vw,24px)] ${pairColumns(row)}`}
-            >
+      <div className={`grid px-gutter ${GAP}`}>
+        {ROWS.map((row) =>
+          row.length === 1 ? (
+            <WorkFrame key={row[0].photo.src} frame={row[0]} onOpen={setIndex} />
+          ) : (
+            <div key={row[0].photo.src} className={`grid ${GAP} ${pairColumns(row)}`}>
               {row.map((frame) => (
                 <WorkFrame key={frame.photo.src} frame={frame} onOpen={setIndex} />
               ))}
             </div>
-          );
-        })}
+          ),
+        )}
       </div>
 
       <Lightbox

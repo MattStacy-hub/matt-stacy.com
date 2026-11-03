@@ -26,8 +26,8 @@ export const HERO_PHOTO: Photo = {
  * Selected work, in page order, which is also the lightbox's order. Each frame
  * names its place in the sequence:
  *
- * - `bleed`: runs edge to edge in a cinematic crop. Use it for the opener.
- * - `wide`: a cinematic crop inside the page margins, between the pairs.
+ * - `bleed`: a full-width frame in a cinematic crop. Use it for the opener.
+ * - `wide`: a full-width frame in a cinematic crop, between the pairs.
  * - `major` and `minor`: a pair on one row, the major two-thirds wide in 3:2
  *   and the minor a third wide, cropped to the same height. A portrait suits
  *   the minor slot. Either can come first.

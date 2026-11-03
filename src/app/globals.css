@@ -98,12 +98,10 @@
 
 @keyframes work-reveal {
   from {
-    transform: scale(1.12);
-    opacity: 0.35;
+    transform: scale(1.1);
   }
   to {
     transform: scale(1);
-    opacity: 1;
   }
 }
 
