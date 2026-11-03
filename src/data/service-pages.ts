@@ -313,7 +313,7 @@ export const DRONE = {
       heading: "Destination and hospitality",
       text: "Aerials that sell a location: lodges, itineraries, and landscapes from the perspective that makes people book.",
       photo: {
-        src: `${P}/amazonas-region/gocta/casa-1.webp`,
+        src: `${P}/amazonas-region/gocta/gocta-house-1.webp`,
         width: 2560,
         height: 1706,
         alt: "Aerial view at dusk of a lit house with round shingled roofs on a forested hillside, a person standing in the open doorway and village lights in the valley below, Amazonas, Peru",
