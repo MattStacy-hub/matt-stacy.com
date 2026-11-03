@@ -22,7 +22,7 @@ export const SERVICES: Service[] = [
     navLabel: "Drone Cinematography",
     heading: "Drone cinematography",
     summary:
-      "Aerial stills and film of ridgelines, glaciers and approach routes, graded to match everything shot on the ground.",
+      "Drone photos and video of the mountains, the routes and the people on them.",
     seoTitle: "Drone Cinematography in Peru",
     seoDescription:
       "Aerial film and stills in the Peruvian Andes for productions, destinations and expeditions. Flown at altitude and graded to match the ground footage.",
