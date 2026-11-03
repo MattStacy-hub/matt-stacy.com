@@ -107,10 +107,10 @@ export default function BrandCommercialPage() {
           </h2>
           <ol className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-1.5">
             {BRAND.process.map((step, i) => (
-              <li key={step.name} className="lg:pr-6">
+              <li key={step.name} className="text-center">
                 <span aria-hidden="true" className={`mb-5 block h-1.5 ${STEP_COLORS[i]}`} />
                 <h3 className="mb-2 text-[22px] leading-tight font-semibold tracking-[-0.01em]">{step.name}</h3>
-                <p className="max-w-[34ch] text-[15px] leading-[1.7]">{step.text}</p>
+                <p className="mx-auto max-w-[34ch] px-3 text-[15px] leading-[1.7]">{step.text}</p>
               </li>
             ))}
           </ol>
