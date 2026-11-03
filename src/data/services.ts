@@ -44,7 +44,7 @@ export const SERVICES: Service[] = [
     navLabel: "Expedition & Athlete Documentation",
     heading: "Expedition and athlete documentation",
     summary:
-      "I travel with climbers, alpinists and trail runners and photograph and film them on route, from the approach to the summit and back down.",
+      "I travel with alpinists, mountain bikers and trail runners and photograph and film them on route, from the approach to the summit and back down.",
     seoTitle: "Expedition & Athlete Photography and Film in Peru",
     seoDescription:
       "Expedition and athlete documentation in the Peruvian Andes. An alpinist photographer who climbs with the team and shoots stills, film and aerials from trailhead to summit.",
