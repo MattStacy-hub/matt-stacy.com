@@ -325,6 +325,8 @@ export const BRAND = {
       place: "Cordillera Huayhuash, Áncash",
     },
   ] as Photo[],
+  /** A YouTube film shown above the photos. */
+  video: { id: "ez03mgREp94", title: "Pallay Punchu Flow | Mace Training in the Andes" },
   productionHeading: "Producing in Peru",
   productionPhoto: {
     src: `${P}/cusco-region/nevado-ausangate/nevado-ausangate-3.webp`,

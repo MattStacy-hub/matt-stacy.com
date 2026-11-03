@@ -54,7 +54,18 @@ export default function BrandCommercialPage() {
         </div>
       </section>
 
-      <section aria-label="Photographs" className="px-gutter pb-[clamp(64px,9vw,128px)]">
+      <section aria-label="Film and photographs" className="px-gutter pb-[clamp(64px,9vw,128px)]">
+        <div className="relative mb-2 aspect-video bg-varnish">
+          <iframe
+            src={`https://www.youtube-nocookie.com/embed/${BRAND.video.id}?rel=0`}
+            title={BRAND.video.title}
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className="absolute inset-0 size-full"
+          />
+        </div>
         <div className="grid gap-2 md:grid-cols-3">
           {BRAND.photos.map((photo) => (
             <figure
