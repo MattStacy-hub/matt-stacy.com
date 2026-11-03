@@ -37,25 +37,3 @@ export const FIELD_SHEET = [
   { term: "Highest shoot", value: "Nevado Palcaraju – 6,274 meters" },
   { term: "Years of experience", value: "6+" },
 ];
-
-/** What a team gets when I join, written as answers to a producer's questions. */
-export const STRENGTHS = [
-  {
-    question: "Can they keep up?",
-    answer:
-      "I carry my own kit and keep pace at altitude over long days. I rope up and shoot from positions a photographer who doesn't climb can't safely reach.",
-    detail: "Wilderness First Responder · Avalanche Level 1",
-  },
-  {
-    question: "Do they know the ground?",
-    answer:
-      "I live in the Peruvian Andes year-round and work in Spanish, so scouting, permits, transport and local crews are handled from here, not flown in.",
-    detail: "Cordillera Blanca · Huayhuash · Vilcanota · Urubamba",
-  },
-  {
-    question: "Who handles the rest?",
-    answer:
-      "Photography, video and aerial work as one package. I plan, shoot, edit and deliver, so there's one person to brief and one schedule to keep.",
-    detail: "Stills · Video · Drone",
-  },
-];

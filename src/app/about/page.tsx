@@ -12,7 +12,6 @@ import {
   FIELD_SHEET,
   INTRO_OPENER,
   PORTRAIT,
-  STRENGTHS,
 } from "@/data/about";
 import { getPosts } from "@/lib/blog";
 import { CONTACT } from "@/data/site";
@@ -78,8 +77,8 @@ export default async function AboutPage() {
           </div>
         </section>
 
-        {/* A first way in, before the long story. Copy from the current About page. */}
-        <section className="px-gutter pb-[clamp(64px,9vw,128px)]">
+        {/* A first way in. The client logos below bring their own top spacing. */}
+        <section className="px-gutter">
           <div className="mx-auto flex max-w-[1320px] flex-wrap items-end justify-between gap-x-10 gap-y-8 border-t border-varnish pt-[clamp(28px,4vw,44px)]">
             <div>
               <h2 className="font-display mb-3 text-[clamp(32px,4vw,56px)] leading-[1.05] text-balance">
@@ -105,33 +104,10 @@ export default async function AboutPage() {
           </div>
         </section>
 
-        {/* What a team gets, framed as the questions a producer asks before hiring. */}
-        <section className="px-gutter pb-[clamp(64px,9vw,128px)]">
-          <div className="mx-auto max-w-[1320px]">
-            <h2 className="mb-[clamp(28px,4vw,44px)] text-[clamp(30px,3.6vw,48px)] leading-[1.05] font-bold tracking-[-0.02em]">
-              Before you hire me
-            </h2>
-            <dl className="border-t border-varnish">
-              {STRENGTHS.map((s) => (
-                <div
-                  key={s.question}
-                  className="grid gap-x-[clamp(24px,5vw,80px)] gap-y-3 border-b border-bone py-[clamp(24px,3vw,36px)] md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]"
-                >
-                  <dt className="font-display text-[clamp(26px,2.6vw,34px)] leading-[1.1]">{s.question}</dt>
-                  <dd>
-                    <p className="max-w-[58ch] text-[17px]">{s.answer}</p>
-                    <p className="mt-2.5 text-[14px] font-semibold opacity-70">{s.detail}</p>
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </section>
-
         <Clients />
 
         {posts.length > 0 && (
-          <section className="px-gutter pb-[clamp(64px,9vw,128px)]">
+          <section className="px-gutter py-[clamp(64px,9vw,128px)]">
             <div className="mx-auto max-w-[1320px]">
               <div className="mb-[clamp(28px,4vw,44px)] flex flex-wrap items-end justify-between gap-4">
                 <h2 className="text-[clamp(26px,2.8vw,36px)] leading-[1.1] font-bold tracking-[-0.015em]">
