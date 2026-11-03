@@ -22,7 +22,7 @@ export default function DronePage() {
     >
       <section className="px-gutter py-[clamp(64px,9vw,128px)]">
         <div className="mx-auto max-w-[980px] text-center">
-          <p className="font-display mb-6 text-[clamp(32px,4.4vw,60px)] leading-[1.08] text-balance">
+          <p className="heading-statement mb-6">
             {DRONE.statement}
           </p>
           <p className="mx-auto max-w-[58ch] text-[17px]">{DRONE.body}</p>
@@ -31,7 +31,7 @@ export default function DronePage() {
 
       {/* What the drone is hired for, each over one of its own frames. */}
       <section className="bg-varnish pt-[clamp(64px,9vw,128px)] text-canvas">
-        <h2 className="mb-[clamp(28px,4vw,48px)] px-gutter text-[clamp(30px,3.6vw,48px)] leading-none font-bold tracking-[-0.02em]">
+        <h2 className="mb-[clamp(28px,4vw,48px)] px-gutter heading-section">
           {DRONE.usesHeading}
         </h2>
         <ul className="grid gap-2 px-gutter md:grid-cols-2">
@@ -52,7 +52,7 @@ export default function DronePage() {
                 aria-hidden="true"
                 className="absolute inset-0 -z-10 bg-gradient-to-t from-[rgba(20,15,12,.85)] via-[rgba(20,15,12,.25)] via-45% to-transparent"
               />
-              <h3 className="mb-2 text-[clamp(22px,2.2vw,28px)] leading-tight font-semibold tracking-[-0.01em] text-white">
+              <h3 className="heading-item mb-2 text-white">
                 {use.heading}
               </h3>
               <p className="max-w-[40ch] text-[15px] text-bone">{use.text}</p>

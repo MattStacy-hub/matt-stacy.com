@@ -76,7 +76,7 @@ export default async function CollectionPage({ params }: Props) {
                 ))}
               </ul>
             </nav>
-            <h1 className="font-display text-[clamp(44px,7vw,100px)] leading-none">{collection.title}</h1>
+            <h1 className="heading-page">{collection.title}</h1>
           </div>
         </section>
 
@@ -110,7 +110,7 @@ export default async function CollectionPage({ params }: Props) {
                   className="absolute inset-0 -z-10 bg-gradient-to-t from-[rgba(20,15,12,.75)] to-transparent to-60%"
                 />
                 <span className="text-[14px] opacity-80">{label}</span>
-                <span className="font-display text-[clamp(28px,3.4vw,48px)] leading-[1.05]">{c.title}</span>
+                <span className="heading-photo">{c.title}</span>
               </Link>
             ))}
           </div>

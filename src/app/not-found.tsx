@@ -13,7 +13,7 @@ export default function NotFound() {
       <SiteHeader />
       <main className="px-gutter pt-40 pb-32">
         <p className="label text-clay">404</p>
-        <h1 className="font-display mt-4 text-[clamp(40px,6vw,84px)] leading-none">
+        <h1 className="heading-page mt-4">
           This page isn&apos;t built yet
         </h1>
         <p className="mt-6 max-w-[48ch]">

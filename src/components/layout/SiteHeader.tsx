@@ -192,8 +192,7 @@ export function SiteHeader({ overHeroId }: SiteHeaderProps) {
         className="fixed inset-0 z-[60] overflow-y-auto bg-varnish px-gutter pb-10 text-canvas"
         style={{ paddingTop: "calc(24px + env(safe-area-inset-top, 0px))" }}
       >
-        <div className="flex items-center justify-between">
-          <span className="label">Menu</span>
+        <div className="flex items-center justify-end">
           <button
             ref={closeButtonRef}
             type="button"
@@ -219,9 +218,10 @@ export function SiteHeader({ overHeroId }: SiteHeaderProps) {
                     <span className="block py-4 text-[26px] font-semibold tracking-[-0.01em]">
                       {item.label}
                     </span>
-                    <ul className="mb-4 border-l-2 border-petroglyph pb-3.5 pl-3.5">
+                    <ul className="mb-4 pb-3.5">
                       {item.children.map((child) => (
-                        <li key={child.href}>
+                        <li key={child.href} className="flex items-center gap-3">
+                          <span aria-hidden="true" className="h-0.5 w-3.5 shrink-0 bg-petroglyph" />
                           {child.comingSoon ? (
                             <span className="flex items-baseline gap-3 py-1.5 text-bone/60">
                               {child.label}

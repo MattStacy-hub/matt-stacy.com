@@ -28,7 +28,7 @@ export function Hero() {
         }}
       />
       <div className="px-gutter pb-[clamp(28px,5vw,56px)]">
-        <h1 className="hero-rise font-display max-w-[13ch] text-[clamp(40px,7vw,96px)] leading-none text-balance">
+        <h1 className="hero-rise heading-page max-w-[13ch]">
           Adventure Photographer in Cusco, Peru
         </h1>
       </div>

@@ -37,8 +37,8 @@ export function PostList({ heading, intro, posts, currentCategory, featured, isI
         <div className="mx-auto max-w-[1320px]">
           <header className="mb-[clamp(36px,5vw,64px)] grid gap-6">
             <div className="flex flex-wrap items-end justify-between gap-x-10 gap-y-4">
-              <h1 className="font-display text-[clamp(44px,7vw,100px)] leading-none text-balance">{heading}</h1>
-              {intro && <p className="max-w-[44ch] text-[clamp(16px,1.3vw,18px)]">{intro}</p>}
+              <h1 className="heading-page">{heading}</h1>
+              {intro && <p className="max-w-[44ch] text-[17px]">{intro}</p>}
             </div>
             <nav aria-label="Blog categories">
               <ul className="flex flex-wrap gap-x-[clamp(16px,2.4vw,32px)] gap-y-2 text-[15px]">
