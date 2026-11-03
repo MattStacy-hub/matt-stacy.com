@@ -84,7 +84,7 @@ export const EXPEDITION = {
       text: "I climb with you. My own kit, rope skills, no babysitting. Full documentation of the expedition as it happens, from the approach to the summit and back down.",
     },
   ],
-  logHeading: "Real objectives, documented",
+  logHeading: "Real objectives I've documented",
   /** Heights only where they're confirmed. Blank cells show a dash. */
   log: [
     {
