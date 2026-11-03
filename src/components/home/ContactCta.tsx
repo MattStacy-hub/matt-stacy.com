@@ -16,7 +16,7 @@ export function ContactCta({
 }: ContactCtaProps) {
   return (
     <section id="contact" className="bg-varnish px-gutter py-[clamp(64px,9vw,128px)] text-canvas">
-      <div className="mx-auto grid max-w-[1320px] items-end gap-[clamp(32px,6vw,96px)] md:grid-cols-2">
+      <div className="reveal-up mx-auto grid max-w-[1320px] items-end gap-[clamp(32px,6vw,96px)] md:grid-cols-2">
         <div>
           <h2 className="font-display mb-5.5 text-[clamp(40px,6vw,84px)] leading-none">
             {heading}

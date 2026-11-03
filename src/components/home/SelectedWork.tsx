@@ -110,7 +110,7 @@ export function SelectedWork() {
 
   return (
     <section id="work" aria-label="Selected work" className="bg-varnish py-[clamp(64px,9vw,128px)] text-canvas">
-      <div className={`grid px-gutter ${GAP}`}>
+      <div className={`hover-spotlight grid px-gutter ${GAP}`}>
         {ROWS.map((row) =>
           row.length === 1 ? (
             <WorkFrame key={row[0].photo.src} frame={row[0]} onOpen={setIndex} />

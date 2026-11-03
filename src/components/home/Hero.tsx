@@ -15,7 +15,7 @@ export function Hero() {
         fill
         priority
         sizes="100vw"
-        className="-z-20 object-cover"
+        className="hero-drift -z-20 object-cover"
         style={{ objectPosition: HERO_PHOTO.focus }}
       />
       {/* Darkens the top for the nav and the lower left for the heading. The photo's snow sits right behind the text. */}
@@ -28,7 +28,7 @@ export function Hero() {
         }}
       />
       <div className="px-gutter pb-[clamp(28px,5vw,56px)]">
-        <h1 className="font-display max-w-[13ch] text-[clamp(40px,7vw,96px)] leading-none text-balance">
+        <h1 className="hero-rise font-display max-w-[13ch] text-[clamp(40px,7vw,96px)] leading-none text-balance">
           Adventure Photographer in Cusco, Peru
         </h1>
       </div>

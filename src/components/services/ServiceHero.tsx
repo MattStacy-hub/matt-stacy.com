@@ -21,7 +21,7 @@ export function ServiceHero({ photo, heading }: ServiceHeroProps) {
         fill
         priority
         sizes="100vw"
-        className="-z-20 object-cover"
+        className="hero-drift -z-20 object-cover"
         style={{ objectPosition: photo.focus }}
       />
       <div
@@ -33,7 +33,7 @@ export function ServiceHero({ photo, heading }: ServiceHeroProps) {
         }}
       />
       <div className="px-gutter pb-[clamp(28px,5vw,56px)]">
-        <h1 className="font-display max-w-[14ch] text-[clamp(40px,6.4vw,88px)] leading-none text-balance">
+        <h1 className="hero-rise font-display max-w-[14ch] text-[clamp(40px,6.4vw,88px)] leading-none text-balance">
           {heading}
         </h1>
       </div>

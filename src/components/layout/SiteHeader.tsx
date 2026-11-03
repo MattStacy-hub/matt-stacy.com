@@ -207,9 +207,13 @@ export function SiteHeader({ overHeroId }: SiteHeaderProps) {
           </button>
         </div>
         <nav aria-label="Mobile" className="mt-7">
-          <ul>
-            {MAIN_NAV.map((item) => (
-              <li key={item.label} className="border-b border-bone/15">
+          <ul className="menu-stagger">
+            {MAIN_NAV.map((item, i) => (
+              <li
+                key={item.label}
+                className="border-b border-bone/15"
+                style={{ "--i": i } as React.CSSProperties}
+              >
                 {item.children ? (
                   <>
                     <span className="block py-4 text-[26px] font-semibold tracking-[-0.01em]">

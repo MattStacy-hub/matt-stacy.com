@@ -9,7 +9,7 @@ export function Services() {
         className="mx-auto grid max-w-[1320px] gap-[clamp(20px,3vw,40px)] sm:grid-cols-2 lg:grid-cols-4"
       >
         {SERVICES.map((service) => (
-          <article key={service.slug} className="min-w-0 pt-5.5 text-center">
+          <article key={service.slug} className="reveal-up min-w-0 pt-5.5 text-center">
             <h3 className="mb-2 text-center text-[22px] leading-tight font-semibold tracking-[-0.01em]">
               {service.heading}
             </h3>
