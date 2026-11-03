@@ -42,7 +42,7 @@ export default async function AboutPage() {
       />
       <SiteHeader overHeroId={SERVICE_HERO_ID} />
       <main>
-        <ServiceHero photo={ABOUT_HERO} heading="Matt Stacy" showPlace={false} />
+        <ServiceHero photo={ABOUT_HERO} heading="Matt Stacy" />
 
         {/*
           The portrait and its two companions: the opener at the top of the
