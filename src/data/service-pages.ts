@@ -338,7 +338,7 @@ export const BRAND = {
     { item: "Location scouting", detail: "Routes, light and access checked in person before the shoot." },
     { item: "Filming permits", detail: "Arranged for protected areas and heritage sites." },
     { item: "Local crew", detail: "Guides, porters, drivers and assistants I work with regularly." },
-    { item: "Logistics support" },
+    { item: "Logistics support", detail: "Transport, lodging, meals and gear, from Cusco or Huaraz to the trailhead and back." },
   ] as { item: string; detail?: string }[],
   processHeading: "How we collaborate",
   process: [
