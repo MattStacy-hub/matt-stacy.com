@@ -55,17 +55,17 @@ export default function BrandCommercialPage() {
       </section>
 
       <section aria-label="Photographs" className="px-gutter pb-[clamp(64px,9vw,128px)]">
-        <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-[1fr_1fr_1.6fr]">
-          {BRAND.photos.map((photo, i) => (
+        <div className="grid gap-2 md:grid-cols-3">
+          {BRAND.photos.map((photo) => (
             <figure
               key={photo.src}
-              className={`relative h-[clamp(340px,42vw,620px)] overflow-hidden bg-bone ${i === 2 ? "sm:col-span-2 lg:col-span-1" : ""}`}
+              className="relative h-[clamp(340px,42vw,620px)] overflow-hidden bg-bone"
             >
               <Image
                 src={photo.src}
                 alt={photo.alt}
                 fill
-                sizes={i === 2 ? "(min-width: 1024px) 45vw, 100vw" : "(min-width: 1024px) 28vw, (min-width: 640px) 50vw, 100vw"}
+                sizes="(min-width: 768px) 33vw, 100vw"
                 className="object-cover"
                 style={{ objectPosition: photo.focus }}
               />
