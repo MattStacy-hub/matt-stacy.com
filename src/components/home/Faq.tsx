@@ -1,4 +1,5 @@
-import { FAQ } from "@/data/home";
+import Link from "next/link";
+import { FAQ, type FaqItem } from "@/data/home";
 
 /**
  * Plain <details> elements: open and close without JavaScript, and the
@@ -23,11 +24,28 @@ export function Faq() {
                   +
                 </span>
               </summary>
-              <p className="mb-6 max-w-[66ch]">{item.answer}</p>
+              <p className="mb-6 max-w-[66ch]">
+                <Answer item={item} />
+              </p>
             </details>
           ))}
         </div>
       </div>
     </section>
+  );
+}
+
+/** The answer text, with its link words (if any) turned into a link. */
+function Answer({ item }: { item: FaqItem }) {
+  const at = item.link ? item.answer.indexOf(item.link.text) : -1;
+  if (!item.link || at < 0) return item.answer;
+  return (
+    <>
+      {item.answer.slice(0, at)}
+      <Link href={item.link.href} className="underline underline-offset-3 hover:text-petroglyph">
+        {item.link.text}
+      </Link>
+      {item.answer.slice(at + item.link.text.length)}
+    </>
   );
 }

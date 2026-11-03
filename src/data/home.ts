@@ -164,33 +164,42 @@ export const TESTIMONIAL = {
   role: "Mace Movement Peru",
 } as const;
 
+export interface FaqItem {
+  question: string;
+  answer: string;
+  /** Words in the answer to turn into a link on the page. */
+  link?: { text: string; href: string };
+}
+
 /** Shown on the page and repeated, word for word, in the FAQPage structured data. */
-export const FAQ = [
+export const FAQ: readonly FaqItem[] = [
   {
     question: "Can you arrange filming permits and local crew in Peru?",
     answer:
-      "Yes. For commercial shoots I handle location scouting, filming permits and local crew in Peru, so a visiting brand team can arrive and start working.",
+      "Yes. I arrange permits for protected areas and heritage sites, and work with guides, porters and drivers I know well.",
   },
   {
     question: "Where are you based?",
     answer:
-      "In the Sacred Valley, near Cusco (UTC−5). I shoot across the Peruvian Andes, from Cusco and Ausangate to the Cordillera Blanca and Huayhuash.",
+      "Cusco, Peru (UTC−5). I work across Peru and travel for projects anywhere rugged and beautiful.",
   },
   {
     question: "Do you shoot both photography and video?",
     answer:
-      "Yes. Stills and film share one grade, one pace and one point of view, so a campaign's photographs and video can come from the same shoot.",
+      "Yes. I shoot photo and video with a Sony system. Aerials are shot on the latest professional DJI drones.",
   },
   {
     question: "Can you film athletes during a climb, a race or an expedition?",
     answer:
-      "Yes. I travel with trail runners, climbers and alpinists and film them on route, where they train and compete, at the pace the objective demands.",
+      "Yes. I climb with the team and document the whole objective, from the approach to the summit and back down. See expedition and athlete documentation.",
+    link: { text: "expedition and athlete documentation", href: "/services/expedition-athlete-documentation" },
   },
   {
     question: "How do I start a project?",
-    answer: `Email ${CONTACT.email} with what you're making, where, and roughly when. ${CONTACT.replyTime}`,
+    answer: `Use the Start a project button, or email ${CONTACT.email} with what you're making, where, and roughly when.`,
+    link: { text: "Start a project", href: "/contact" },
   },
-] as const;
+];
 
 /**
  * Client logos, in page order. Files live in public/images/clients/, trimmed
