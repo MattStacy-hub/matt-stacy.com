@@ -34,7 +34,7 @@ export const FIELD_SHEET = [
     value: "Alpine climbing, trekking, expeditions, travel and lifestyle – anywhere rugged and beautiful",
   },
   { term: "Languages I speak", value: "English & Spanish" },
-  { term: "Highest shoot", value: "6,274 m, Nevado Palcaraju" },
+  { term: "Highest shoot", value: "Nevado Palcaraju – 6,274 meters" },
   { term: "Years of experience", value: "6+" },
 ];
 
