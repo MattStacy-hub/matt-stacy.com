@@ -157,7 +157,7 @@ export function SiteHeader({ overHeroId }: SiteHeaderProps) {
                     aria-current={isCurrent(item.href) ? "page" : undefined}
                     className={
                       item.button
-                        ? "label inline-block bg-canvas px-4 py-2.5 tracking-[0.26em] text-varnish transition-colors hover:bg-bone"
+                        ? "label inline-block bg-petroglyph px-4 py-2.5 tracking-[0.26em] text-white transition-colors hover:bg-[#a9311a]"
                         : `label inline-block border-b py-2.5 tracking-[0.26em] transition-colors ${
                             isCurrent(item.href) ? "border-current" : "border-transparent hover:border-current"
                           }`
