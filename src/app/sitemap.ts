@@ -29,7 +29,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ],
     "drone-cinematography": [
       DRONE.hero,
-      ...DRONE.pair.map((view) => view.photo),
       ...DRONE.uses.map((use) => use.photo),
     ],
     "adventure-photography": [

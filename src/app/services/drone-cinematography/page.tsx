@@ -20,36 +20,6 @@ export default function DronePage() {
       slug={SLUG}
       hero={DRONE.hero}
     >
-      {/* One mountain from the ground and from the air, side by side. */}
-      <section className="px-gutter py-[clamp(64px,9vw,128px)]">
-        <div className="mx-auto max-w-[1320px]">
-          <div className="mb-[clamp(28px,4vw,48px)] grid gap-[clamp(16px,4vw,64px)] md:grid-cols-[5fr_7fr] md:items-end">
-            <h2 className="text-[clamp(30px,3.6vw,48px)] leading-[1.05] font-bold tracking-[-0.02em] text-balance">
-              {DRONE.pairHeading}
-            </h2>
-            <p className="font-display max-w-[46ch] text-[clamp(19px,1.7vw,23px)] leading-[1.45] tracking-normal [font-variation-settings:'opsz'_36]">
-              {DRONE.pairText}
-            </p>
-          </div>
-          <div className="grid gap-2 sm:grid-cols-2">
-            {DRONE.pair.map((view) => (
-              <figure key={view.label} className="relative aspect-[3/2] overflow-hidden bg-bone">
-                <Image
-                  src={view.photo.src}
-                  alt={view.photo.alt}
-                  fill
-                  sizes="(min-width: 640px) 50vw, 100vw"
-                  className="object-cover"
-                />
-                <figcaption className="absolute top-4 left-4 bg-varnish/85 px-3 py-1.5 text-[13px] font-semibold text-canvas">
-                  {view.label}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* What the drone is hired for, each over one of its own frames. */}
       <section className="bg-varnish py-[clamp(64px,9vw,128px)] text-canvas">
         <h2 className="mb-[clamp(28px,4vw,48px)] px-gutter text-[clamp(30px,3.6vw,48px)] leading-none font-bold tracking-[-0.02em]">

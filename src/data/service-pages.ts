@@ -49,15 +49,6 @@ const AUSANGATE_FINS: Photo = {
   focus: "50% 55%",
 };
 
-const CAMPA_AERIAL: Photo = {
-  src: `${P}/cusco-region/nevado-campa/nevado-campa-2.webp`,
-  width: 2560,
-  height: 1707,
-  alt: "Aerial view of a figure on a snow ridge of Nevado Campa high above turquoise glacial lakes, Cordillera Vilcanota, Peru",
-  title: "Nevado Campa",
-  place: "Cordillera Vilcanota, Cusco",
-};
-
 const SHAQSHA_DAWN: Photo = {
   src: `${P}/ancash-region/cordillera-blanca/cordillera-blanca-26.webp`,
   width: 1365,
@@ -210,23 +201,6 @@ export const EXPEDITION = {
 
 export const DRONE = {
   hero: HUAYHUASH_AERIAL,
-  pairHeading: "Heightened perspective",
-  pairText:
-    "From the ridge you get the climber's view. From the air you get the whole story: the route, the lakes below and how small a person is up there.",
-  pair: [
-    {
-      label: "From the ridge",
-      photo: {
-        src: `${P}/cusco-region/nevado-campa/nevado-campa-3.webp`,
-        width: 2560,
-        height: 1707,
-        alt: "An orange dawn sky over a high plateau dotted with lakes, the snow of the south ridge of Nevado Campa in the foreground, Peru",
-        title: "Dawn from the south ridge",
-        place: "Nevado Campa, Cusco",
-      },
-    },
-    { label: "From the air", photo: CAMPA_AERIAL },
-  ] as { label: string; photo: Photo }[],
   usesHeading: "What I fly for",
   uses: [
     {
