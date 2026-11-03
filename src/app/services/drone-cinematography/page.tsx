@@ -67,6 +67,7 @@ export default function DronePage() {
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"
                 className="-z-20 object-cover"
+                style={{ objectPosition: use.photo.focus }}
               />
               <span
                 aria-hidden="true"

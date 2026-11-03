@@ -331,6 +331,7 @@ export const DRONE = {
         alt: "Aerial view of a person standing on a striped red and green rock ridge, with red mountains and grassy slopes beyond under a cloudy sky, Pallay Punchu, Cusco, Peru",
         title: "Pallay Punchu",
         place: "Cusco",
+        focus: "50% 42%",
       },
     },
     {
