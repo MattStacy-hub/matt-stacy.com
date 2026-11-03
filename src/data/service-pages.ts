@@ -80,7 +80,7 @@ export const EXPEDITION = {
       text: "Campaign-ready stills and film that show the athlete in real terrain. Built for brand decks, social, editorial, and film licensing.",
     },
     {
-      heading: "For expedition teams",
+      heading: "For independent expedition teams",
       text: "I climb with you. My own kit, rope skills, no babysitting. Full documentation of the expedition as it happens, from the approach to the summit and back down.",
     },
   ],
