@@ -89,7 +89,7 @@ export default async function PostPage({ params }: Props) {
                   </Link>
                 ))}
               </p>
-              <h1 className="font-display text-[clamp(38px,5.6vw,72px)] leading-[1.04] text-balance">
+              <h1 className="heading-page">
                 {post.title}
               </h1>
             </header>

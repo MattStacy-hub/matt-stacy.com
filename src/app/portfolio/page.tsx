@@ -28,7 +28,7 @@ export default function PortfolioPage() {
       <main>
         <section className="px-gutter pt-[clamp(136px,15vw,200px)] pb-[clamp(40px,5vw,72px)]">
           <div className="mx-auto max-w-[1320px]">
-            <h1 className="font-display text-[clamp(48px,8vw,112px)] leading-none">Portfolio</h1>
+            <h1 className="heading-page">Portfolio</h1>
           </div>
         </section>
 
@@ -54,7 +54,7 @@ export default function PortfolioPage() {
                       aria-hidden="true"
                       className="absolute inset-0 -z-10 bg-gradient-to-t from-[rgba(20,15,12,.7)] via-[rgba(20,15,12,.15)] via-40% to-transparent"
                     />
-                    <span className="font-display text-[clamp(30px,3vw,44px)] leading-[1.02] text-white">
+                    <span className="heading-photo text-white">
                       {collection.title}
                     </span>
                   </Link>

@@ -22,7 +22,7 @@ export default function AdventurePhotographyPage() {
     >
       <section className="px-gutter py-[clamp(64px,9vw,128px)]">
         <div className="mx-auto max-w-[980px] text-center">
-          <p className="font-display mb-6 text-[clamp(32px,4.4vw,60px)] leading-[1.08] text-balance">
+          <p className="heading-statement mb-6">
             {ADVENTURE.statement}
           </p>
           <p className="mx-auto max-w-[58ch] text-[17px]">{ADVENTURE.body}</p>
@@ -32,7 +32,7 @@ export default function AdventurePhotographyPage() {
       {/* Three trip shapes, so a visitor can find theirs before reading further. */}
       <section className="px-gutter pb-[clamp(64px,9vw,128px)]">
         <div className="mx-auto max-w-[1320px]">
-          <h2 className="mb-[clamp(28px,4vw,44px)] text-[clamp(30px,3.6vw,48px)] leading-[1.05] font-bold tracking-[-0.02em]">
+          <h2 className="mb-[clamp(28px,4vw,44px)] heading-section">
             {ADVENTURE.formatsHeading}
           </h2>
           <ul className="grid gap-[clamp(32px,3vw,40px)] md:grid-cols-3">
@@ -48,7 +48,7 @@ export default function AdventurePhotographyPage() {
                     style={{ objectPosition: format.photo.focus }}
                   />
                 </div>
-                <h3 className="font-display mb-2 text-[clamp(26px,2.6vw,34px)] leading-[1.1] font-bold">
+                <h3 className="heading-item mb-2">
                   {format.name}
                 </h3>
                 <p className="mb-3 text-[14px] leading-snug font-semibold opacity-70">{format.examples}</p>
@@ -62,22 +62,25 @@ export default function AdventurePhotographyPage() {
       {/* Three phases on one line: a short trip, not a project plan. */}
       <section className="bg-bone/45 px-gutter py-[clamp(64px,9vw,128px)]">
         <div className="mx-auto max-w-[1320px]">
-          <h2 className="mb-[clamp(32px,5vw,56px)] text-[clamp(26px,2.8vw,36px)] leading-[1.1] font-bold tracking-[-0.015em]">
+          <h2 className="mb-[clamp(32px,5vw,56px)] heading-section">
             {ADVENTURE.phasesHeading}
           </h2>
           <ol className="grid gap-10 md:grid-cols-2 md:gap-[clamp(24px,3vw,48px)] lg:grid-cols-4">
             {ADVENTURE.phases.map((phase, i) => (
               <li key={phase.name} className="relative border-t-2 border-varnish pt-6">
-                {/* The dot moves a quarter of the way along the line with each step. */}
+                {/* The dot steps evenly along the line: the first at the start, the last at the end. */}
                 <span
                   aria-hidden="true"
                   className="absolute -top-[7px] size-3 rounded-full bg-petroglyph"
-                  style={{ left: `${(i * 100) / ADVENTURE.phases.length}%` }}
+                  style={{
+                    left: `${(i * 100) / (ADVENTURE.phases.length - 1)}%`,
+                    transform: `translateX(-${(i * 100) / (ADVENTURE.phases.length - 1)}%)`,
+                  }}
                 />
-                <h3 className="font-display mb-2.5 text-[clamp(26px,2.6vw,34px)] leading-[1.1] font-bold">
+                <h3 className="heading-item mb-2.5">
                   {phase.name}
                 </h3>
-                <p className="max-w-[40ch] text-[15.5px] leading-[1.7]">{phase.text}</p>
+                <p className="max-w-[40ch] text-[15px] leading-[1.7]">{phase.text}</p>
               </li>
             ))}
           </ol>
@@ -97,7 +100,7 @@ export default function AdventurePhotographyPage() {
             />
           </figure>
           <div>
-            <h2 className="mb-4 text-[clamp(26px,2.8vw,36px)] leading-[1.1] font-bold tracking-[-0.015em]">
+            <h2 className="mb-4 heading-section">
               {ADVENTURE.includedHeading}
             </h2>
             <p className="mb-[clamp(20px,3vw,32px)] max-w-[52ch] text-[17px]">{ADVENTURE.includedIntro}</p>

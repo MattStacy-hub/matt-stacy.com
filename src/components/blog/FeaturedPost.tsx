@@ -46,7 +46,7 @@ export function FeaturedPost({ post }: { post: PostSummary }) {
         <h2 className="font-display mb-5 max-w-[18ch] text-[clamp(38px,6vw,84px)] leading-[1.02] text-balance">
           {post.title}
         </h2>
-        <span className="block max-w-[52ch] text-[clamp(16px,1.4vw,19px)] text-bone">{post.excerpt}</span>
+        <span className="block max-w-[52ch] text-[17px] text-bone">{post.excerpt}</span>
         <span className="label mt-7 inline-flex gap-3 bg-petroglyph px-6.5 py-4 text-white">
           Read the story
           <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>

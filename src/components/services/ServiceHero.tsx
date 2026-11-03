@@ -33,7 +33,7 @@ export function ServiceHero({ photo, heading }: ServiceHeroProps) {
         }}
       />
       <div className="px-gutter pb-[clamp(28px,5vw,56px)]">
-        <h1 className="hero-rise font-display max-w-[14ch] text-[clamp(40px,6.4vw,88px)] leading-none text-balance">
+        <h1 className="hero-rise heading-page max-w-[14ch]">
           {heading}
         </h1>
       </div>

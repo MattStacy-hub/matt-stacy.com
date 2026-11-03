@@ -81,7 +81,7 @@ export default async function AboutPage() {
         <section className="px-gutter">
           <div className="mx-auto flex max-w-[1320px] flex-wrap items-end justify-between gap-x-10 gap-y-8 border-t border-varnish pt-[clamp(28px,4vw,44px)]">
             <div>
-              <h2 className="font-display mb-3 text-[clamp(32px,4vw,56px)] leading-[1.05] text-balance">
+              <h2 className="heading-statement mb-3">
                 Tell me what you&apos;re planning.
               </h2>
               <p className="max-w-[52ch] text-[17px] opacity-80">{CONTACT.replyTime}</p>
@@ -110,7 +110,7 @@ export default async function AboutPage() {
           <section className="px-gutter py-[clamp(64px,9vw,128px)]">
             <div className="mx-auto max-w-[1320px]">
               <div className="mb-[clamp(28px,4vw,44px)] flex flex-wrap items-end justify-between gap-4">
-                <h2 className="text-[clamp(26px,2.8vw,36px)] leading-[1.1] font-bold tracking-[-0.015em]">
+                <h2 className="heading-section">
                   Personal Blog
                 </h2>
                 <Link href="/blog" className="group inline-flex gap-2 text-[15px] font-semibold text-petroglyph">

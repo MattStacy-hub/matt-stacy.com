@@ -36,10 +36,10 @@ export default function ContactPage() {
         <section className="px-gutter pt-[clamp(120px,13vw,176px)] pb-[clamp(64px,9vw,128px)]">
           <div className="mx-auto grid max-w-[1320px] items-start gap-[clamp(48px,7vw,112px)] md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
             <div>
-              <h1 className="font-display mb-6 text-[clamp(48px,7vw,100px)] leading-[0.98] text-balance">
+              <h1 className="heading-page mb-6">
                 {CONTACT_PAGE.heading}
               </h1>
-              <p className="mb-6 max-w-[34ch] text-[clamp(17px,1.5vw,20px)]">{CONTACT_PAGE.lead}</p>
+              <p className="mb-6 max-w-[34ch] text-[17px]">{CONTACT_PAGE.lead}</p>
               <p className="mb-[clamp(36px,5vw,56px)] flex items-center gap-2.5 text-[15px] font-semibold">
                 <span aria-hidden="true" className="size-2 rounded-full bg-petroglyph" />
                 {CONTACT.booking}

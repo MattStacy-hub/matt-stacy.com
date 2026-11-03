@@ -23,7 +23,7 @@ export default function ExpeditionPage() {
       {/* Who's holding the camera. */}
       <section className="px-gutter py-[clamp(64px,9vw,128px)]">
         <div className="mx-auto max-w-[980px] text-center">
-          <p className="font-display mb-6 text-[clamp(32px,4.4vw,60px)] leading-[1.08] text-balance">
+          <p className="heading-statement mb-6">
             {EXPEDITION.statement}
           </p>
           <div className="mx-auto grid max-w-[58ch] gap-5 text-[17px]">
@@ -48,7 +48,7 @@ export default function ExpeditionPage() {
         <div className="mx-auto grid max-w-[1320px] gap-[clamp(32px,5vw,80px)] px-gutter py-[clamp(48px,7vw,96px)] md:grid-cols-2">
           {EXPEDITION.audiences.map((audience) => (
             <div key={audience.heading} className="text-center">
-              <h2 className="mb-3 text-[clamp(22px,2.2vw,28px)] leading-tight font-semibold tracking-[-0.01em]">
+              <h2 className="heading-item mb-3">
                 {audience.heading}
               </h2>
               <p className="mx-auto max-w-[46ch] text-bone">{audience.text}</p>
@@ -61,7 +61,7 @@ export default function ExpeditionPage() {
       <section className="px-gutter py-[clamp(64px,9vw,128px)]">
         <div className="mx-auto grid max-w-[1320px] gap-[clamp(32px,5vw,72px)] lg:grid-cols-[minmax(0,1fr)_300px]">
           <div>
-            <h2 className="mb-[clamp(24px,3vw,36px)] text-[clamp(26px,2.8vw,36px)] leading-[1.1] font-bold tracking-[-0.015em]">
+            <h2 className="mb-[clamp(24px,3vw,36px)] heading-section">
               {EXPEDITION.logHeading}
             </h2>
             <table className="block w-full border-collapse text-left md:table">

@@ -60,6 +60,39 @@
   line-height: 1.4;
 }
 
+/*
+ * The type scale. One style per role, so a heading looks the same wherever it
+ * appears: page titles, big intro statements, section headings, item titles
+ * and the titles on photo blocks.
+ */
+@utility heading-page {
+  @apply font-display text-balance;
+  font-size: clamp(40px, 6.4vw, 88px);
+  line-height: 1;
+}
+@utility heading-statement {
+  @apply font-display text-balance;
+  font-size: clamp(32px, 4.4vw, 60px);
+  line-height: 1.08;
+}
+@utility heading-section {
+  font-size: clamp(26px, 2.8vw, 36px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+}
+@utility heading-item {
+  font-size: clamp(22px, 2.2vw, 28px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+@utility heading-photo {
+  @apply font-display;
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: 1.05;
+}
+
 /* Fraunces with optical sizing at display sizes. */
 @utility font-display {
   font-family: var(--font-serif);

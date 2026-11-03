@@ -25,7 +25,7 @@ export default function BrandCommercialPage() {
     >
       <section className="px-gutter py-[clamp(64px,9vw,128px)]">
         <div className="mx-auto grid max-w-[60ch] justify-items-center gap-[clamp(16px,2vw,24px)] text-center">
-          <p className="font-display text-[clamp(30px,3.8vw,52px)] leading-[1.1] text-balance">
+          <p className="heading-statement">
             {BRAND.statement}
           </p>
           <p className="max-w-[56ch] text-[17px]">{BRAND.body}</p>
@@ -35,7 +35,7 @@ export default function BrandCommercialPage() {
       {/* An index of the work, one line each, rather than a grid of cards. */}
       <section className="px-gutter pb-[clamp(64px,9vw,128px)]">
         <div className="mx-auto max-w-[1320px]">
-          <h2 className="mb-[clamp(24px,3vw,36px)] text-[clamp(30px,3.6vw,48px)] leading-[1.05] font-bold tracking-[-0.02em]">
+          <h2 className="mb-[clamp(24px,3vw,36px)] heading-section">
             {BRAND.capabilitiesHeading}
           </h2>
           <ul className="border-t border-varnish">
@@ -44,7 +44,7 @@ export default function BrandCommercialPage() {
                 key={capability.heading}
                 className="grid gap-1.5 border-b border-bone py-5 md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:items-center md:gap-[clamp(24px,6vw,96px)]"
               >
-                <h3 className="text-[clamp(22px,2.2vw,28px)] leading-tight tracking-[-0.01em]">
+                <h3 className="heading-item font-normal">
                   {capability.heading}
                 </h3>
                 <p className="max-w-[56ch] text-[16px]">{capability.text}</p>
@@ -72,7 +72,7 @@ export default function BrandCommercialPage() {
       <section className="bg-varnish px-gutter py-[clamp(64px,9vw,128px)] text-canvas">
         <div className="mx-auto grid max-w-[1320px] gap-[clamp(32px,5vw,72px)] md:grid-cols-2">
           <div>
-            <h2 className="mb-[clamp(24px,3vw,36px)] text-[clamp(30px,3.6vw,48px)] leading-[1.05] font-bold tracking-[-0.02em]">
+            <h2 className="mb-[clamp(24px,3vw,36px)] heading-section">
               {BRAND.productionHeading}
             </h2>
             <dl className="border border-bone/20">
@@ -104,14 +104,14 @@ export default function BrandCommercialPage() {
 
       <section className="px-gutter py-[clamp(64px,9vw,128px)]">
         <div className="mx-auto max-w-[1320px]">
-          <h2 className="mb-[clamp(32px,5vw,56px)] text-[clamp(26px,2.8vw,36px)] leading-[1.1] font-bold tracking-[-0.015em]">
+          <h2 className="mb-[clamp(32px,5vw,56px)] heading-section">
             {BRAND.processHeading}
           </h2>
           <ol className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-1.5">
             {BRAND.process.map((step, i) => (
               <li key={step.name} className="text-center">
                 <span aria-hidden="true" className={`mb-5 block h-1.5 ${STEP_COLORS[i]}`} />
-                <h3 className="mb-2 text-[22px] leading-tight font-semibold tracking-[-0.01em]">{step.name}</h3>
+                <h3 className="heading-item mb-2">{step.name}</h3>
                 <p className="mx-auto max-w-[34ch] px-3 text-[15px] leading-[1.7]">{step.text}</p>
               </li>
             ))}
