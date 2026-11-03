@@ -189,7 +189,7 @@ export const ADVENTURE = {
   formatsHeading: "Choose your trip",
   formats: [
     {
-      name: "A day trip",
+      name: "Single day trip",
       examples: "Pallay Punchu, Inti Punku, Maras, Palcoyo",
       text: "One day, one place, the best of the light. Ideal for a group of friends or a couple.",
       photo: {

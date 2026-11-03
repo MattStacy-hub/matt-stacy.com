@@ -48,7 +48,7 @@ export default function AdventurePhotographyPage() {
                     style={{ objectPosition: format.photo.focus }}
                   />
                 </div>
-                <h3 className="font-display mb-2 text-[clamp(26px,2.6vw,34px)] leading-[1.1]">
+                <h3 className="font-display mb-2 text-[clamp(26px,2.6vw,34px)] leading-[1.1] font-bold">
                   {format.name}
                 </h3>
                 <p className="mb-3 text-[14px] leading-snug font-semibold opacity-70">{format.examples}</p>
@@ -72,7 +72,7 @@ export default function AdventurePhotographyPage() {
                   aria-hidden="true"
                   className="absolute -top-[7px] left-0 size-3 rounded-full bg-petroglyph"
                 />
-                <h3 className="font-display mb-2.5 text-[clamp(26px,2.6vw,34px)] leading-[1.1]">
+                <h3 className="font-display mb-2.5 text-[clamp(26px,2.6vw,34px)] leading-[1.1] font-bold">
                   {phase.name}
                 </h3>
                 <p className="max-w-[40ch] text-[15.5px] leading-[1.7]">{phase.text}</p>
