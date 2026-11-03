@@ -35,7 +35,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       ...ADVENTURE.formats.map((format) => format.photo),
       ADVENTURE.includedPhoto,
     ],
-    "brand-commercial": [BRAND.hero, ...BRAND.photos],
+    "brand-commercial": [BRAND.hero, ...BRAND.photos, BRAND.productionPhoto],
   };
 
   return [

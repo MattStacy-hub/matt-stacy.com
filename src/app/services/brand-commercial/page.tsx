@@ -24,7 +24,7 @@ export default function BrandCommercialPage() {
       hero={BRAND.hero}
     >
       <section className="px-gutter py-[clamp(64px,9vw,128px)]">
-        <div className="mx-auto grid max-w-[1320px] items-end gap-[clamp(24px,6vw,96px)] md:grid-cols-[7fr_5fr]">
+        <div className="mx-auto grid max-w-[1320px] items-center gap-[clamp(24px,6vw,96px)] md:grid-cols-[7fr_5fr]">
           <p className="font-display text-[clamp(30px,3.8vw,52px)] leading-[1.1] text-balance">
             {BRAND.statement}
           </p>
@@ -74,29 +74,37 @@ export default function BrandCommercialPage() {
         </div>
       </section>
 
-      {/* Logistics laid out like a call sheet: every line is something handled. */}
+      {/* Logistics laid out like a call sheet beside a photo of the team on the approach. */}
       <section className="bg-varnish px-gutter py-[clamp(64px,9vw,128px)] text-canvas">
-        <div className="mx-auto grid max-w-[1320px] gap-[clamp(32px,6vw,96px)] md:grid-cols-[5fr_7fr]">
+        <div className="mx-auto grid max-w-[1320px] gap-[clamp(32px,5vw,72px)] md:grid-cols-2">
           <div>
-            <h2 className="mb-5 text-[clamp(30px,3.6vw,48px)] leading-[1.05] font-bold tracking-[-0.02em]">
+            <h2 className="mb-[clamp(24px,3vw,36px)] text-[clamp(30px,3.6vw,48px)] leading-[1.05] font-bold tracking-[-0.02em]">
               {BRAND.productionHeading}
             </h2>
-            <p className="max-w-[40ch] text-bone">{BRAND.productionIntro}</p>
+            <dl className="border border-bone/20">
+              {BRAND.production.map((line, i) => (
+                <div
+                  key={line.item}
+                  className={`grid gap-1 px-[clamp(16px,2.5vw,28px)] py-4.5 sm:grid-cols-[minmax(0,2fr)_minmax(0,3fr)_auto] sm:items-center sm:gap-6 ${
+                    i > 0 ? "border-t border-bone/15" : ""
+                  }`}
+                >
+                  <dt className="text-[17px] font-semibold">{line.item}</dt>
+                  <dd className="text-[15px] text-bone/85">{line.detail}</dd>
+                  <dd className="text-[13px] font-semibold text-petroglyph sm:text-right">Handled</dd>
+                </div>
+              ))}
+            </dl>
           </div>
-          <dl className="border border-bone/20">
-            {BRAND.production.map((line, i) => (
-              <div
-                key={line.item}
-                className={`grid gap-1 px-[clamp(16px,2.5vw,28px)] py-4.5 sm:grid-cols-[minmax(0,2fr)_minmax(0,3fr)_auto] sm:items-center sm:gap-6 ${
-                  i > 0 ? "border-t border-bone/15" : ""
-                }`}
-              >
-                <dt className="text-[17px] font-semibold">{line.item}</dt>
-                <dd className="text-[15px] text-bone/85">{line.detail}</dd>
-                <dd className="text-[13px] font-semibold text-petroglyph sm:text-right">Handled</dd>
-              </div>
-            ))}
-          </dl>
+          <figure className="relative min-h-[320px] overflow-hidden bg-bone/10">
+            <Image
+              src={BRAND.productionPhoto.src}
+              alt={BRAND.productionPhoto.alt}
+              fill
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </figure>
         </div>
       </section>
 

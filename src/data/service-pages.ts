@@ -270,7 +270,7 @@ export const ADVENTURE = {
 
 export const BRAND = {
   hero: AUSANGATE_FINS,
-  statement: "Imagery that sells the experience.",
+  statement: "Imagery that sells",
   body: "Gear looks right when it's used where it was made to be used. I shoot product, people and place in real terrain and real weather, so the campaign holds up to the people who know the difference.",
   capabilitiesHeading: "What I shoot for brands",
   capabilities: [
@@ -326,8 +326,14 @@ export const BRAND = {
     },
   ] as Photo[],
   productionHeading: "Producing in Peru",
-  productionIntro:
-    "A visiting team should arrive and start working. The groundwork is handled before you land.",
+  productionPhoto: {
+    src: `${P}/cusco-region/nevado-ausangate/nevado-ausangate-3.webp`,
+    width: 2560,
+    height: 1707,
+    alt: "A line of climbers with packs working up a rocky slope patched with snow under a clear blue sky, on the way to moraine camp, Nevado Ausangate, Peru",
+    title: "Trail to moraine camp",
+    place: "Ausangate, Cusco",
+  } as Photo,
   production: [
     { item: "Location scouting", detail: "Routes, light and access checked in person before the shoot." },
     { item: "Filming permits", detail: "Arranged for protected areas and heritage sites." },
