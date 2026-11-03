@@ -27,7 +27,7 @@ export const INTRO_OPENER =
 
 /** The facts a producer checks first. Shown as a field sheet beside the portrait. */
 export const FIELD_SHEET = [
-  { term: "Home base", value: "Sacred Valley, Cusco, Peru" },
+  { term: "Home base", value: "Cusco, Peru" },
   { term: "Where I work", value: "Across Peru, available globally" },
   { term: "Specialty", value: "Alpine climbing, trekking, expeditions, travel and lifestyle" },
   { term: "Languages I speak", value: "English & Spanish" },
