@@ -80,7 +80,7 @@ export default async function CollectionPage({ params }: Props) {
           </div>
         </section>
 
-        <section className="px-gutter pb-[clamp(64px,9vw,128px)]">
+        <section className="px-gutter pb-[clamp(40px,5vw,64px)]">
           <div className="mx-auto max-w-[1600px]">
             <JustifiedGallery photos={collection.photos} label={`${collection.title} photographs`} />
           </div>
@@ -88,7 +88,7 @@ export default async function CollectionPage({ params }: Props) {
 
         {/* Previous and next collections, each led by its cover frame. */}
         <nav aria-label="More collections" className="px-gutter pb-[clamp(64px,9vw,128px)]">
-          <div className="mx-auto grid max-w-[1600px] gap-2 sm:grid-cols-2">
+          <div className="mx-auto grid max-w-[1600px] gap-2 border-t border-bone pt-[clamp(40px,5vw,64px)] sm:grid-cols-2">
             {[
               { label: "Previous", collection: previous },
               { label: "Next", collection: next },
