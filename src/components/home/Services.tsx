@@ -4,13 +4,9 @@ import { SERVICES } from "@/data/services";
 export function Services() {
   return (
     <section id="about" className="px-gutter py-[clamp(64px,9vw,128px)]">
-      <h2 className="mx-auto max-w-[1320px] text-center text-[clamp(30px,3.6vw,48px)] leading-[1.05] font-bold tracking-[-0.02em] text-balance">
-        Outdoor and adventure photography and film.
-      </h2>
-
       <div
         id="services"
-        className="mx-auto mt-[clamp(48px,6vw,80px)] grid max-w-[1320px] gap-[clamp(20px,3vw,40px)] border-t border-varnish sm:grid-cols-2 lg:grid-cols-4"
+        className="mx-auto grid max-w-[1320px] gap-[clamp(20px,3vw,40px)] sm:grid-cols-2 lg:grid-cols-4"
       >
         {SERVICES.map((service) => (
           <article key={service.slug} className="min-w-0 pt-5.5">
