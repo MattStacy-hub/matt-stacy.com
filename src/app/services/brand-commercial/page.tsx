@@ -87,7 +87,7 @@ export default function BrandCommercialPage() {
             {BRAND.production.map((line, i) => (
               <div
                 key={line.item}
-                className={`grid gap-1 px-[clamp(16px,2.5vw,28px)] py-4.5 sm:grid-cols-[minmax(0,2fr)_minmax(0,3fr)_auto] sm:items-baseline sm:gap-6 ${
+                className={`grid gap-1 px-[clamp(16px,2.5vw,28px)] py-4.5 sm:grid-cols-[minmax(0,2fr)_minmax(0,3fr)_auto] sm:items-center sm:gap-6 ${
                   i > 0 ? "border-t border-bone/15" : ""
                 }`}
               >
