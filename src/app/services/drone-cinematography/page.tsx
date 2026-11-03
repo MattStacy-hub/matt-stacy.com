@@ -80,23 +80,6 @@ export default function DronePage() {
           ))}
         </ul>
       </section>
-
-      {/* Practical notes, set like the locations list on the homepage. */}
-      <section className="px-gutter py-[clamp(64px,9vw,128px)]">
-        <div className="mx-auto max-w-[1320px]">
-          <h2 className="mb-[clamp(28px,4vw,44px)] text-[clamp(26px,2.8vw,36px)] leading-[1.1] font-bold tracking-[-0.015em]">
-            {DRONE.notesHeading}
-          </h2>
-          <div className="grid gap-[clamp(24px,3vw,40px)] md:grid-cols-3">
-            {DRONE.notes.map((note) => (
-              <div key={note.heading} className="border-t border-varnish pt-4.5">
-                <h3 className="mb-2 text-[19px] leading-tight font-semibold">{note.heading}</h3>
-                <p className="max-w-[40ch] text-[15px] leading-[1.7]">{note.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </ServicePageShell>
   );
 }

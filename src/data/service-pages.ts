@@ -346,21 +346,6 @@ export const DRONE = {
       },
     },
   ] as { heading: string; text: string; photo: Photo }[],
-  notesHeading: "Flying in the high Andes",
-  notes: [
-    {
-      heading: "One grade",
-      text: "Aerials are color graded with the ground footage, so the cut never jumps between two looks.",
-    },
-    {
-      heading: "Planned for altitude",
-      text: "Thin air, cold batteries and afternoon wind shape every flight plan. Launch windows go into the schedule early.",
-    },
-    {
-      heading: "Carried in",
-      text: "The drone travels in my pack, so it flies from the camp or the col, not just the roadside.",
-    },
-  ],
 } as const;
 
 /* ── Adventure photography ────────────────────────────────────────── */
