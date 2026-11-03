@@ -41,6 +41,11 @@ export type WorkPhoto = Photo & { layout: WorkLayout };
 
 const P = "/images/portfolio";
 
+/**
+ * In story order: the trek and the people on it, Peru, up onto the ice, dawn
+ * and the summit, the view out to the rainforest, winter in the US, then
+ * first light and night to close. Neighbors share their light.
+ */
 export const SELECTED_WORK: WorkPhoto[] = [
   {
     src: `${P}/huayhuash-hiker-valley-view.webp`,
@@ -70,15 +75,6 @@ export const SELECTED_WORK: WorkPhoto[] = [
     layout: "major",
   },
   {
-    src: `${P}/ice-climber-yellow-jacket.webp`,
-    width: 1707,
-    height: 2560,
-    alt: "An ice climber in a yellow jacket swinging an axe into a frozen waterfall, WYO Ice Fest, Wyoming",
-    title: "Ice climbing",
-    place: "Wyoming",
-    layout: "minor",
-  },
-  {
     src: `${P}/ausangate-basecamp-flute.webp`,
     width: 1707,
     height: 2560,
@@ -88,6 +84,24 @@ export const SELECTED_WORK: WorkPhoto[] = [
     layout: "minor",
   },
   {
+    src: `${P}/huayhuash-trekker-below-glacier.webp`,
+    width: 1365,
+    height: 2048,
+    alt: "A trekker on a grassy slope below a glacier and a cloud-capped peak, Cordillera Huayhuash, Peru",
+    title: "Below the glacier",
+    place: "Huayhuash, Áncash",
+    layout: "minor",
+  },
+  {
+    src: `${P}/climbers-ice-ridge-black-and-white.webp`,
+    width: 2560,
+    height: 1707,
+    alt: "Black-and-white view of climbers on a broken ice ridge above layered ranges, Peru",
+    title: "The ice ridge",
+    place: "Peru",
+    layout: "major",
+  },
+  {
     src: `${P}/nevado-shaqsha-alpenglow.webp`,
     width: 2560,
     height: 1707,
@@ -95,6 +109,15 @@ export const SELECTED_WORK: WorkPhoto[] = [
     title: "Dawn below Shaqsha",
     place: "Cordillera Blanca, Áncash",
     layout: "major",
+  },
+  {
+    src: `${P}/climber-above-cloud-sea.webp`,
+    width: 1707,
+    height: 2560,
+    alt: "A climber in a helmet standing on summit rocks above a sea of cloud, Peru",
+    title: "Above the clouds",
+    place: "Peru",
+    layout: "minor",
   },
   {
     src: `${P}/amazon-river-aerial.webp`,
@@ -116,31 +139,13 @@ export const SELECTED_WORK: WorkPhoto[] = [
     layout: "major",
   },
   {
-    src: `${P}/huayhuash-trekker-below-glacier.webp`,
-    width: 1365,
-    height: 2048,
-    alt: "A trekker on a grassy slope below a glacier and a cloud-capped peak, Cordillera Huayhuash, Peru",
-    title: "Below the glacier",
-    place: "Huayhuash, Áncash",
-    layout: "minor",
-  },
-  {
-    src: `${P}/climber-above-cloud-sea.webp`,
+    src: `${P}/ice-climber-yellow-jacket.webp`,
     width: 1707,
     height: 2560,
-    alt: "A climber in a helmet standing on summit rocks above a sea of cloud, Peru",
-    title: "Above the clouds",
-    place: "Peru",
+    alt: "An ice climber in a yellow jacket swinging an axe into a frozen waterfall, WYO Ice Fest, Wyoming",
+    title: "Ice climbing",
+    place: "Wyoming",
     layout: "minor",
-  },
-  {
-    src: `${P}/dunes-under-stars.webp`,
-    width: 2560,
-    height: 1707,
-    alt: "A lone figure with a light on a sand dune under a starry sky, Utah",
-    title: "Dunes at night",
-    place: "Utah",
-    layout: "major",
   },
   {
     src: `${P}/climbers-sunlit-snow-arete.webp`,
@@ -152,12 +157,12 @@ export const SELECTED_WORK: WorkPhoto[] = [
     layout: "half",
   },
   {
-    src: `${P}/climbers-ice-ridge-black-and-white.webp`,
+    src: `${P}/dunes-under-stars.webp`,
     width: 2560,
     height: 1707,
-    alt: "Black-and-white view of climbers on a broken ice ridge above layered ranges, Peru",
-    title: "The ice ridge",
-    place: "Peru",
+    alt: "A lone figure with a light on a sand dune under a starry sky, Utah",
+    title: "Dunes at night",
+    place: "Utah",
     layout: "half",
   },
 ];
