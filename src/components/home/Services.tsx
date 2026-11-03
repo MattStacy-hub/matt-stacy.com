@@ -9,11 +9,11 @@ export function Services() {
         className="mx-auto grid max-w-[1320px] gap-[clamp(20px,3vw,40px)] sm:grid-cols-2 lg:grid-cols-4"
       >
         {SERVICES.map((service) => (
-          <article key={service.slug} className="min-w-0 pt-5.5">
+          <article key={service.slug} className="min-w-0 pt-5.5 text-center">
             <h3 className="mb-2 text-center text-[22px] leading-tight font-semibold tracking-[-0.01em]">
               {service.heading}
             </h3>
-            <p className="max-w-[36ch] text-[15px] leading-[1.7]">{service.summary}</p>
+            <p className="mx-auto max-w-[36ch] text-[15px] leading-[1.7]">{service.summary}</p>
             {/* Linked once the service's own page exists. */}
             {!service.comingSoon && (
               <Link
