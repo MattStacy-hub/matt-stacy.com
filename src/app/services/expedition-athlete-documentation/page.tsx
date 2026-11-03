@@ -59,7 +59,7 @@ export default function ExpeditionPage() {
 
       {/* The record, set as a climbing log. */}
       <section className="px-gutter py-[clamp(64px,9vw,128px)]">
-        <div className="mx-auto grid max-w-[1320px] items-start gap-[clamp(32px,5vw,72px)] lg:grid-cols-[minmax(0,1fr)_300px]">
+        <div className="mx-auto grid max-w-[1320px] gap-[clamp(32px,5vw,72px)] lg:grid-cols-[minmax(0,1fr)_300px]">
           <div>
             <h2 className="mb-[clamp(24px,3vw,36px)] text-[clamp(26px,2.8vw,36px)] leading-[1.1] font-bold tracking-[-0.015em]">
               {EXPEDITION.logHeading}
@@ -88,14 +88,14 @@ export default function ExpeditionPage() {
               </tbody>
             </table>
           </div>
-          <figure className="hidden lg:block">
+          {/* Stretches to the table, so the photo runs from the heading to the last row. */}
+          <figure className="relative hidden lg:block">
             <Image
               src={EXPEDITION.logPhoto.src}
               alt={EXPEDITION.logPhoto.alt}
-              width={EXPEDITION.logPhoto.width}
-              height={EXPEDITION.logPhoto.height}
+              fill
               sizes="300px"
-              className="h-auto w-full"
+              className="object-cover"
             />
           </figure>
         </div>
