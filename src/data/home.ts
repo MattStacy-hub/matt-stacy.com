@@ -43,14 +43,22 @@ const P = "/images/portfolio";
 
 export const SELECTED_WORK: WorkPhoto[] = [
   {
-    src: `${P}/huayhuash-hiker-turquoise-lake.webp`,
+    src: `${P}/nevado-campa-summit-ridge-aerial.webp`,
     width: 2560,
     height: 1707,
-    alt: "A hiker in red on a rocky pass above a turquoise lake and a wall of glaciated peaks, Cordillera Huayhuash, Peru",
-    title: "Above the lake",
-    place: "Huayhuash, Áncash",
-    focus: "50% 85%",
-    layout: "bleed",
+    alt: "Aerial view of a snow summit ridge above turquoise lakes and glaciated peaks, Cordillera Vilcanota, Peru",
+    title: "Nevado Campa",
+    place: "Cordillera Vilcanota, Cusco",
+    layout: "half",
+  },
+  {
+    src: `${P}/alpenglow-snow-pyramid.webp`,
+    width: 2560,
+    height: 1707,
+    alt: "A sharp snow pyramid catching the last pink light above dark ridges",
+    title: "Last light",
+    place: "",
+    layout: "half",
   },
   {
     src: `${P}/machu-picchu-storm-light.webp`,
