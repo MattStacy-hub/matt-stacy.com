@@ -2,30 +2,19 @@ import Link from "next/link";
 import { CONTACT } from "@/data/site";
 
 interface ContactCtaProps {
-  heading?: string;
-  /** Lead-in before the reply-time promise. `null` drops the paragraph, promise and all. */
-  text?: string | null;
   /** A service slug: the contact form opens with that service selected. */
   service?: string;
 }
 
-export function ContactCta({
-  heading = "Start a project",
-  text = "Tell me what you're making, where, and roughly when.",
-  service,
-}: ContactCtaProps) {
+/** The closing contact block, the same on every page. */
+export function ContactCta({ service }: ContactCtaProps) {
   return (
     <section id="contact" className="bg-varnish px-gutter py-[clamp(64px,9vw,128px)] text-canvas">
       <div className="reveal-up mx-auto grid max-w-[1320px] items-end gap-[clamp(32px,6vw,96px)] md:grid-cols-2">
         <div>
           <h2 className="font-display mb-5.5 text-[clamp(40px,6vw,84px)] leading-none">
-            {heading}
+            Tell me what you&apos;re planning
           </h2>
-          {text !== null && (
-            <p className="max-w-[44ch] text-bone">
-              {text} {CONTACT.replyTime}
-            </p>
-          )}
           <Link
             href={service ? `/contact?service=${service}` : "/contact"}
             className="label group mt-8 inline-flex gap-3 bg-petroglyph px-6.5 py-4 text-white"

@@ -19,8 +19,6 @@ export default function DronePage() {
     <ServicePageShell
       slug={SLUG}
       hero={DRONE.hero}
-      ctaHeading={DRONE.ctaHeading}
-      ctaText={DRONE.ctaText}
     >
       {/* One mountain from the ground and from the air, side by side. */}
       <section className="px-gutter py-[clamp(64px,9vw,128px)]">

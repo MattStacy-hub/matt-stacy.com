@@ -22,8 +22,6 @@ export default function BrandCommercialPage() {
     <ServicePageShell
       slug={SLUG}
       hero={BRAND.hero}
-      ctaHeading={BRAND.ctaHeading}
-      ctaText={BRAND.ctaText}
     >
       <section className="px-gutter py-[clamp(64px,9vw,128px)]">
         <div className="mx-auto grid max-w-[1320px] items-end gap-[clamp(24px,6vw,96px)] md:grid-cols-[7fr_5fr]">

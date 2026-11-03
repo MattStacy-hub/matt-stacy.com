@@ -19,8 +19,6 @@ export default function ExpeditionPage() {
     <ServicePageShell
       slug={SLUG}
       hero={EXPEDITION.hero}
-      ctaHeading={EXPEDITION.ctaHeading}
-      ctaText={EXPEDITION.ctaText}
     >
       {/* Who's holding the camera. */}
       <section className="px-gutter py-[clamp(64px,9vw,128px)]">

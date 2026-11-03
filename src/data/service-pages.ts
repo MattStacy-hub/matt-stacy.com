@@ -106,8 +106,6 @@ export const OVERVIEW = {
     },
   } as Record<string, { audience: string; text: string; photo: Photo }>,
   compareHeading: "What each service covers",
-  ctaHeading: "Bring your vision to life",
-  ctaText: "Tell me about your project, expedition, or campaign.",
   /** Rows of the comparison table, one value per service. */
   compare: [
     {
@@ -274,9 +272,6 @@ export const EXPEDITION = {
     },
   ],
   logPhoto: SHAQSHA_DAWN,
-  ctaHeading: "Tell me about the objective",
-  ctaText:
-    "Whether you're a sponsored athlete, an expedition team, or a brand backing a climb, let's talk about documenting it properly.",
 } as const;
 
 /* ── Drone cinematography ─────────────────────────────────────────── */
@@ -366,8 +361,6 @@ export const DRONE = {
       text: "The drone travels in my pack, so it flies from the camp or the col, not just the roadside.",
     },
   ],
-  ctaHeading: "Let's get your project off the ground",
-  ctaText: "Tell me about your campaign, expedition, or destination, and where you want the camera to fly.",
 } as const;
 
 /* ── Adventure photography ────────────────────────────────────────── */
@@ -456,8 +449,6 @@ export const ADVENTURE = {
     title: "Laguna Caramarca",
     place: "Cordillera Huayhuash, Áncash",
   } as Photo,
-  ctaHeading: "Let's plan your shoot",
-  ctaText: "Tell me about your expedition or project.",
 } as const;
 
 /* ── Brand & commercial ───────────────────────────────────────────── */
@@ -536,6 +527,4 @@ export const BRAND = {
     { name: "Produce", text: "On-location production of stills and motion required to meet our goals." },
     { name: "Deliver", text: "Edited, public-facing assets delivered on schedule with clear licensing." },
   ],
-  ctaHeading: "Let's talk about your campaign",
-  ctaText: "Tell me about your brand, your goals, and your timeline. I'll get back to you with how we can work together.",
 } as const;

@@ -19,8 +19,6 @@ export default function AdventurePhotographyPage() {
     <ServicePageShell
       slug={SLUG}
       hero={ADVENTURE.hero}
-      ctaHeading={ADVENTURE.ctaHeading}
-      ctaText={ADVENTURE.ctaText}
     >
       <section className="px-gutter py-[clamp(64px,9vw,128px)]">
         <div className="mx-auto max-w-[980px] text-center">
