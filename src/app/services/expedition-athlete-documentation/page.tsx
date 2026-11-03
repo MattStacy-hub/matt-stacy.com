@@ -34,59 +34,6 @@ export default function ExpeditionPage() {
         </div>
       </section>
 
-      {/*
-        The climb in five stages, drawn as a route line with a node per
-        stage, the way a topo marks belays.
-      */}
-      <section className="px-gutter pb-[clamp(64px,9vw,128px)]">
-        <div className="mx-auto max-w-[1320px]">
-          <div className="mb-[clamp(36px,5vw,64px)] grid gap-3">
-            <h2 className="text-[clamp(30px,3.6vw,48px)] leading-[1.05] font-bold tracking-[-0.02em]">
-              {EXPEDITION.ascentHeading}
-            </h2>
-            <p className="max-w-[52ch] text-[17px]">{EXPEDITION.ascentIntro}</p>
-          </div>
-
-          <ol className="relative grid gap-[clamp(40px,6vw,88px)] before:absolute before:top-2 before:bottom-2 before:left-[7px] before:w-px before:bg-varnish/30">
-            {EXPEDITION.ascent.map((step, i) => {
-              const portrait = step.photo.height > step.photo.width;
-              const flip = i % 2 === 1;
-              return (
-                <li key={step.stage} className="relative pl-[clamp(36px,5vw,64px)]">
-                  <span
-                    aria-hidden="true"
-                    className={`absolute top-1.5 left-0 size-[15px] rounded-full border-2 ${
-                      i === 3 ? "border-petroglyph bg-petroglyph" : "border-varnish bg-canvas"
-                    }`}
-                  />
-                  <div className="grid items-start gap-[clamp(20px,4vw,64px)] md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
-                    <div className={flip ? "md:order-2" : ""}>
-                      <p className="mb-2 text-[15px] tabular-nums opacity-60">
-                        {String(i + 1).padStart(2, "0")} / {String(EXPEDITION.ascent.length).padStart(2, "0")}
-                      </p>
-                      <h3 className="font-display mb-3 text-[clamp(28px,3vw,40px)] leading-[1.05]">
-                        {step.stage}
-                      </h3>
-                      <p className="max-w-[40ch] text-[16px]">{step.text}</p>
-                    </div>
-                    <figure className={flip ? "md:order-1" : ""}>
-                      <Image
-                        src={step.photo.src}
-                        alt={step.photo.alt}
-                        width={step.photo.width}
-                        height={step.photo.height}
-                        sizes="(min-width: 768px) 55vw, 100vw"
-                        className={`h-auto w-full ${portrait ? "max-w-[420px]" : ""} ${flip && portrait ? "md:ml-auto" : ""}`}
-                      />
-                    </figure>
-                  </div>
-                </li>
-              );
-            })}
-          </ol>
-        </div>
-      </section>
-
       {/* Two kinds of client, under one photo of the rope. */}
       <section className="bg-varnish text-canvas">
         <div className="relative aspect-[16/7] min-h-[260px] w-full">

@@ -23,7 +23,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const servicePhotos: Record<string, Photo[]> = {
     "expedition-athlete-documentation": [
       EXPEDITION.hero,
-      ...EXPEDITION.ascent.map((step) => step.photo),
       EXPEDITION.ropePhoto,
       EXPEDITION.logPhoto,
     ],
