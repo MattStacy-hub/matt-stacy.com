@@ -33,7 +33,7 @@ export const SERVICES: Service[] = [
     navLabel: "Adventure Photography",
     heading: "Adventure photography",
     summary:
-      "I come along on your trek, climb or day trip in Peru and photograph it as it happens. When we get back, your photos arrive in a private gallery.",
+      "I come along on your trek, climb or day trip in Peru and photograph it as it happens. Drone photography and video can be added on to any trip where permitted. Images delivered via private online gallery.",
     seoTitle: "Adventure Photographer for Hire in Peru: Treks & Climbs",
     seoDescription:
       "Hire an adventure photographer in Cusco for your trek, climb or day trip in Peru. Planned around your itinerary, delivered as a private gallery.",
