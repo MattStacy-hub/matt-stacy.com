@@ -156,11 +156,12 @@ export const SELECTED_WORK: WorkPhoto[] = [
   },
 ];
 
-/** A line from one of the blog posts, quoted word for word, with a link to the post. */
-export const BLOG_QUOTE = {
-  quote: "I see dreams as goals we haven’t set yet.",
-  post: "Vertical",
-  href: "/blog/vertical-my-story-and-approach-to-becoming-a-photographer-in-alpine-environments",
+/** A client's words, quoted as they wrote them. */
+export const TESTIMONIAL = {
+  quote:
+    "I’m truly and deeply, grateful for you and your incredible work … I’m so happy we were able to bring this project to life. For me, this has been both a personal goal and a dream come true, and I couldn’t be happier that you were the one who helped make it happen.",
+  name: "Juan Carlos",
+  role: "Movement coach",
 } as const;
 
 /** Shown on the page and repeated, word for word, in the FAQPage structured data. */

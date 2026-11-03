@@ -4,7 +4,7 @@ import { Hero, HERO_ID } from "@/components/home/Hero";
 import { Services } from "@/components/home/Services";
 import { Clients } from "@/components/home/Clients";
 import { SelectedWork } from "@/components/home/SelectedWork";
-import { BlogQuote } from "@/components/home/BlogQuote";
+import { Testimonial } from "@/components/home/Testimonial";
 import { Faq } from "@/components/home/Faq";
 import { ContactCta } from "@/components/home/ContactCta";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -33,7 +33,7 @@ export default function HomePage() {
         <Services />
         <Clients />
         <SelectedWork />
-        <BlogQuote />
+        <Testimonial />
         <Faq />
         <ContactCta />
       </main>
