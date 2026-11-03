@@ -22,10 +22,10 @@ export const SERVICES: Service[] = [
     navLabel: "Drone Cinematography",
     heading: "Drone cinematography",
     summary:
-      "Drone photos and video of the mountains, the routes and the people on them.",
+      "Drone photos and video of the high Andes, from the glaciers and ridgelines down to the trail into camp, taken on the same trip as the photos on the ground.",
     seoTitle: "Drone Cinematography in Peru",
     seoDescription:
-      "Aerial film and stills in the Peruvian Andes for productions, destinations and expeditions. Flown at altitude and graded to match the ground footage.",
+      "Drone photos and video in the Peruvian Andes for brand films, destinations and expeditions. I fly the latest professional DJI drones and I'm Part 107 certified.",
     comingSoon: false,
   },
   {
