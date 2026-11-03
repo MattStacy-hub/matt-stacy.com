@@ -110,10 +110,7 @@ export default async function AboutPage() {
         {/* How I got here: a rope line down the page, a year at each anchor. */}
         <section className="bg-bone/45 px-gutter py-[clamp(64px,9vw,128px)]">
           <div className="mx-auto max-w-[1100px]">
-            <h2 className="mb-[clamp(32px,5vw,56px)] text-[clamp(30px,3.6vw,48px)] leading-[1.05] font-bold tracking-[-0.02em]">
-              How I got here
-            </h2>
-            <ol className="relative border-l-2 border-varnish">
+            <ol aria-label="How I got here" className="relative border-l-2 border-varnish">
               {MILESTONES.map((m) => (
                 <li
                   key={m.year}
