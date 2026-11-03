@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id={HERO_ID}
-      className="relative isolate flex min-h-[min(86vh,880px)] flex-col justify-end overflow-hidden pt-28 text-white"
+      className="relative isolate flex min-h-[min(86svh,880px)] flex-col justify-end overflow-hidden pt-28 text-white"
     >
       <Image
         src={HERO_PHOTO.src}

@@ -103,7 +103,7 @@ export default async function PostPage({ params }: Props) {
                   height={0}
                   priority
                   sizes="(min-width: 1220px) 1120px, 100vw"
-                  className="h-auto max-h-[80vh] w-full object-cover"
+                  className="h-auto max-h-[80svh] w-full object-cover"
                 />
               </figure>
             )}

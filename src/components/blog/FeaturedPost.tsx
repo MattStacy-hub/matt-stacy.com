@@ -15,7 +15,7 @@ export function FeaturedPost({ post }: { post: PostSummary }) {
     <section
       id={FEATURED_POST_ID}
       aria-label="Featured post"
-      className="relative isolate flex min-h-[min(84vh,860px)] flex-col justify-end overflow-hidden pt-28 text-white"
+      className="relative isolate flex min-h-[min(84svh,860px)] flex-col justify-end overflow-hidden pt-28 text-white"
     >
       {post.cover && (
         <Image

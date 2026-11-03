@@ -13,7 +13,7 @@ export function ServiceHero({ photo, heading }: ServiceHeroProps) {
   return (
     <section
       id={SERVICE_HERO_ID}
-      className="relative isolate flex min-h-[min(78vh,780px)] flex-col justify-end overflow-hidden pt-28 text-white"
+      className="relative isolate flex min-h-[min(78svh,780px)] flex-col justify-end overflow-hidden pt-28 text-white"
     >
       <Image
         src={photo.src}
