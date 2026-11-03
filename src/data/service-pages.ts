@@ -189,7 +189,7 @@ export const ADVENTURE = {
   formatsHeading: "Choose your trip",
   formats: [
     {
-      name: "Single day trip",
+      name: "Single-day trip",
       examples: "Pallay Punchu, Inti Punku, Maras, Palcoyo",
       text: "One day, one place, the best of the light. Ideal for a group of friends or a couple.",
       photo: {
@@ -202,7 +202,7 @@ export const ADVENTURE = {
       },
     },
     {
-      name: "A multi-day trek",
+      name: "Multi-day trekking",
       examples: "Ausangate, Salkantay, Huayhuash, Ancascocha",
       text: "I walk the whole route with you: the camps, the passes and the mornings before anyone's awake.",
       photo: {
@@ -215,7 +215,7 @@ export const ADVENTURE = {
       },
     },
     {
-      name: "A climb",
+      name: "Mountaineering objective",
       examples: "Guided ascents across the Cusco ranges and the Cordillera Blanca",
       text: "On the rope with your team, shooting the summit day from the inside.",
       photo: {
