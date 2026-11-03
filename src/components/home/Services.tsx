@@ -4,7 +4,7 @@ import { SERVICES } from "@/data/services";
 export function Services() {
   return (
     <section id="about" className="px-gutter py-[clamp(64px,9vw,128px)]">
-      <h2 className="mx-auto max-w-[1320px] text-[clamp(30px,3.6vw,48px)] leading-[1.05] font-bold tracking-[-0.02em] text-balance">
+      <h2 className="mx-auto max-w-[1320px] text-center text-[clamp(30px,3.6vw,48px)] leading-[1.05] font-bold tracking-[-0.02em] text-balance">
         Outdoor and adventure photography and film.
       </h2>
 
