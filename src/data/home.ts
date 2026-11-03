@@ -42,18 +42,18 @@ export type WorkPhoto = Photo & { layout: WorkLayout };
 const P = "/images/portfolio";
 
 /**
- * In story order: the trek and the people on it, Peru, up onto the ice, dawn
- * and the summit, the view out to the rainforest, winter in the US, then
- * first light and night to close. Neighbors share their light.
+ * In story order: people in the mountains, Peru, up onto the ice, dawn and
+ * the summit, the view out to the rainforest, winter in the US, then the
+ * trek and night to close. Neighbors share their light.
  */
 export const SELECTED_WORK: WorkPhoto[] = [
   {
-    src: `${P}/huayhuash-hiker-valley-view.webp`,
-    width: 2048,
-    height: 1365,
-    alt: "A hiker with a large pack looking out over a wide valley of jagged peaks, Cordillera Huayhuash, Peru",
-    title: "Looking down the valley",
-    place: "Huayhuash, Áncash",
+    src: `${P}/climbers-sunlit-snow-arete.webp`,
+    width: 2560,
+    height: 1707,
+    alt: "Climbers on a sunlit snow arête at dawn above a valley in shadow",
+    title: "Lone Peak",
+    place: "Wasatch Range, Utah",
     layout: "half",
   },
   {
@@ -148,12 +148,12 @@ export const SELECTED_WORK: WorkPhoto[] = [
     layout: "minor",
   },
   {
-    src: `${P}/climbers-sunlit-snow-arete.webp`,
-    width: 2560,
-    height: 1707,
-    alt: "Climbers on a sunlit snow arête at dawn above a valley in shadow",
-    title: "The arête at dawn",
-    place: "",
+    src: `${P}/huayhuash-hiker-valley-view.webp`,
+    width: 2048,
+    height: 1365,
+    alt: "A hiker with a large pack looking out over a wide valley of jagged peaks, Cordillera Huayhuash, Peru",
+    title: "Looking down the valley",
+    place: "Huayhuash, Áncash",
     layout: "half",
   },
   {

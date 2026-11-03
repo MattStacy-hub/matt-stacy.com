@@ -15,12 +15,6 @@ export const metadata = pageMetadata({
   ogImage: COLLECTIONS[0].photos[0].src,
 });
 
-/**
- * Frames loaded into each collection's strip. More than fit on most screens,
- * so the strip always reaches the right edge; the rest are cut off by it.
- */
-const STRIP_LENGTH = 8;
-
 export default function PortfolioPage() {
   return (
     <>
@@ -38,52 +32,36 @@ export default function PortfolioPage() {
           </div>
         </section>
 
-        {/*
-          Each collection as a strip of its first frames, every strip the same
-          height and every frame whole at its own shape, like a length of film.
-          The strip runs off the right edge of the page rather than squeezing
-          its last frame to fit.
-        */}
-        <section aria-label="Collections" className="overflow-x-clip px-gutter pb-[clamp(64px,9vw,128px)]">
-          <ol className="mx-auto max-w-[1320px]">
-            {COLLECTIONS.map((collection) => (
-              <li key={collection.slug} className="border-t border-varnish">
-                <Link
-                  href={`/portfolio/${collection.slug}`}
-                  className="group block py-[clamp(24px,3.5vw,44px)]"
-                >
-                  <span className="mb-[clamp(18px,2.4vw,28px)] grid gap-x-[clamp(16px,3vw,48px)] gap-y-3 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:items-end">
-                    <span className="font-display text-[clamp(32px,3.6vw,52px)] leading-[1.02]">
+        {/* Each collection as one block: its cover photo with the title on it. */}
+        <section aria-label="Collections" className="px-gutter pb-[clamp(64px,9vw,128px)]">
+          <ul className="mx-auto grid max-w-[1320px] gap-2 sm:grid-cols-2 lg:grid-cols-3">
+            {COLLECTIONS.map((collection) => {
+              const cover = collection.photos[0];
+              return (
+                <li key={collection.slug}>
+                  <Link
+                    href={`/portfolio/${collection.slug}`}
+                    className="group relative isolate flex aspect-[4/5] flex-col justify-end overflow-hidden p-[clamp(20px,2.4vw,32px)]"
+                  >
+                    <Image
+                      src={cover.src}
+                      alt={cover.alt}
+                      fill
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      className="-z-20 object-cover transition-transform duration-1000 ease-[cubic-bezier(.2,.7,.2,1)] group-hover:scale-[1.04]"
+                    />
+                    <span
+                      aria-hidden="true"
+                      className="absolute inset-0 -z-10 bg-gradient-to-t from-[rgba(20,15,12,.7)] via-[rgba(20,15,12,.15)] via-40% to-transparent"
+                    />
+                    <span className="font-display text-[clamp(30px,3vw,44px)] leading-[1.02] text-white">
                       {collection.title}
                     </span>
-                    <span className="max-w-[52ch] text-[15.5px] leading-[1.7] text-balance lg:justify-self-end lg:text-right">
-                      {collection.intro}
-                    </span>
-                  </span>
-                  <span className="mr-[calc(50%-50vw)] flex gap-1.5 overflow-hidden [--strip-h:clamp(200px,22vw,320px)]">
-                    {collection.photos.slice(0, STRIP_LENGTH).map((photo, j) => {
-                      const ratio = photo.width / photo.height;
-                      return (
-                        <span
-                          key={photo.src}
-                          className="relative block h-(--strip-h) flex-none overflow-hidden bg-bone"
-                          style={{ aspectRatio: `${photo.width} / ${photo.height}` }}
-                        >
-                          <Image
-                            src={photo.src}
-                            alt={j === 0 ? photo.alt : ""}
-                            fill
-                            sizes={`${Math.round(320 * ratio)}px`}
-                            className="object-cover transition-transform duration-1000 ease-[cubic-bezier(.2,.7,.2,1)] group-hover:scale-[1.04]"
-                          />
-                        </span>
-                      );
-                    })}
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ol>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </section>
 
         <ContactCta />
