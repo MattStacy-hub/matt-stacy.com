@@ -284,7 +284,6 @@ export const EXPEDITION = {
 
 export const DRONE = {
   hero: HUAYHUASH_AERIAL,
-  lead: "Dynamic aerials that reveal new perspectives. For professional productions, launching from anywhere you can imagine.",
   pairHeading: "Heightened perspective",
   pairText:
     "From the ridge you get the climber's view. From the air you get the whole story: the route, the lakes below and how small a person is up there.",
@@ -376,7 +375,6 @@ export const DRONE = {
 
 export const ADVENTURE = {
   hero: SAN_ANTONIO_PASS,
-  lead: "Traveling to Peru for a trek, a climb, or a once-in-a-lifetime adventure? I document journeys throughout all of Peru, turning your time from the Andes to the Amazon into a gallery of story-driven images you'll be excited to share, print, and relive.",
   statement: "Photos that tell a story.",
   body: "For independent travelers venturing into Peru's mountain ranges for a trek around Ausangate or Salkantay, groups of friends day-tripping to places like Pallay Punchu, or tour operators looking to elevate their guests' experience with professional photography services. Based in Cusco, available across Peru.",
   formatsHeading: "Choose your trip",

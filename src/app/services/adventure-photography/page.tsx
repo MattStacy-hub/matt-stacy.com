@@ -19,7 +19,6 @@ export default function AdventurePhotographyPage() {
     <ServicePageShell
       slug={SLUG}
       hero={ADVENTURE.hero}
-      lead={ADVENTURE.lead}
       ctaHeading={ADVENTURE.ctaHeading}
       ctaText={ADVENTURE.ctaText}
     >

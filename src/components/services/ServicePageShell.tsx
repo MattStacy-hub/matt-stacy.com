@@ -11,7 +11,7 @@ import { breadcrumbSchema, serviceSchema } from "@/lib/seo";
 interface ServicePageShellProps {
   slug: string;
   hero: Photo;
-  lead: string;
+  lead?: string;
   ctaHeading: string;
   ctaText: string;
   children: React.ReactNode;

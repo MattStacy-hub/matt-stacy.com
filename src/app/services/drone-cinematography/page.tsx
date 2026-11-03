@@ -19,7 +19,6 @@ export default function DronePage() {
     <ServicePageShell
       slug={SLUG}
       hero={DRONE.hero}
-      lead={DRONE.lead}
       ctaHeading={DRONE.ctaHeading}
       ctaText={DRONE.ctaText}
     >
