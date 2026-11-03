@@ -45,6 +45,12 @@ const nextConfig: NextConfig = {
   // Don't advertise the framework and version to anyone probing for exploits.
   poweredByHeader: false,
 
+  experimental: {
+    // Set by `next upgrade --agent=security`. Has Next.js nudge coding
+    // agents when a security release is out for the installed version.
+    agentUpgrade: "security",
+  },
+
   // There's no services overview page: the homepage lists the services. Old
   // links to an overview (this site's /services, the old site's
   // /services-overview) land on that list instead.
