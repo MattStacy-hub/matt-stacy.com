@@ -68,10 +68,10 @@ export default function AdventurePhotographyPage() {
           <ol className="grid gap-10 md:grid-cols-2 md:gap-[clamp(24px,3vw,48px)] lg:grid-cols-4">
             {ADVENTURE.phases.map((phase, i) => (
               <li key={phase.name} className="relative border-t-2 border-varnish pt-6">
-                {/* The petroglyph steps evenly along the line, centered on it: the first at the start, the last at the end. */}
+                {/* The petroglyph steps evenly along the line, sitting a little above its center: the first at the start, the last at the end. */}
                 <span
                   aria-hidden="true"
-                  className="brand-mark absolute -top-[15px] h-7 text-petroglyph"
+                  className="brand-mark absolute -top-[21px] h-7 text-petroglyph"
                   style={{
                     left: `${(i * 100) / (ADVENTURE.phases.length - 1)}%`,
                     transform: `translateX(-${(i * 100) / (ADVENTURE.phases.length - 1)}%)`,
