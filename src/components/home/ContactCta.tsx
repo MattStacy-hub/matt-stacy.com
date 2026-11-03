@@ -28,7 +28,7 @@ export function ContactCta({
             href={service ? `/contact?service=${service}` : "/contact"}
             className="label group mt-8 inline-flex gap-3 bg-petroglyph px-6.5 py-4 text-white"
           >
-            Send an inquiry
+            Start a project
             <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
           </Link>
         </div>
