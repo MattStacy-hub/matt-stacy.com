@@ -241,6 +241,10 @@
       @media (width < 40rem) {
         columns: 1;
       }
+      /* A gallery of one photo runs the full width, not half of it. */
+      &:has(> :only-child) {
+        columns: 1;
+      }
       & > img,
       & > figure {
         break-inside: avoid;

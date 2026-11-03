@@ -89,12 +89,9 @@ export default async function PostPage({ params }: Props) {
                   </Link>
                 ))}
               </p>
-              <h1 className="font-display mb-6 text-[clamp(38px,5.6vw,72px)] leading-[1.04] text-balance">
+              <h1 className="font-display text-[clamp(38px,5.6vw,72px)] leading-[1.04] text-balance">
                 {post.title}
               </h1>
-              <p className="mx-auto max-w-[60ch] text-[clamp(17px,1.5vw,20px)] leading-[1.6] text-balance">
-                {post.excerpt}
-              </p>
             </header>
 
             {post.cover && (
