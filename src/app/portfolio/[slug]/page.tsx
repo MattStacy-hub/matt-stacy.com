@@ -76,13 +76,7 @@ export default async function CollectionPage({ params }: Props) {
                 ))}
               </ul>
             </nav>
-            <div className="flex flex-wrap items-end justify-between gap-x-10 gap-y-4">
-              <h1 className="font-display text-[clamp(44px,7vw,100px)] leading-none">{collection.title}</h1>
-              <div className="max-w-[46ch]">
-                <p className="text-[clamp(16px,1.3vw,18px)]">{collection.intro}</p>
-                <p className="mt-2 text-[14px] tabular-nums opacity-60">{collection.photos.length} frames</p>
-              </div>
-            </div>
+            <h1 className="font-display text-[clamp(44px,7vw,100px)] leading-none">{collection.title}</h1>
           </div>
         </section>
 

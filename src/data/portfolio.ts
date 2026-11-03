@@ -20,8 +20,6 @@ export interface Collection {
   title: string;
   seoTitle: string;
   seoDescription: string;
-  /** One or two sentences under the title, and on the portfolio index. */
-  intro: string;
   /** In page order. The first is the collection's cover. */
   photos: PortfolioPhoto[];
 }
@@ -121,7 +119,6 @@ export const COLLECTIONS: Collection[] = [
     seoTitle: "Adventure Photography Portfolio: Mountaineering and Trekking",
     seoDescription:
       "Adventure photography from the Peruvian Andes and beyond: mountaineering, trekking and the camps between, by Matt Stacy.",
-    intro: "People moving through big country: climbers, trekkers and the camps between, mostly in the Peruvian Andes.",
     photos: [
       "nevado-shaqsha-alpenglow",
       "sacred-valley-aerial",
@@ -153,7 +150,6 @@ export const COLLECTIONS: Collection[] = [
     seoTitle: "Extreme Sports Photography: Ice Climbing, Splitboarding, Alpinism",
     seoDescription:
       "Extreme sports photography: ice climbing at WYO Ice Fest, splitboarding in Utah and alpine climbing in Peru, by Matt Stacy.",
-    intro: "Ice climbing, splitboarding and alpine climbing, shot from the rope, the skin track and the next pitch over.",
     photos: [
       "splitboarder-skinning-steep-slope",
       "ice-climber-yellow-jacket",
@@ -176,7 +172,6 @@ export const COLLECTIONS: Collection[] = [
     seoTitle: "Aerial Drone Photography: Peru and Beyond",
     seoDescription:
       "Aerial drone photography of glaciers, ridges, rainforest rivers and forests in Peru and North America, by Matt Stacy.",
-    intro: "The view from the drone: glaciers, ridgelines, rivers and forests seen from above.",
     photos: [
       "dark-ridges-aerial-black-and-white",
       "palcaraju-summit-ridge",
@@ -196,7 +191,6 @@ export const COLLECTIONS: Collection[] = [
     seoTitle: "Cordillera Huayhuash Trek Photography, Peru",
     seoDescription:
       "Photographs from nine days on the Huayhuash Alpine Circuit in Peru: glacial lakes, high camps and the peaks of the Cordillera Huayhuash.",
-    intro: "Nine days and seventy kilometers around the Cordillera Huayhuash, carrying full photo and drone kit.",
     photos: [
       "huayhuash-climber-black-and-white",
       "huayhuash-figure-below-peaks",
@@ -226,7 +220,6 @@ export const COLLECTIONS: Collection[] = [
     seoTitle: "Fine Art Mountain Photography",
     seoDescription:
       "Fine art mountain and night photography from Peru and North America, by Matt Stacy.",
-    intro: "Frames made for the wall: night skies, quiet light and the mountains at their most graphic.",
     photos: [
       "machu-picchu-storm-light",
       "snow-ridge-blue-sky-aerial",
@@ -251,7 +244,6 @@ export const COLLECTIONS: Collection[] = [
     seoTitle: "Landscape Photography: Peruvian Andes and Beyond",
     seoDescription:
       "Landscape photography from the Peruvian Andes, Canada and the Pacific Northwest, by Matt Stacy.",
-    intro: "Mountains, forests and coastlines in the light that makes them, from the Andes to the Pacific Northwest.",
     photos: [
       "glaciated-peak-aerial",
       "amazon-river-aerial",
