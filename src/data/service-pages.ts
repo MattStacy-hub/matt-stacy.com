@@ -88,37 +88,31 @@ export const EXPEDITION = {
   log: [
     {
       objective: "Nevado Palcaraju",
-      range: "Cordillera Blanca, Peru",
       style: "New line on the south face",
       coverage: "Stills, aerials",
     },
     {
       objective: "Nevado Verónica",
-      range: "Cordillera Urubamba, Peru",
       style: "East ridge, leading",
       coverage: "Stills, action film",
     },
     {
       objective: "Nevado Campa",
-      range: "Cordillera Vilcanota, Peru",
       style: "South ridge, solo",
       coverage: "Stills, aerials, action film",
     },
     {
       objective: "Nevado Shaqsha",
-      range: "Cordillera Blanca, Peru",
       style: "Southeast face",
       coverage: "Stills",
     },
     {
       objective: "Huayhuash Alpine Circuit",
-      range: "Cordillera Huayhuash, Peru",
       style: "Alpine Circuit",
       coverage: "Stills, handheld film, aerials",
     },
     {
       objective: "Lone Peak",
-      range: "Wasatch Range, Utah",
       style: "South Face of the Question Mark Wall",
       coverage: "Stills, in Backcountry Magazine",
     },

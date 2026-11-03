@@ -80,7 +80,6 @@ export default function ExpeditionPage() {
                   >
                     <th scope="row" className="font-normal md:py-4 md:pr-6">
                       <span className="block text-[18px] leading-tight font-semibold">{climb.objective}</span>
-                      <span className="text-[14px] opacity-70">{climb.range}</span>
                     </th>
                     <td className="mt-1.5 text-[15px] md:py-4 md:pr-6">{climb.style}</td>
                     <td className="text-[14px] opacity-70 md:py-4">{climb.coverage}</td>
