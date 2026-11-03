@@ -66,11 +66,13 @@ export default function AdventurePhotographyPage() {
             {ADVENTURE.phasesHeading}
           </h2>
           <ol className="grid gap-10 md:grid-cols-2 md:gap-[clamp(24px,3vw,48px)] lg:grid-cols-4">
-            {ADVENTURE.phases.map((phase) => (
+            {ADVENTURE.phases.map((phase, i) => (
               <li key={phase.name} className="relative border-t-2 border-varnish pt-6">
+                {/* The dot moves a quarter of the way along the line with each step. */}
                 <span
                   aria-hidden="true"
-                  className="absolute -top-[7px] left-0 size-3 rounded-full bg-petroglyph"
+                  className="absolute -top-[7px] size-3 rounded-full bg-petroglyph"
+                  style={{ left: `${(i * 100) / ADVENTURE.phases.length}%` }}
                 />
                 <h3 className="font-display mb-2.5 text-[clamp(26px,2.6vw,34px)] leading-[1.1] font-bold">
                   {phase.name}
