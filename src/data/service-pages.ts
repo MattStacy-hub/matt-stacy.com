@@ -58,15 +58,6 @@ const CAMPA_AERIAL: Photo = {
   place: "Cordillera Vilcanota, Cusco",
 };
 
-const VERONICA_ICE: Photo = {
-  src: `${P}/cusco-region/nevado-veronica/nevado-veronica-7.webp`,
-  width: 2048,
-  height: 1619,
-  alt: "A climber leading a steep pitch of ice on the east ridge of Nevado Verónica in warm evening light, two ropes running down the face, Peru",
-  title: "East ridge, Verónica",
-  place: "Cordillera Urubamba, Cusco",
-};
-
 const SHAQSHA_DAWN: Photo = {
   src: `${P}/ancash-region/cordillera-blanca/cordillera-blanca-26.webp`,
   width: 1365,
@@ -75,65 +66,6 @@ const SHAQSHA_DAWN: Photo = {
   title: "Dawn below Shaqsha",
   place: "Cordillera Blanca, Áncash",
 };
-
-/* ── Overview ─────────────────────────────────────────────────────── */
-
-export const OVERVIEW = {
-  heading: "How I can help",
-  intro:
-    "Commercial adventure photography and film from the Peruvian Andes, for the brands, expeditions, and athletes who go where the story is. Hire me for a shoot, or take home the work itself.",
-  /** One row per service, keyed by slug: who it suits, in their words, what it is, and a photo. */
-  routes: {
-    "expedition-athlete-documentation": {
-      audience: "You're climbing something, or sponsoring someone who is",
-      text: "Full-trip coverage for expedition teams and sponsored athletes.",
-      photo: VERONICA_ICE,
-    },
-    "drone-cinematography": {
-      audience: "You need the view nobody on the ground can get",
-      text: "Cinematic aerials that reveal the scale of the landscape.",
-      photo: HUAYHUASH_AERIAL,
-    },
-    "adventure-photography": {
-      audience: "You're traveling to Peru for a trek, a climb or a day in the hills",
-      text: "For individuals and groups visiting Peru who value high-quality photography.",
-      photo: SAN_ANTONIO_PASS,
-    },
-    "brand-commercial": {
-      audience: "You're a brand with a campaign to shoot in the Andes",
-      text: "Photo and video campaigns that help outdoor brands stand out.",
-      photo: AUSANGATE_FINS,
-    },
-  } as Record<string, { audience: string; text: string; photo: Photo }>,
-  compareHeading: "What each service covers",
-  /** Rows of the comparison table, one value per service. */
-  compare: [
-    {
-      item: "Photography",
-      values: { "drone-cinematography": "yes", "adventure-photography": "yes", "expedition-athlete-documentation": "yes", "brand-commercial": "yes" },
-    },
-    {
-      item: "Film",
-      values: { "drone-cinematography": "yes", "adventure-photography": "no", "expedition-athlete-documentation": "yes", "brand-commercial": "yes" },
-    },
-    {
-      item: "Aerials",
-      values: { "drone-cinematography": "yes", "adventure-photography": "add-on", "expedition-athlete-documentation": "yes", "brand-commercial": "yes" },
-    },
-    {
-      item: "Planning before the trip",
-      values: { "drone-cinematography": "yes", "adventure-photography": "yes", "expedition-athlete-documentation": "yes", "brand-commercial": "yes" },
-    },
-    {
-      item: "Scouting, permits and local crew",
-      values: { "drone-cinematography": "no", "adventure-photography": "no", "expedition-athlete-documentation": "no", "brand-commercial": "yes" },
-    },
-    {
-      item: "Commercial licensing",
-      values: { "drone-cinematography": "yes", "adventure-photography": "no", "expedition-athlete-documentation": "yes", "brand-commercial": "yes" },
-    },
-  ] as { item: string; values: Record<string, "yes" | "no" | "add-on"> }[],
-} as const;
 
 /* ── Expedition & athlete documentation ───────────────────────────── */
 
