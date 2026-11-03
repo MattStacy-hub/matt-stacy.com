@@ -464,7 +464,6 @@ export const ADVENTURE = {
 
 export const BRAND = {
   hero: AUSANGATE_FINS,
-  lead: "Commercial photography and film for outdoor brands, travel companies, and hospitality. On-location shooting throughout Peru and worldwide.",
   statement: "Imagery that sells the experience.",
   body: "Gear looks right when it's used where it was made to be used. I shoot product, people and place in real terrain and real weather, so the campaign holds up to the people who know the difference.",
   capabilitiesHeading: "What I shoot for brands",

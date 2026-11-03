@@ -22,7 +22,6 @@ export default function BrandCommercialPage() {
     <ServicePageShell
       slug={SLUG}
       hero={BRAND.hero}
-      lead={BRAND.lead}
       ctaHeading={BRAND.ctaHeading}
       ctaText={BRAND.ctaText}
     >

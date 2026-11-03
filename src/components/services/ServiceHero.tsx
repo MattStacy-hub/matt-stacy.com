@@ -6,13 +6,12 @@ export const SERVICE_HERO_ID = "service-hero";
 interface ServiceHeroProps {
   photo: Photo;
   heading: string;
-  lead?: string;
   /** Show where the photo was taken, bottom right. */
   showPlace?: boolean;
 }
 
 /** Full-bleed photo opening each service page. Shorter than the homepage hero. */
-export function ServiceHero({ photo, heading, lead, showPlace = true }: ServiceHeroProps) {
+export function ServiceHero({ photo, heading, showPlace = true }: ServiceHeroProps) {
   return (
     <section
       id={SERVICE_HERO_ID}
@@ -37,10 +36,9 @@ export function ServiceHero({ photo, heading, lead, showPlace = true }: ServiceH
       />
       <div className="grid items-end gap-6 px-gutter pb-[clamp(28px,5vw,56px)] md:grid-cols-[1fr_auto]">
         <div>
-          <h1 className={`font-display max-w-[14ch] text-[clamp(40px,6.4vw,88px)] leading-none text-balance ${lead ? "mb-5" : ""}`}>
+          <h1 className="font-display max-w-[14ch] text-[clamp(40px,6.4vw,88px)] leading-none text-balance">
             {heading}
           </h1>
-          {lead && <p className="max-w-[48ch] text-[clamp(16px,1.4vw,19px)] text-balance text-bone">{lead}</p>}
         </div>
         {/* Where the photo was taken, set like the captions in Selected work. */}
         {showPlace && (

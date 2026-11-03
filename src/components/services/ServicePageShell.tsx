@@ -11,7 +11,6 @@ import { breadcrumbSchema, serviceSchema } from "@/lib/seo";
 interface ServicePageShellProps {
   slug: string;
   hero: Photo;
-  lead?: string;
   ctaHeading: string;
   ctaText: string;
   children: React.ReactNode;
@@ -24,7 +23,6 @@ interface ServicePageShellProps {
 export function ServicePageShell({
   slug,
   hero,
-  lead,
   ctaHeading,
   ctaText,
   children,
@@ -45,7 +43,7 @@ export function ServicePageShell({
 
       <SiteHeader overHeroId={SERVICE_HERO_ID} />
       <main>
-        <ServiceHero photo={hero} heading={service.heading} lead={lead} />
+        <ServiceHero photo={hero} heading={service.heading} />
         {children}
         <NextService slug={slug} />
         <ContactCta heading={ctaHeading} text={ctaText} service={slug} />
