@@ -55,7 +55,7 @@ export const SERVICES: Service[] = [
     navLabel: "Brand & Commercial",
     heading: "Brand and commercial production",
     summary:
-      "Photos and film for outdoor, travel and tourism brands, shot in real terrain. I handle the location scouting, filming permits and local crew in Peru, so your team can arrive and start working.",
+      "Photos and films for outdoor, travel and tourism brands. Pre-production, on location shooting, and post-production services in Peru.",
     seoTitle: "Brand & Commercial Photography and Film in Peru",
     seoDescription:
       "Campaign photography and film for outdoor, travel and hospitality brands. Location scouting, filming permits and local crew in Peru.",
