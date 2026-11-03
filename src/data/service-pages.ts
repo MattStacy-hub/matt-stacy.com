@@ -141,7 +141,6 @@ export const OVERVIEW = {
 
 export const EXPEDITION = {
   hero: PALCARAJU_WALLS,
-  lead: "I capture the raw emotion of athletes pushing their limits. Expedition teams on the cutting edge of mountain adventures. The joys, the pain, and every step taken from the start of the journey to the final summit push.",
   statement: "Legacies, documented.",
   body: [
     "My skills as an alpinist and all-around outdoor athlete mean I can rope up without being a liability. I carry my own kit, shoot handheld angles from top-down, and produce captivating, dynamic aerial footage.",

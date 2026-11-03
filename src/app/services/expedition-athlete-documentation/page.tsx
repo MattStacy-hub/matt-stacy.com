@@ -19,7 +19,6 @@ export default function ExpeditionPage() {
     <ServicePageShell
       slug={SLUG}
       hero={EXPEDITION.hero}
-      lead={EXPEDITION.lead}
       ctaHeading={EXPEDITION.ctaHeading}
       ctaText={EXPEDITION.ctaText}
     >
