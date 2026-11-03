@@ -64,7 +64,7 @@ export const EXPEDITION = {
   hero: PALCARAJU_WALLS,
   statement: "Legacies, documented.",
   body: [
-    "My skills as an alpinist and all-around outdoor athlete mean I can rope up without being a liability. I carry my own kit, shoot handheld angles from top-down, and produce captivating, dynamic aerial footage.",
+    "Combining my passions for alpine climbing and visual storytelling makes me an asset to any adventurous production. I can rope up without being a liability, carry my gear, shoot handheld angles from top-down, and produce captivating, dynamic material.",
   ],
   ropePhoto: {
     src: `${P}/cusco-region/nevado-veronica/nevado-veronica-7.webp`,
