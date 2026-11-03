@@ -44,7 +44,7 @@ export default function BrandCommercialPage() {
                 key={capability.heading}
                 className="grid gap-1.5 border-b border-bone py-5 md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:items-center md:gap-[clamp(24px,6vw,96px)]"
               >
-                <h3 className="text-[clamp(22px,2.2vw,28px)] leading-tight font-bold tracking-[-0.01em]">
+                <h3 className="text-[clamp(22px,2.2vw,28px)] leading-tight tracking-[-0.01em]">
                   {capability.heading}
                 </h3>
                 <p className="max-w-[56ch] text-[16px]">{capability.text}</p>
