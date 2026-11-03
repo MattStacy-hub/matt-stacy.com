@@ -10,7 +10,7 @@ export function Services() {
       >
         {SERVICES.map((service) => (
           <article key={service.slug} className="min-w-0 pt-5.5">
-            <h3 className="mb-2 text-[22px] leading-tight font-semibold tracking-[-0.01em]">
+            <h3 className="mb-2 text-center text-[22px] leading-tight font-semibold tracking-[-0.01em]">
               {service.heading}
             </h3>
             <p className="max-w-[36ch] text-[15px] leading-[1.7]">{service.summary}</p>
