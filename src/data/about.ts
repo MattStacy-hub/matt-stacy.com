@@ -27,10 +27,10 @@ export const INTRO_OPENER =
 
 /** The facts a producer checks first. Shown as a field sheet beside the portrait. */
 export const FIELD_SHEET = [
-  { term: "Based", value: "Sacred Valley, Cusco, Peru" },
-  { term: "Working", value: "Across Peru, available worldwide" },
-  { term: "Focus", value: "Alpine climbing, trekking, expeditions, travel and lifestyle" },
-  { term: "Languages", value: "English, Spanish (B2)" },
+  { term: "Home base", value: "Sacred Valley, Cusco, Peru" },
+  { term: "Where I work", value: "Across Peru, available globally" },
+  { term: "Specialty", value: "Alpine climbing, trekking, expeditions, travel and lifestyle" },
+  { term: "Languages I speak", value: "English & Spanish" },
   { term: "Highest shoot", value: "6,274 m, Nevado Palcaraju" },
   { term: "Shooting in the field since", value: "2021" },
 ];
