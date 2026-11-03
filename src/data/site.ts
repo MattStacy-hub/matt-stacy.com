@@ -14,9 +14,6 @@ export const SITE_CONFIG = {
   locale: "en_US",
 } as const;
 
-/** The print shop, hosted on Squarespace on its own subdomain. */
-export const SHOP_URL = "https://shop.matt-stacy.com";
-
 export const CONTACT = {
   email: "mattstacym@gmail.com",
   instagram: "_mattstacy",

@@ -1,4 +1,3 @@
-import { SHOP_URL } from "./site";
 import { SERVICES } from "./services";
 
 export interface NavLink {
@@ -25,7 +24,6 @@ export const MAIN_NAV: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services", children: SERVICE_LINKS },
   { label: "Portfolio", href: "/portfolio" },
-  { label: "Prints", href: SHOP_URL },
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
   { label: "Start a project", href: "/contact", button: true },
