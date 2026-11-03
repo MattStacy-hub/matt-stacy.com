@@ -81,7 +81,7 @@ export const EXPEDITION = {
     },
     {
       heading: "For independent expedition teams",
-      text: "I'll documentation your expedition from the start to finish whether that means summiting with you or capturing visuals from below to combine with your own footage on route. This is for teams climbing routes on the cutting edge of alpinism or teams climbing rarely summited peaks in off-the-beaten-path places.",
+      text: "I'll document your expedition from the start to finish, whether that means summiting with you or capturing visuals from below to combine with your footage on route. This is intended for teams climbing on the cutting edge of alpinism or those attempting rarely summited peaks in remote locations.",
     },
   ],
   logHeading: "Real objectives I've documented",
