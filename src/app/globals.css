@@ -155,24 +155,6 @@
   }
 }
 
-/*
- * Hovering a photo in a grid quiets the others, so the one under the
- * pointer stands forward. Mouse and trackpad only.
- */
-@utility hover-spotlight {
-  @media (hover: hover) {
-    /* Keeps the photos' own hover zoom alongside the fade. */
-    & img {
-      transition:
-        opacity 0.4s ease,
-        transform 1.4s cubic-bezier(0.2, 0.7, 0.2, 1);
-    }
-    &:has(button:hover) button:not(:hover) img {
-      opacity: 0.45;
-    }
-  }
-}
-
 /* The phone menu's links slide in one after another each time it opens. */
 @utility menu-stagger {
   @media (prefers-reduced-motion: no-preference) {
