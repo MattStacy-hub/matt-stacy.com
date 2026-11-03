@@ -20,6 +20,15 @@ export default function DronePage() {
       slug={SLUG}
       hero={DRONE.hero}
     >
+      <section className="px-gutter py-[clamp(64px,9vw,128px)]">
+        <div className="mx-auto max-w-[980px] text-center">
+          <p className="font-display mb-6 text-[clamp(32px,4.4vw,60px)] leading-[1.08] text-balance">
+            {DRONE.statement}
+          </p>
+          <p className="mx-auto max-w-[58ch] text-[17px]">{DRONE.body}</p>
+        </div>
+      </section>
+
       {/* What the drone is hired for, each over one of its own frames. */}
       <section className="bg-varnish pt-[clamp(64px,9vw,128px)] text-canvas">
         <h2 className="mb-[clamp(28px,4vw,48px)] px-gutter text-[clamp(30px,3.6vw,48px)] leading-none font-bold tracking-[-0.02em]">

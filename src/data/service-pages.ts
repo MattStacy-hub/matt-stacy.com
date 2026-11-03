@@ -124,6 +124,8 @@ export const EXPEDITION = {
 
 export const DRONE = {
   hero: HUAYHUASH_AERIAL,
+  statement: "The bigger picture.",
+  body: "Aerial film and stills from the high Andes, flown by a climber who can carry the drone to where the shot is. I fly the latest professional DJI drones for brand films, destinations and expeditions.",
   usesHeading: "What I fly for",
   uses: [
     {

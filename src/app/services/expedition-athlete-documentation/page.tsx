@@ -22,11 +22,11 @@ export default function ExpeditionPage() {
     >
       {/* Who's holding the camera. */}
       <section className="px-gutter py-[clamp(64px,9vw,128px)]">
-        <div className="mx-auto grid max-w-[1320px] gap-[clamp(28px,6vw,96px)] md:grid-cols-[5fr_7fr]">
-          <p className="font-display text-[clamp(30px,3.8vw,52px)] leading-[1.1] text-balance">
+        <div className="mx-auto max-w-[980px] text-center">
+          <p className="font-display mb-6 text-[clamp(32px,4.4vw,60px)] leading-[1.08] text-balance">
             {EXPEDITION.statement}
           </p>
-          <div className="grid max-w-[62ch] content-start gap-5 text-[17px]">
+          <div className="mx-auto grid max-w-[58ch] gap-5 text-[17px]">
             {EXPEDITION.body.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
