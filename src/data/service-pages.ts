@@ -67,12 +67,12 @@ export const EXPEDITION = {
     "My skills as an alpinist and all-around outdoor athlete mean I can rope up without being a liability. I carry my own kit, shoot handheld angles from top-down, and produce captivating, dynamic aerial footage.",
   ],
   ropePhoto: {
-    src: `${P}/cusco-region/nevado-mariposa/nevado-mariposa-4.webp`,
-    width: 2560,
-    height: 1422,
-    alt: "Looking up a broad snow slope along a climbing rope to a climber leading out near the crest, boot tracks running up the snow, Nevado Mariposa, Peru",
-    title: "Final lead, Nevado Mariposa",
-    place: "Cordillera Vilcanota, Cusco",
+    src: `${P}/cusco-region/nevado-veronica/nevado-veronica-7.webp`,
+    width: 2048,
+    height: 1619,
+    alt: "A climber with a heavy pack leading up a steep wall of glacier ice on two ropes, warm low sun on the ice against a clear blue sky, Nevado Verónica, Peru",
+    title: "Ice pitch, Nevado Verónica",
+    place: "Cordillera Urubamba, Cusco",
   } as Photo,
   audiences: [
     {
