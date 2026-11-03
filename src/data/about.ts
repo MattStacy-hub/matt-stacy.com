@@ -32,7 +32,7 @@ export const FIELD_SHEET = [
   { term: "Specialty", value: "Alpine climbing, trekking, expeditions, travel and lifestyle" },
   { term: "Languages I speak", value: "English & Spanish" },
   { term: "Highest shoot", value: "6,274 m, Nevado Palcaraju" },
-  { term: "Shooting in the field since", value: "2021" },
+  { term: "Years of experience", value: "6+" },
 ];
 
 export interface Milestone {
