@@ -24,7 +24,7 @@ export const CONTACT = {
   ],
   /** Shown beside the contact details. Update it when the calendar moves on. */
   booking: "Currently booking 2026 & 2027 projects",
-  base: "Sacred Valley, Cusco, Peru",
+  base: "Cusco, Peru",
   timezone: "UTC−5",
   replyTime:
     "I reply within two business days. If I'm out on an expedition, I'll reply as soon as I'm back to civilization.",
