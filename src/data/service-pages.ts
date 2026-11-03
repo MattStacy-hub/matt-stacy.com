@@ -97,6 +97,11 @@ export const EXPEDITION = {
       coverage: "Stills, action film",
     },
     {
+      objective: "Lone Peak",
+      style: "South Face of the Question Mark Wall",
+      coverage: "Stills, in Backcountry Magazine",
+    },
+    {
       objective: "Nevado Campa",
       style: "South ridge, solo",
       coverage: "Stills, aerials, action film",
@@ -110,11 +115,6 @@ export const EXPEDITION = {
       objective: "Huayhuash Alpine Circuit",
       style: "Alpine Circuit",
       coverage: "Stills, handheld film, aerials",
-    },
-    {
-      objective: "Lone Peak",
-      style: "South Face of the Question Mark Wall",
-      coverage: "Stills, in Backcountry Magazine",
     },
   ],
   logPhoto: SHAQSHA_DAWN,
