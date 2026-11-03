@@ -5,6 +5,8 @@ export interface NavLink {
   href: string;
   /** Page not built yet: shown in menus, but not as a link. */
   comingSoon?: boolean;
+  /** Set as a bordered button in the desktop header, not a plain link. */
+  button?: boolean;
 }
 
 export interface NavItem extends NavLink {
@@ -27,5 +29,5 @@ export const MAIN_NAV: NavItem[] = [
   { label: "Portfolio", href: "/portfolio" },
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/contact" },
+  { label: "Start a project", href: "/contact", button: true },
 ];
