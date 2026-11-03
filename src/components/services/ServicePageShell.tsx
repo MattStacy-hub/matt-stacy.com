@@ -36,7 +36,6 @@ export function ServicePageShell({
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },
-          { name: "Services", path: "/services" },
           { name: service.navLabel, path: `/services/${slug}` },
         ])}
       />

@@ -13,15 +13,12 @@ export interface NavItem extends NavLink {
   children?: NavLink[];
 }
 
-/** The services dropdown: an overview page, then one page per service. */
-const SERVICE_LINKS: NavLink[] = [
-  { label: "Overview", href: "/services" },
-  ...SERVICES.map((service) => ({
-    label: service.navLabel,
-    href: `/services/${service.slug}`,
-    comingSoon: service.comingSoon,
-  })),
-];
+/** The services dropdown: one page per service. */
+const SERVICE_LINKS: NavLink[] = SERVICES.map((service) => ({
+  label: service.navLabel,
+  href: `/services/${service.slug}`,
+  comingSoon: service.comingSoon,
+}));
 
 export const MAIN_NAV: NavItem[] = [
   { label: "Home", href: "/" },
