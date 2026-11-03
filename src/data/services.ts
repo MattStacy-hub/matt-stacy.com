@@ -33,7 +33,7 @@ export const SERVICES: Service[] = [
     navLabel: "Adventure Photography",
     heading: "Adventure photography",
     summary:
-      "Treks, climbs and day trips in Peru photographed for travelers, groups and tour operators, delivered as a private gallery.",
+      "I come along on your trek, climb or day trip in Peru and photograph it as it happens. When we get back, your photos arrive in a private gallery.",
     seoTitle: "Adventure Photographer for Hire in Peru: Treks & Climbs",
     seoDescription:
       "Hire an adventure photographer in Cusco for your trek, climb or day trip in Peru. Planned around your itinerary, delivered as a private gallery.",
@@ -44,7 +44,7 @@ export const SERVICES: Service[] = [
     navLabel: "Expedition & Athlete Documentation",
     heading: "Expedition and athlete documentation",
     summary:
-      "Trail runners, climbers and alpinists photographed and filmed on route, from the approach to the summit and back.",
+      "I travel with climbers, alpinists and trail runners and photograph and film them on route, from the approach to the summit and back down.",
     seoTitle: "Expedition & Athlete Photography and Film in Peru",
     seoDescription:
       "Expedition and athlete documentation in the Peruvian Andes. An alpinist photographer who climbs with the team and shoots stills, film and aerials from trailhead to summit.",
@@ -55,7 +55,7 @@ export const SERVICES: Service[] = [
     navLabel: "Brand & Commercial",
     heading: "Brand and commercial production",
     summary:
-      "Campaign stills and film for outdoor, travel and tourism brands. Location scouting, filming permits and local crew in Peru.",
+      "Photos and film for outdoor, travel and tourism brands, shot in real terrain. I handle the location scouting, filming permits and local crew in Peru, so your team can arrive and start working.",
     seoTitle: "Brand & Commercial Photography and Film in Peru",
     seoDescription:
       "Campaign photography and film for outdoor, travel and hospitality brands. Location scouting, filming permits and local crew in Peru.",
