@@ -125,7 +125,7 @@ export const EXPEDITION = {
 export const DRONE = {
   hero: HUAYHUASH_AERIAL,
   statement: "Capturing elevated perspectives",
-  body: "Professional aerial film and stills. I fly the latest professional DJI drones for brand films, destinations and expeditions. Part 107 certified.",
+  body: "Professional aerial film and photography leveraging the latest DJI drone fleet for stand-out visuals for brand films, travel destinations, and expeditions. I am Part 107 certified with 300+ hours of flight time.",
   usesHeading: "What I fly for",
   uses: [
     {
