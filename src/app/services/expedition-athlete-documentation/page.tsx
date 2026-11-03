@@ -67,8 +67,7 @@ export default function ExpeditionPage() {
             <table className="block w-full border-collapse text-left md:table">
               <thead className="sr-only md:not-sr-only">
                 <tr className="border-b border-varnish text-[13px] opacity-70">
-                  <th scope="col" className="pb-3 font-normal">Peak</th>
-                  <th scope="col" className="pb-3 font-normal">Height</th>
+                  <th scope="col" className="pb-3 font-normal">Objective</th>
                   <th scope="col" className="pb-3 font-normal">Route</th>
                   <th scope="col" className="pb-3 font-normal">Coverage</th>
                 </tr>
@@ -76,18 +75,15 @@ export default function ExpeditionPage() {
               <tbody className="block md:table-row-group">
                 {EXPEDITION.log.map((climb) => (
                   <tr
-                    key={climb.peak}
-                    className="grid grid-cols-[1fr_auto] gap-x-4 border-b border-bone py-4 md:table-row md:py-0"
+                    key={climb.objective}
+                    className="grid border-b border-bone py-4 md:table-row md:py-0"
                   >
                     <th scope="row" className="font-normal md:py-4 md:pr-6">
-                      <span className="block text-[18px] leading-tight font-semibold">{climb.peak}</span>
+                      <span className="block text-[18px] leading-tight font-semibold">{climb.objective}</span>
                       <span className="text-[14px] opacity-70">{climb.range}</span>
                     </th>
-                    <td className="text-right text-[15px] tabular-nums md:py-4 md:pr-6 md:text-left">
-                      {climb.height || "—"}
-                    </td>
-                    <td className="col-span-2 mt-1.5 text-[15px] md:py-4 md:pr-6">{climb.style}</td>
-                    <td className="col-span-2 text-[14px] opacity-70 md:py-4">{climb.coverage}</td>
+                    <td className="mt-1.5 text-[15px] md:py-4 md:pr-6">{climb.style}</td>
+                    <td className="text-[14px] opacity-70 md:py-4">{climb.coverage}</td>
                   </tr>
                 ))}
               </tbody>
