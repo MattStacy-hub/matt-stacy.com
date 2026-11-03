@@ -25,7 +25,8 @@ export function Clients() {
   const hasLogos = CLIENTS.length > 0;
   return (
     <section className="px-gutter pt-[clamp(64px,9vw,128px)]">
-      <div className="reveal-up mx-auto max-w-[1320px]">
+      {/* bg-canvas: the reveal animation isolates this block, so the logos multiply against this fill instead of the page. */}
+      <div className="reveal-up mx-auto max-w-[1320px] bg-canvas">
         <h2 className="mb-[clamp(28px,4vw,44px)] text-[clamp(26px,2.8vw,36px)] leading-[1.1] font-bold tracking-[-0.015em]">
           Brands I&apos;ve worked with
         </h2>
