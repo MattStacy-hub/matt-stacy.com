@@ -64,7 +64,7 @@ export const EXPEDITION = {
   hero: PALCARAJU_WALLS,
   statement: "Legacies, documented.",
   body: [
-    "My skills as an alpinist and all-around outdoor athlete mean I can rope up without being a liability. I carry my own kit, shoot handheld angles from top-down, and produce captivating, dynamic aerial footage.",
+    "Combining my passions for alpine climbing and visual storytelling makes me an asset to any adventurous production. I can rope up without being a liability, carry my gear, shoot handheld angles from top-down, and produce captivating, dynamic material.",
   ],
   ropePhoto: {
     src: `${P}/cusco-region/nevado-veronica/nevado-veronica-7.webp`,
@@ -81,7 +81,7 @@ export const EXPEDITION = {
     },
     {
       heading: "For independent expedition teams",
-      text: "I'll document your expedition from start to finish, whether that means summiting with you or capturing visuals from below to combine with your own footage on route. This is for teams climbing routes on the cutting edge of alpinism or teams climbing rarely summited peaks in off-the-beaten-path places.",
+      text: "I'll document your expedition from the start to finish, whether that means summiting with you or capturing visuals from below to combine with your footage on route. This is intended for teams climbing on the cutting edge of alpinism or those attempting rarely summited peaks in remote locations.",
     },
   ],
   logHeading: "Real objectives I've documented",
