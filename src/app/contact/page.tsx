@@ -10,7 +10,7 @@ import { breadcrumbSchema, pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Contact Matt Stacy: Photography and Film in Peru",
   description:
-    "Plan an expedition, brand campaign, drone shoot or adventure photography session in Peru. Send an inquiry to Matt Stacy, based in the Sacred Valley, Cusco.",
+    "Plan an expedition, brand campaign, drone shoot or adventure photography session in Peru. Send an inquiry to Matt Stacy, based in Cusco, Peru.",
   path: "/contact",
 });
 

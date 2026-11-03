@@ -109,7 +109,7 @@ export function professionalServiceSchema() {
     founder: { "@id": PERSON_ID },
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Sacred Valley",
+      addressLocality: "Cusco",
       addressRegion: "Cusco",
       addressCountry: "PE",
     },

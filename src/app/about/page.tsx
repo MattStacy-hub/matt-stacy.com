@@ -20,7 +20,7 @@ import { breadcrumbSchema, pageMetadata, personSchema } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "About Matt Stacy, Adventure Photographer in Peru",
   description:
-    "Matt Stacy is an adventure photographer, filmmaker and climber based in the Sacred Valley, Cusco. Wilderness First Responder, Spanish speaker, working across Peru and worldwide.",
+    "Matt Stacy is an adventure photographer, filmmaker and climber based in Cusco, Peru. Wilderness First Responder, Spanish speaker, working across Peru and worldwide.",
   path: "/about",
   ogImage: ABOUT_HERO.src,
 });
