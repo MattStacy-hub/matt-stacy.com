@@ -29,7 +29,10 @@ export const INTRO_OPENER =
 export const FIELD_SHEET = [
   { term: "Home base", value: "Cusco, Peru" },
   { term: "Where I work", value: "Across Peru, available globally" },
-  { term: "Specialty", value: "Alpine climbing, trekking, expeditions, travel and lifestyle" },
+  {
+    term: "Specialty",
+    value: "Alpine climbing, trekking, expeditions, travel and lifestyle – anywhere rugged and beautiful",
+  },
   { term: "Languages I speak", value: "English & Spanish" },
   { term: "Highest shoot", value: "6,274 m, Nevado Palcaraju" },
   { term: "Years of experience", value: "6+" },
