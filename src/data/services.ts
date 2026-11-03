@@ -18,17 +18,6 @@ export interface Service {
  */
 export const SERVICES: Service[] = [
   {
-    slug: "drone-cinematography",
-    navLabel: "Drone Cinematography",
-    heading: "Drone cinematography",
-    summary:
-      "Drone photos and video from the high Andes to the deep cloud forest shot on the latest professional DJI drones.",
-    seoTitle: "Drone Cinematography in Peru",
-    seoDescription:
-      "Drone photos and video in the Peruvian Andes for brand films, destinations and expeditions. I fly the latest professional DJI drones and I'm Part 107 certified.",
-    comingSoon: false,
-  },
-  {
     slug: "adventure-photography",
     navLabel: "Adventure Photography",
     heading: "Adventure photography",
@@ -37,6 +26,17 @@ export const SERVICES: Service[] = [
     seoTitle: "Adventure Photographer for Hire in Peru: Treks & Climbs",
     seoDescription:
       "Hire an adventure photographer in Cusco for your trek, climb or day trip in Peru. Planned around your itinerary, delivered as a private gallery.",
+    comingSoon: false,
+  },
+  {
+    slug: "drone-cinematography",
+    navLabel: "Drone Cinematography",
+    heading: "Drone cinematography",
+    summary:
+      "Drone photos and video from the high Andes to the deep cloud forest shot on the latest professional DJI drones.",
+    seoTitle: "Drone Cinematography in Peru",
+    seoDescription:
+      "Drone photos and video in the Peruvian Andes for brand films, destinations and expeditions. I fly the latest professional DJI drones and I'm Part 107 certified.",
     comingSoon: false,
   },
   {
