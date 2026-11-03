@@ -22,7 +22,7 @@ export const SERVICES: Service[] = [
     navLabel: "Drone Cinematography",
     heading: "Drone cinematography",
     summary:
-      "Drone photos and video of the high Andes, from the glaciers and ridgelines down to the trail into camp, taken on the same trip as the photos on the ground.",
+      "Drone photos and video from the high Andes to the deep cloud forest shot on the latest professional DJI drones.",
     seoTitle: "Drone Cinematography in Peru",
     seoDescription:
       "Drone photos and video in the Peruvian Andes for brand films, destinations and expeditions. I fly the latest professional DJI drones and I'm Part 107 certified.",
