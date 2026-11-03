@@ -54,8 +54,8 @@ export default function BrandCommercialPage() {
         </div>
       </section>
 
-      <section aria-label="Film and photographs" className="px-gutter pb-[clamp(64px,9vw,128px)]">
-        <div className="relative mb-2 aspect-video bg-varnish">
+      <section aria-label="Film" className="px-gutter pb-[clamp(64px,9vw,128px)]">
+        <div className="relative aspect-video bg-varnish">
           <iframe
             src={`https://www.youtube-nocookie.com/embed/${BRAND.video.id}?rel=0`}
             title={BRAND.video.title}
@@ -65,23 +65,6 @@ export default function BrandCommercialPage() {
             allowFullScreen
             className="absolute inset-0 size-full"
           />
-        </div>
-        <div className="grid gap-2 md:grid-cols-3">
-          {BRAND.photos.map((photo) => (
-            <figure
-              key={photo.src}
-              className="relative h-[clamp(340px,42vw,620px)] overflow-hidden bg-bone"
-            >
-              <Image
-                src={photo.src}
-                alt={photo.alt}
-                fill
-                sizes="(min-width: 768px) 33vw, 100vw"
-                className="object-cover"
-                style={{ objectPosition: photo.focus }}
-              />
-            </figure>
-          ))}
         </div>
       </section>
 

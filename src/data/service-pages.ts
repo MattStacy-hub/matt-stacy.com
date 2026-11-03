@@ -299,33 +299,7 @@ export const BRAND = {
       text: "Editorial assignments and branded content for magazines, publications, and digital media in the outdoor and adventure-travel space.",
     },
   ],
-  photos: [
-    {
-      src: `${P}/cusco-region/urubamba/urubamba-11.webp`,
-      width: 1706,
-      height: 2560,
-      alt: "A red dome tent pitched in a hollow dug into snow, a backpack at its entrance and cloud filling the valleys below, Cordillera Urubamba, Peru",
-      title: "High camp, Verónica",
-      place: "Cordillera Urubamba · 5,300 m",
-    },
-    {
-      src: `${P}/ancash-region/cordillera-blanca/cordillera-blanca-22.webp`,
-      width: 1365,
-      height: 2048,
-      alt: "A climber with a helmet, large backpack and ice axe on a rock ledge, looking down the Llanganuco valley and its two turquoise lakes, Cordillera Blanca, Peru",
-      title: "Llanganuco",
-      place: "Cordillera Blanca, Áncash",
-    },
-    {
-      src: `${P}/ancash-region/cordillera-huayhuash/cordillera-huayhuash-5.webp`,
-      width: 2048,
-      height: 1365,
-      alt: "An orange tent on the shore of a still lake below a snow-covered peak and glacier, flanked by dark rock walls, Cordillera Huayhuash, Peru",
-      title: "Sarapacocha",
-      place: "Cordillera Huayhuash, Áncash",
-    },
-  ] as Photo[],
-  /** A YouTube film shown above the photos. */
+  /** A YouTube film shown below the capabilities. */
   video: { id: "ez03mgREp94", title: "Pallay Punchu Flow | Mace Training in the Andes" },
   productionHeading: "Producing in Peru",
   productionPhoto: {
