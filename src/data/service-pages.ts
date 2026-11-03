@@ -107,14 +107,14 @@ export const EXPEDITION = {
       coverage: "Stills, aerials, action film",
     },
     {
-      objective: "Nevado Shaqsha",
-      style: "Southeast face",
-      coverage: "Stills",
-    },
-    {
       objective: "Huayhuash Alpine Circuit",
       style: "Alpine Circuit",
       coverage: "Stills, handheld film, aerials",
+    },
+    {
+      objective: "Nevado Shaqsha",
+      style: "Southeast face",
+      coverage: "Stills",
     },
   ],
   logPhoto: SHAQSHA_DAWN,
