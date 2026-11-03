@@ -182,7 +182,7 @@ export const DRONE = {
 
 export const ADVENTURE = {
   hero: SAN_ANTONIO_PASS,
-  statement: "Photos that tell a story.",
+  statement: "Photos that tell your story.",
   body: "For independent travelers venturing into Peru's mountain ranges for a trek around Ausangate or Salkantay, groups of friends day-tripping to places like Pallay Punchu, or tour operators looking to elevate their guests' experience with professional photography services. Based in Cusco, available across Peru.",
   formatsHeading: "Choose your trip",
   formats: [
