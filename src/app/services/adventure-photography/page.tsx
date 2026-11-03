@@ -95,9 +95,6 @@ export default function AdventurePhotographyPage() {
               sizes="(min-width: 768px) 40vw, 100vw"
               className="h-auto w-full"
             />
-            <figcaption className="mt-2.5 text-[13px] opacity-70">
-              {ADVENTURE.includedPhoto.title} · {ADVENTURE.includedPhoto.place}
-            </figcaption>
           </figure>
           <div>
             <h2 className="mb-4 text-[clamp(26px,2.8vw,36px)] leading-[1.1] font-bold tracking-[-0.015em]">

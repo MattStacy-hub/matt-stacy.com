@@ -80,9 +80,6 @@ export default function ExpeditionPage() {
                         sizes="(min-width: 768px) 55vw, 100vw"
                         className={`h-auto w-full ${portrait ? "max-w-[420px]" : ""} ${flip && portrait ? "md:ml-auto" : ""}`}
                       />
-                      <figcaption className="mt-2.5 text-[13px] opacity-70">
-                        {step.photo.title} · {step.photo.place}
-                      </figcaption>
                     </figure>
                   </div>
                 </li>
@@ -160,9 +157,6 @@ export default function ExpeditionPage() {
               sizes="300px"
               className="h-auto w-full"
             />
-            <figcaption className="mt-2.5 text-[13px] opacity-70">
-              {EXPEDITION.logPhoto.title} · {EXPEDITION.logPhoto.place}
-            </figcaption>
           </figure>
         </div>
       </section>
