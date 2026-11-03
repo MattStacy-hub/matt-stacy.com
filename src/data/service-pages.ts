@@ -325,12 +325,12 @@ export const DRONE = {
       heading: "Stills",
       text: "High-resolution aerial photography, composed and delivered ready for print, editorial, and social.",
       photo: {
-        src: `${P}/cusco-region/nevado-sirijuani/nevado-sirijuani-1.webp`,
-        width: 2560,
-        height: 1705,
-        alt: "Aerial view of the glacier spilling down the northwest slopes of Nevado Sirijuani between dark rock ridges, Cordillera Urubamba, Peru",
-        title: "Nevado Sirijuani",
-        place: "Cordillera Urubamba, Cusco",
+        src: `${P}/cusco-region/pallay-punchu/pallay-punchu-1.webp`,
+        width: 1706,
+        height: 2560,
+        alt: "Aerial view of a person standing on a striped red and green rock ridge, with red mountains and grassy slopes beyond under a cloudy sky, Pallay Punchu, Cusco, Peru",
+        title: "Pallay Punchu",
+        place: "Cusco",
       },
     },
     {
@@ -472,7 +472,7 @@ export const BRAND = {
   photos: [
     {
       src: `${P}/cusco-region/urubamba/urubamba-11.webp`,
-      width: 1707,
+      width: 1706,
       height: 2560,
       alt: "A red dome tent pitched in a hollow dug into snow, a backpack at its entrance and cloud filling the valleys below, Cordillera Urubamba, Peru",
       title: "High camp, Verónica",
