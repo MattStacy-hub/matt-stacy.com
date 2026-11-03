@@ -109,19 +109,7 @@ export function SelectedWork() {
   const [index, setIndex] = useState(-1);
 
   return (
-    <section id="work" className="bg-varnish py-[clamp(64px,9vw,128px)] text-canvas">
-      <div className="mb-[clamp(28px,4vw,48px)] flex items-baseline justify-between gap-6 px-gutter">
-        <h2 className="text-[clamp(30px,3.6vw,48px)] leading-none font-bold tracking-[-0.02em]">
-          Selected work
-        </h2>
-        <Link
-          href="/portfolio"
-          className="shrink-0 text-[14px] font-semibold text-bone transition-colors hover:text-canvas"
-        >
-          Full portfolio →
-        </Link>
-      </div>
-
+    <section id="work" aria-label="Selected work" className="bg-varnish py-[clamp(64px,9vw,128px)] text-canvas">
       <div className={`grid px-gutter ${GAP}`}>
         {ROWS.map((row) =>
           row.length === 1 ? (
@@ -134,6 +122,15 @@ export function SelectedWork() {
             </div>
           ),
         )}
+      </div>
+
+      <div className="mt-[clamp(20px,2.5vw,32px)] flex justify-end px-gutter">
+        <Link
+          href="/portfolio"
+          className="text-[14px] font-semibold text-bone transition-colors hover:text-canvas"
+        >
+          Full portfolio →
+        </Link>
       </div>
 
       <Lightbox
