@@ -34,7 +34,7 @@ export function ContactCta({
             <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
           </Link>
         </div>
-        <dl className="grid grid-cols-[auto_1fr] items-baseline gap-x-7 gap-y-3.5 border-t border-bone/25 pt-6">
+        <dl className="grid grid-cols-[auto_1fr] items-baseline gap-x-7 gap-y-3.5">
           <dt className="text-[15px] text-bone/70">Email</dt>
           <dd className="text-[17px] break-words">
             <a href={`mailto:${CONTACT.email}`} className="hover:underline">
