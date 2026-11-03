@@ -3,8 +3,8 @@ import { CONTACT } from "@/data/site";
 
 interface ContactCtaProps {
   heading?: string;
-  /** Lead-in before the reply-time promise. */
-  text?: string;
+  /** Lead-in before the reply-time promise. `null` drops the paragraph, promise and all. */
+  text?: string | null;
   /** A service slug: the contact form opens with that service selected. */
   service?: string;
 }
@@ -21,9 +21,11 @@ export function ContactCta({
           <h2 className="font-display mb-5.5 text-[clamp(40px,6vw,84px)] leading-none">
             {heading}
           </h2>
-          <p className="max-w-[44ch] text-bone">
-            {text} {CONTACT.replyTime}
-          </p>
+          {text !== null && (
+            <p className="max-w-[44ch] text-bone">
+              {text} {CONTACT.replyTime}
+            </p>
+          )}
           <Link
             href={service ? `/contact?service=${service}` : "/contact"}
             className="label group mt-8 inline-flex gap-3 bg-petroglyph px-6.5 py-4 text-white"

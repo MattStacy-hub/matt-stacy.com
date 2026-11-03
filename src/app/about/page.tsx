@@ -127,10 +127,7 @@ export default async function AboutPage() {
           </section>
         )}
 
-        <ContactCta
-          heading="Tell me what you're planning"
-          text="The objective, the team, the dates you're looking at."
-        />
+        <ContactCta heading="Tell me what you're planning" text={null} />
       </main>
       <SiteFooter />
     </>
