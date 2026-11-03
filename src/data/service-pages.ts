@@ -191,7 +191,7 @@ export const ADVENTURE = {
     {
       name: "Single-day trip",
       examples: "Pallay Punchu, Inti Punku, Maras, Palcoyo",
-      text: "One day, one place, the best of the light. Ideal for a group of friends or a couple.",
+      text: "We organize an entire day focused on capturing your experience in a single location. This offer is perfect for groups of friends, solo travelers, or couples seeking unique photographs together.",
       photo: {
         src: `${P}/cusco-region/inti-punku/inti-punku-1.webp`,
         width: 2048,
@@ -204,7 +204,7 @@ export const ADVENTURE = {
     {
       name: "Multi-day trekking",
       examples: "Ausangate, Salkantay, Huayhuash, Ancascocha",
-      text: "I walk the whole route with you: the camps, the passes and the mornings before anyone's awake.",
+      text: "I will accompany you on your multi-day trek from beginning to end, from sunrise to sunset. This service can focus solely on photography, or you can enhance it by including video and drone coverage for a more dynamic visual story.",
       photo: {
         src: `${P}/cusco-region/nevado-ausangate/nevado-ausangate-7.webp`,
         width: 2560,
@@ -217,7 +217,7 @@ export const ADVENTURE = {
     {
       name: "Mountaineering objective",
       examples: "Guided ascents across the Cusco ranges and the Cordillera Blanca",
-      text: "On the rope with your team, shooting the summit day from the inside.",
+      text: "I'll join your rope team. You can focus on the climbing while I move around to capture dynamic shots of you and your team on the mountain. Coverage from basecamp to the summit and back.",
       photo: {
         src: `${P}/ancash-region/cordillera-blanca/cordillera-blanca-16.webp`,
         width: 2048,
