@@ -77,11 +77,11 @@ export const EXPEDITION = {
   audiences: [
     {
       heading: "For sponsored athletes and brands",
-      text: "Campaign-ready stills and film that show the athlete in real terrain. Built for brand decks, social, editorial, and film licensing.",
+      text: "I create campaign-quality assets that demonstrate athletes doing what they do best. For web, social media, editorial, and film licensing.",
     },
     {
       heading: "For independent expedition teams",
-      text: "I climb with you. My own kit, rope skills, no babysitting. Full documentation of the expedition as it happens, from the approach to the summit and back down.",
+      text: "I'll document your expedition from start to finish, whether that means summiting with you or capturing visuals from below to combine with your own footage on route. This is for teams climbing routes on the cutting edge of alpinism or teams climbing rarely summited peaks in off-the-beaten-path places.",
     },
   ],
   logHeading: "Real objectives I've documented",
