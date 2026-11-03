@@ -47,11 +47,11 @@ export default function ExpeditionPage() {
         </div>
         <div className="mx-auto grid max-w-[1320px] gap-[clamp(32px,5vw,80px)] px-gutter py-[clamp(48px,7vw,96px)] md:grid-cols-2">
           {EXPEDITION.audiences.map((audience) => (
-            <div key={audience.heading}>
+            <div key={audience.heading} className="text-center">
               <h2 className="mb-3 text-[clamp(22px,2.2vw,28px)] leading-tight font-semibold tracking-[-0.01em]">
                 {audience.heading}
               </h2>
-              <p className="max-w-[46ch] text-bone">{audience.text}</p>
+              <p className="mx-auto max-w-[46ch] text-bone">{audience.text}</p>
             </div>
           ))}
         </div>
