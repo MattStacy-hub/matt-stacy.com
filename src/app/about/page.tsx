@@ -11,7 +11,6 @@ import {
   ABOUT_HERO,
   FIELD_SHEET,
   INTRO_OPENER,
-  MILESTONES,
   PORTRAIT,
   PULL_QUOTE,
   STRENGTHS,
@@ -104,39 +103,6 @@ export default async function AboutPage() {
                 See the portfolio
               </Link>
             </div>
-          </div>
-        </section>
-
-        {/* How I got here: a rope line down the page, a year at each anchor. */}
-        <section className="bg-bone/45 px-gutter py-[clamp(64px,9vw,128px)]">
-          <div className="mx-auto max-w-[1100px]">
-            <ol aria-label="How I got here" className="relative border-l-2 border-varnish">
-              {MILESTONES.map((m) => (
-                <li
-                  key={m.year}
-                  className="relative grid gap-x-[clamp(24px,4vw,64px)] gap-y-2 pb-[clamp(32px,4vw,48px)] pl-[clamp(24px,4vw,48px)] last:pb-0 md:grid-cols-[120px_minmax(0,1fr)]"
-                >
-                  <span
-                    aria-hidden="true"
-                    className="absolute top-[0.55em] -left-[7px] size-3 rounded-full bg-petroglyph"
-                  />
-                  <p className="font-display text-[clamp(30px,3.2vw,44px)] leading-none tabular-nums">{m.year}</p>
-                  <div>
-                    <h3 className="mb-2 text-[20px] leading-tight font-semibold">{m.title}</h3>
-                    <p className="max-w-[58ch] text-[15.5px] leading-[1.7]">{m.text}</p>
-                    {m.href && (
-                      <Link
-                        href={m.href}
-                        className="group mt-2.5 inline-flex gap-2 text-[14px] font-semibold text-petroglyph"
-                      >
-                        {m.href.startsWith("http") ? "Visit the site" : "Read the story"}
-                        <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
-                      </Link>
-                    )}
-                  </div>
-                </li>
-              ))}
-            </ol>
           </div>
         </section>
 

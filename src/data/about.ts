@@ -38,50 +38,6 @@ export const FIELD_SHEET = [
   { term: "Years of experience", value: "6+" },
 ];
 
-export interface Milestone {
-  year: string;
-  title: string;
-  text: string;
-  /** A blog post with the full story. */
-  href?: string;
-}
-
-/** How I got here, oldest first. */
-export const MILESTONES: Milestone[] = [
-  {
-    year: "2019",
-    title: "The drive west",
-    text: "I graduated from university in Indiana and moved from the Chicago suburbs to Los Angeles for an engineering job. On the drive I saw the Tetons, my first real mountains. Until then they only existed in textbooks.",
-  },
-  {
-    year: "2020",
-    title: "The first camera",
-    text: "The trails closed for COVID. On the couch in Santa Monica I hesitated over a $600 Canon T7i on eBay, and my roommate said you'll never know if you don't take the risk. I bought it, and learning it never felt like work. That November I moved to Salt Lake City to be near the mountains.",
-  },
-  {
-    year: "2021",
-    title: "Going solo",
-    text: "I'd never traveled alone, so I tried five days in Jackson Hole. A week after getting back, I built a sleeping platform in my car and drove 4,000 miles, working remotely the whole way. I took an avalanche course and started shooting friends snowboarding and climbing.",
-  },
-  {
-    year: "2022",
-    title: "Peru",
-    text: "My friend Joey and I walked the Salkantay trek, five days and about 50 miles self-supported, and I saw glaciated mountains for the first time. I was supposed to fly home. Instead I went to Huaraz for seven weeks, made my first Peruvian friends and learned Spanish from almost nothing.",
-    href: "/blog/vertical-my-story-and-approach-to-becoming-a-photographer-in-alpine-environments",
-  },
-  {
-    year: "2025",
-    title: "Andes Adventure Visuals",
-    text: "After coming back every year, I started a business to give other people the same access: photography tours, workshops, mountaineering expeditions and treks across Peru.",
-    href: "https://www.andesadventurevisuals.com",
-  },
-  {
-    year: "Now",
-    title: "Here for good",
-    text: "I live full-time in the Sacred Valley and make photographs and films in the high Andes. I've been told no countless times and pivoted again and again. The work is only starting to take off, and it feels like it's just beginning.",
-  },
-];
-
 export const PULL_QUOTE = {
   quote:
     "I didn't want my work as a photographer to endanger the lives of my partners.",
