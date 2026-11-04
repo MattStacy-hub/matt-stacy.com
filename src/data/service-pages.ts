@@ -77,7 +77,7 @@ export const EXPEDITION = {
   audiences: [
     {
       heading: "For sponsored athletes and brands",
-      text: "I create campaign-quality assets that demonstrate athletes doing what they do best. For web, social media, editorial, and film licensing.",
+      text: "I create campaign-quality assets that demonstrate athletes doing what they do best. We'll plan the shoot around your objective, then I'll keep up with you on the mountain and capture the moments that tell your story. Everything is delivered edited and ready for web, social media, editorial, and film licensing. Plus, I'm always loaded with the best snacks on the mountain.",
     },
     {
       heading: "For independent expedition teams",
