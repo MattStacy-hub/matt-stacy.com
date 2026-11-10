@@ -24,7 +24,7 @@ export default function LinksPage() {
           </header>
 
           <ul className="border-t border-varnish">
-            {BIO_LINKS.map((link, index) => {
+            {BIO_LINKS.map((link) => {
               const external = link.href.startsWith("http");
               const row = (
                 <>
@@ -43,7 +43,7 @@ export default function LinksPage() {
                       alt=""
                       fill
                       sizes="136px"
-                      priority={index < 4}
+                      priority
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </span>
