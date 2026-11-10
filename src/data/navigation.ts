@@ -26,5 +26,6 @@ export const MAIN_NAV: NavItem[] = [
   { label: "Portfolio", href: "/portfolio" },
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
+  { label: "Prints", href: "https://shop.matt-stacy.com/" },
   { label: "Start a project", href: "/contact", button: true },
 ];
