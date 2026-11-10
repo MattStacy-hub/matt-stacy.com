@@ -19,10 +19,10 @@ export const BIO_LINKS: BioLink[] = [
   {
     label: "Matt's 2026 Print Shop",
     href: "https://shop.matt-stacy.com/",
-    photo: "/images/links/print-shop-caramarca-camping.webp",
+    photo: "/images/links/print-shop-nevado-salkantay.webp",
   },
   {
-    label: "Book a trip with AAV",
+    label: "Book a trip with Andes Adventure Visuals",
     href: "https://www.andesadventurevisuals.com/links?utm_source=matt-stacy.com&utm_medium=referral&utm_campaign=links",
     photo: "/images/links/aav-logo.png",
   },
@@ -32,13 +32,13 @@ export const BIO_LINKS: BioLink[] = [
     photo: "/images/portfolio/climber-granite-wall.webp",
   },
   {
-    label: "matt-stacy.com",
+    label: "matt-stacy.com | photography, film, & drone",
     href: "/",
     photo: "/images/links/matt-stacy-mark.png",
   },
   {
     label: "YouTube channel",
     href: "https://www.youtube.com/@_mattstacy",
-    photo: "/images/portfolio/huayhuash-tent-at-dusk.webp",
+    photo: "/images/links/youtube-summit-selfie.webp",
   },
 ];
