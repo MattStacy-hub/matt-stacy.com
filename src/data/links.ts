@@ -32,7 +32,7 @@ export const BIO_LINKS: BioLink[] = [
     photo: "/images/portfolio/climber-granite-wall.webp",
   },
   {
-    label: "matt-stacy.com | photography, film, & drone",
+    label: "matt-stacy.com | photography, film & drone",
     href: "/",
     photo: "/images/links/matt-stacy-mark.png",
   },
