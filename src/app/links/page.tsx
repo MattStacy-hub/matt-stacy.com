@@ -31,12 +31,18 @@ export default function LinksPage() {
                   <span className="flex-1 py-4 text-[16px] font-semibold leading-snug">
                     {link.label}
                   </span>
-                  <span
+                  {/* Drawn, not a text glyph: phones render the arrow
+                      characters as emoji. */}
+                  <svg
                     aria-hidden="true"
-                    className="text-[18px] opacity-60 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100"
+                    viewBox="0 0 20 12"
+                    className="h-3 w-5 flex-none opacity-60 transition-[transform,opacity] group-hover:translate-x-1 group-hover:opacity-100"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
                   >
-                    ↗
-                  </span>
+                    <path d="M0 6h18.5M13.5 1l5 5-5 5" />
+                  </svg>
                   <span className="relative size-[68px] flex-none overflow-hidden bg-bone">
                     <Image
                       src={link.photo}
